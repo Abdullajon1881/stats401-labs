@@ -16,7 +16,7 @@ d3.csv("../data/students.csv", d => ({
   const chartHeight = height - labelSpace;
 
   const y = d3.scaleLinear()
-    .domain([0, d3.max(data, d => d.score)])
+    .domain([0, 100])
     .range([0, chartHeight]);
 
   const x = i => i * (barWidth + barGap) + barGap;

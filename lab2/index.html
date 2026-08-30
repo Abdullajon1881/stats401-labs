@@ -3,12 +3,38 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Lab 2</title>
+  <title>Lab 2: Multivariate Visualization with D3</title>
   <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
-  <h1>Lab 2</h1>
-  <p>Lab 2 will be added here.</p>
+<body class="lab2-page">
+  <h1>Lab 2: Multivariate Visualization with D3</h1>
+  <p>STATS 401: Data Acquisition and Visualization</p>
+  <p>Each row is one city, showing its population and average temperature, with colour for region and dot size for development level.</p>
+
+  <nav class="lab-nav">
+    <a href="../lab1/">Lab 1</a>
+    <a href="../lab2/">Lab 2</a>
+    <a href="../lab3/">Lab 3</a>
+    <a href="../lab4/">Lab 4</a>
+    <a href="../lab5/">Lab 5</a>
+    <a href="../lab6/">Lab 6</a>
+    <a href="../lab7/">Lab 7</a>
+    <a href="../lab8/">Lab 8</a>
+    <a href="../lab9/">Lab 9</a>
+    <a href="../lab10/">Lab 10</a>
+  </nav>
+
+  <div id="chart" class="lab2-chart"></div>
+  <div id="tooltip" class="lab2-tooltip"></div>
+
+  <div class="design-justification">
+    <h2>Design Justification</h2>
+    <p>Population is a ratio variable, so I show it with horizontal bar length on a scale that starts at zero. This makes differences in population magnitude easy to compare. Region is nominal and is shown with color because the regions are categories with no natural order. Temperature is an interval variable and is shown by the horizontal position of a dot on a separate Celsius scale rather than forcing it onto the population scale. Development level is ordinal and is represented by dot size: Low cities use smaller dots, Medium cities use medium dots, and High cities use larger dots. I keep the population bar and temperature dot on the same city row so the two quantitative values can be compared without losing the city identity. The tooltip provides exact values for all four variables. I hope viewers can quickly compare population and temperature while also noticing whether region or development level appears to relate to those patterns.</p>
+  </div>
+
   <p><a href="../index.html">Back to main page</a></p>
+
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <script src="lab2.js"></script>
 </body>
 </html>

@@ -62,6 +62,10 @@ a:hover {
   text-anchor: middle;
 }
 
+body.lab2-page {
+  max-width: 960px;
+}
+
 .lab2-chart {
   margin-top: 20px;
   overflow-x: auto;

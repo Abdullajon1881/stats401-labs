@@ -18,7 +18,7 @@ function showTooltip(event, d) {
     .html(
       "<strong>" + d.city + "</strong><br>" +
       "Population: " + d.population + " million<br>" +
-      "Temperature: " + d.temp_c + " &deg;C<br>" +
+      "Temperature: " + d.temp_c.toFixed(1) + " &deg;C<br>" +
       "Development: " + d.development_level + "<br>" +
       "Region: " + d.region
     );

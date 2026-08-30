@@ -61,3 +61,58 @@ a:hover {
   fill: #333;
   text-anchor: middle;
 }
+
+.lab2-chart {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.city-label {
+  font-size: 12px;
+  fill: #333;
+  text-anchor: end;
+}
+
+.temperature-dot {
+  stroke: #fff;
+  stroke-width: 1px;
+}
+
+.city-bar:hover,
+.temperature-dot:hover {
+  opacity: 0.8;
+}
+
+.axis-title {
+  font-size: 12px;
+  fill: #333;
+  text-anchor: middle;
+}
+
+.legend-title {
+  font-size: 12px;
+  font-weight: bold;
+  fill: #333;
+}
+
+.legend-text {
+  font-size: 12px;
+  fill: #333;
+}
+
+.lab2-tooltip {
+  position: absolute;
+  display: none;
+  pointer-events: none;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 6px 10px;
+  font-size: 12px;
+  line-height: 1.4;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.design-justification {
+  margin-top: 30px;
+}

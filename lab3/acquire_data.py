@@ -9,8 +9,10 @@ disallows /v1/image/unsafe, so this endpoint is open to automated clients.
 GBIF asks callers to send a User-Agent so they can make contact if a script
 misbehaves, and to keep the request rate modest.
 
-This script pages through bird (class Aves) occurrence records and writes
-them to data/lab3_data.csv.
+This script walks bird (class Aves) occurrence records month by month and
+writes them to data/lab3_data.csv. Querying each year/month slice keeps the
+sample spread across seasons instead of returning only the newest records,
+which is what a single unfiltered query gives back.
 """
 
 from pathlib import Path
@@ -21,10 +23,13 @@ import requests
 
 API_URL = "https://api.gbif.org/v1/occurrence/search"
 TAXON_KEY = 212  # class Aves (birds)
-PAGE_SIZE = 200
+YEARS = (2022, 2023, 2024)
+MONTHS = range(1, 13)
+PAGE_SIZE = 34
+RECORDS_PER_SLICE = 34
 TARGET_RECORDS = 1200
 MIN_RECORDS = 1000
-MAX_PAGES = 20
+MAX_PAGES_PER_SLICE = 5
 DELAY_SECONDS = 1.0
 REQUEST_TIMEOUT = 20
 
@@ -63,59 +68,69 @@ def collect_records():
     seen_keys = set()
     requests_made = 0
 
-    for page in range(MAX_PAGES):
-        if page > 0:
-            time.sleep(DELAY_SECONDS)
+    # months outer, years inner, so every month and year is reached before
+    # the target count is met
+    for month in MONTHS:
+        for year in YEARS:
+            collected_here = 0
 
-        offset = page * PAGE_SIZE
-        params = {
-            "taxonKey": TAXON_KEY,
-            "limit": PAGE_SIZE,
-            "offset": offset,
-        }
+            for page in range(MAX_PAGES_PER_SLICE):
+                if requests_made > 0:
+                    time.sleep(DELAY_SECONDS)
 
-        try:
-            response = requests.get(
-                API_URL,
-                params=params,
-                headers=HEADERS,
-                timeout=REQUEST_TIMEOUT,
-            )
-            response.raise_for_status()
-        except requests.RequestException as error:
-            print(f"Request failed at offset {offset}: {error}")
-            continue
+                offset = page * PAGE_SIZE
+                params = {
+                    "taxonKey": TAXON_KEY,
+                    "year": year,
+                    "month": month,
+                    "limit": PAGE_SIZE,
+                    "offset": offset,
+                }
 
-        requests_made += 1
+                try:
+                    response = requests.get(
+                        API_URL,
+                        params=params,
+                        headers=HEADERS,
+                        timeout=REQUEST_TIMEOUT,
+                    )
+                    response.raise_for_status()
+                except requests.RequestException as error:
+                    print(f"Request failed for {year}-{month:02d} at offset {offset}: {error}")
+                    continue
 
-        try:
-            payload = response.json()
-        except ValueError as error:
-            print(f"Could not read JSON at offset {offset}: {error}")
-            continue
+                requests_made += 1
 
-        results = payload.get("results", [])
-        if not results:
-            print(f"No results returned at offset {offset}; stopping.")
-            break
+                try:
+                    payload = response.json()
+                except ValueError as error:
+                    print(f"Could not read JSON for {year}-{month:02d}: {error}")
+                    continue
 
-        for item in results:
-            record = extract_record(item)
-            # skip duplicates and rows with no identifier or no name
-            if not record["key"] or record["key"] in seen_keys:
-                continue
-            if not record["scientific_name"]:
-                continue
-            seen_keys.add(record["key"])
-            records.append(record)
+                results = payload.get("results", [])
+                if not results:
+                    break
 
-        print(f"Collected {len(records)} records after {requests_made} request(s)")
+                for item in results:
+                    record = extract_record(item)
+                    # skip duplicates and rows with no identifier or no name
+                    if not record["key"] or record["key"] in seen_keys:
+                        continue
+                    if not record["scientific_name"]:
+                        continue
+                    seen_keys.add(record["key"])
+                    records.append(record)
+                    collected_here += 1
 
-        if len(records) >= TARGET_RECORDS:
-            break
-        if payload.get("endOfRecords"):
-            print("API reported the end of the result set; stopping.")
-            break
+                if collected_here >= RECORDS_PER_SLICE:
+                    break
+                if payload.get("endOfRecords"):
+                    break
+
+            print(f"{year}-{month:02d}: {len(records)} records after {requests_made} request(s)")
+
+            if len(records) >= TARGET_RECORDS:
+                return records, requests_made
 
     return records, requests_made
 

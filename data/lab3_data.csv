@@ -1,0 +1,1225 @@
+key,scientific_name,species,family,country,year,month,basis_of_record
+3217673636,"Zonotrichia leucophrys (J.R.Forster, 1772)",Zonotrichia leucophrys,Passerellidae,United States of America,2022,1,HUMAN_OBSERVATION
+3218895649,"Larus occidentalis Audubon, 1839",Larus occidentalis,Laridae,United States of America,2022,1,HUMAN_OBSERVATION
+3219216619,"Streptopelia decaocto (Frivaldszky, 1838)",Streptopelia decaocto,Columbidae,United States of America,2022,1,HUMAN_OBSERVATION
+3219681579,"Calypte anna (R.Lesson, 1829)",Calypte anna,Trochilidae,United States of America,2022,1,HUMAN_OBSERVATION
+3219899666,"Poecile atricapillus (Linnaeus, 1766)",Poecile atricapillus,Paridae,United States of America,2022,1,HUMAN_OBSERVATION
+3220488626,"Sturnus vulgaris Linnaeus, 1758",Sturnus vulgaris,Sturnidae,United States of America,2022,1,HUMAN_OBSERVATION
+3221178642,"Larus californicus Lawrence, 1854",Larus californicus,Laridae,United States of America,2022,1,HUMAN_OBSERVATION
+3221724659,"Passer domesticus (Linnaeus, 1758)",Passer domesticus,Passeridae,United States of America,2022,1,HUMAN_OBSERVATION
+3222299627,"Branta hutchinsii (Richardson, 1832)",Branta hutchinsii,Anatidae,United States of America,2022,1,HUMAN_OBSERVATION
+3222576710,"Corthylio calendula (Linnaeus, 1766)",Regulus calendula,Regulidae,United States of America,2022,1,HUMAN_OBSERVATION
+3223444558,"Sayornis nigricans (Swainson, 1827)",Sayornis nigricans,Tyrannidae,United States of America,2022,1,HUMAN_OBSERVATION
+3224669593,"Haemorhous mexicanus (P.L.Statius Müller, 1776)",Haemorhous mexicanus,Fringillidae,United States of America,2022,1,HUMAN_OBSERVATION
+3226999593,"Poecile rufescens (J.K.Townsend, 1837)",Poecile rufescens,Paridae,United States of America,2022,1,HUMAN_OBSERVATION
+3227143613,"Branta canadensis (Linnaeus, 1758)",Branta canadensis,Anatidae,United States of America,2022,1,HUMAN_OBSERVATION
+3228429686,"Turdus migratorius Linnaeus, 1766",Turdus migratorius,Turdidae,United States of America,2022,1,HUMAN_OBSERVATION
+3228859640,"Astur Lacepède, 1799",,Accipitridae,United States of America,2022,1,HUMAN_OBSERVATION
+3230888625,"Corvus brachyrhynchos C.L.Brehm, 1822",Corvus brachyrhynchos,Corvidae,United States of America,2022,1,HUMAN_OBSERVATION
+3238768627,"Corvus corax Linnaeus, 1758",Corvus corax,Corvidae,United States of America,2022,1,HUMAN_OBSERVATION
+3243437918,"Setophaga townsendi (J.K.Townsend, 1837)",Setophaga townsendi,Parulidae,United States of America,2022,1,HUMAN_OBSERVATION
+3245252653,"Columba livia J.F.Gmelin, 1789",Columba livia,Columbidae,United States of America,2022,1,HUMAN_OBSERVATION
+3424215327,"Passer domesticus (Linnaeus, 1758)",Passer domesticus,Passeridae,Norway,2022,1,HUMAN_OBSERVATION
+3424216324,"Pica pica (Linnaeus, 1758)",Pica pica,Corvidae,Norway,2022,1,HUMAN_OBSERVATION
+3424219359,"Strix aluco Linnaeus, 1758",Strix aluco,Strigidae,Norway,2022,1,HUMAN_OBSERVATION
+3424229324,"Scolopax rusticola Linnaeus, 1758",Scolopax rusticola,Scolopacidae,Norway,2022,1,HUMAN_OBSERVATION
+3424231415,"Strix aluco Linnaeus, 1758",Strix aluco,Strigidae,Norway,2022,1,HUMAN_OBSERVATION
+3424234360,"Turdus iliacus Linnaeus, 1758",Turdus iliacus,Turdidae,Norway,2022,1,HUMAN_OBSERVATION
+3424235321,"Ardea cinerea Linnaeus, 1758",Ardea cinerea,Ardeidae,Norway,2022,1,HUMAN_OBSERVATION
+3424238426,"Gavia immer (Brunnich, 1764)",Gavia immer,Gaviidae,Norway,2022,1,HUMAN_OBSERVATION
+3424241410,"Erithacus rubecula (Linnaeus, 1758)",Erithacus rubecula,Muscicapidae,Norway,2022,1,HUMAN_OBSERVATION
+3424244352,"Turdus iliacus Linnaeus, 1758",Turdus iliacus,Turdidae,Norway,2022,1,HUMAN_OBSERVATION
+3424250336,"Cyanistes caeruleus (Linnaeus, 1758)",Cyanistes caeruleus,Paridae,Norway,2022,1,HUMAN_OBSERVATION
+3424252381,"Chloris chloris (Linnaeus, 1758)",Chloris chloris,Fringillidae,Norway,2022,1,HUMAN_OBSERVATION
+3424256427,"Pica pica (Linnaeus, 1758)",Pica pica,Corvidae,Norway,2022,1,HUMAN_OBSERVATION
+3424262304,"Troglodytes troglodytes (Linnaeus, 1758)",Troglodytes troglodytes,Troglodytidae,Norway,2022,1,HUMAN_OBSERVATION
+3596425796,"Sittasomus griseicapillus (Vieillot, 1818)",Sittasomus griseicapillus,Furnariidae,Brazil,2023,1,HUMAN_OBSERVATION
+3624223101,"Pomatostomus temporalis (Vigors & Horsfield, 1827)",Pomatostomus temporalis,Pomatostomidae,Australia,2023,1,HUMAN_OBSERVATION
+3946209250,"Bambusicola sonorivox Gould, 1863",Bambusicola sonorivox,Phasianidae,Chinese Taipei,2023,1,HUMAN_OBSERVATION
+3993445845,"Rallus aquaticus Linnaeus, 1758",Rallus aquaticus,Rallidae,Sweden,2023,1,HUMAN_OBSERVATION
+4010280451,"Passer montanus (Linnaeus, 1758)",Passer montanus,Passeridae,Finland,2023,1,HUMAN_OBSERVATION
+4010281455,"Periparus ater (Linnaeus, 1758)",Periparus ater,Paridae,Finland,2023,1,HUMAN_OBSERVATION
+4010284363,"Pica pica (Linnaeus, 1758)",Pica pica,Corvidae,Finland,2023,1,HUMAN_OBSERVATION
+4010286358,"Turdus merula Linnaeus, 1758",Turdus merula,Turdidae,Finland,2023,1,HUMAN_OBSERVATION
+4010287355,"Garrulus glandarius (Linnaeus, 1758)",Garrulus glandarius,Corvidae,Finland,2023,1,HUMAN_OBSERVATION
+4010288354,"Coloeus monedula (Linnaeus, 1758)",Coloeus monedula,Corvidae,Finland,2023,1,HUMAN_OBSERVATION
+4010289346,"Emberiza citrinella Linnaeus, 1758",Emberiza citrinella,Emberizidae,Finland,2023,1,HUMAN_OBSERVATION
+4010291356,"Cyanistes caeruleus (Linnaeus, 1758)",Cyanistes caeruleus,Paridae,Finland,2023,1,HUMAN_OBSERVATION
+4010294364,"Parus major Linnaeus, 1758",Parus major,Paridae,Finland,2023,1,HUMAN_OBSERVATION
+4010508309,"Pica pica (Linnaeus, 1758)",Pica pica,Corvidae,Russian Federation,2023,1,HUMAN_OBSERVATION
+4010508313,"Carduelis carduelis caniceps Vigors, 1831",Carduelis carduelis,Fringillidae,Kazakhstan,2023,1,HUMAN_OBSERVATION
+4010508317,"Corvus monedula Linnaeus, 1758",Coloeus monedula,Corvidae,Russian Federation,2023,1,HUMAN_OBSERVATION
+4010508321,"Accipiter nisus (Linnaeus, 1758)",Accipiter nisus,Accipitridae,Russian Federation,2023,1,HUMAN_OBSERVATION
+4010508322,"Mycerobas carnipes (Hodgson, 1836)",Mycerobas carnipes,Fringillidae,Kazakhstan,2023,1,HUMAN_OBSERVATION
+4010508323,"Chloris chloris (Linnaeus, 1758)",Chloris chloris,Fringillidae,Russian Federation,2023,1,HUMAN_OBSERVATION
+4010508337,"Corvus monedula Linnaeus, 1758",Coloeus monedula,Corvidae,Russian Federation,2023,1,HUMAN_OBSERVATION
+4010508341,"Fringilla coelebs Linnaeus, 1758",Fringilla coelebs,Fringillidae,Russian Federation,2023,1,HUMAN_OBSERVATION
+4010508343,"Corvus cornix Linnaeus, 1758",Corvus cornix,Corvidae,Russian Federation,2023,1,HUMAN_OBSERVATION
+4010508351,"Poecile montanus (Conrad von Baldenstein, 1827)",Poecile montanus,Paridae,Russian Federation,2023,1,HUMAN_OBSERVATION
+4010508356,"Corvus cornix Linnaeus, 1758",Corvus cornix,Corvidae,Russian Federation,2023,1,HUMAN_OBSERVATION
+4010508368,"Sitta europaea Linnaeus, 1758",Sitta europaea,Sittidae,Russian Federation,2023,1,HUMAN_OBSERVATION
+4010508371,"Poecile montanus (Conrad von Baldenstein, 1827)",Poecile montanus,Paridae,Russian Federation,2023,1,HUMAN_OBSERVATION
+4010508376,"Corvus corax Linnaeus, 1758",Corvus corax,Corvidae,Russian Federation,2023,1,HUMAN_OBSERVATION
+4010508377,"Pyrrhula pyrrhula (Linnaeus, 1758)",Pyrrhula pyrrhula,Fringillidae,Russian Federation,2023,1,HUMAN_OBSERVATION
+4010508389,"Pica pica (Linnaeus, 1758)",Pica pica,Corvidae,Russian Federation,2023,1,HUMAN_OBSERVATION
+4010508398,"Prunella modularis (Linnaeus, 1758)",Prunella modularis,Prunellidae,Russian Federation,2023,1,HUMAN_OBSERVATION
+4010508399,"Corvus cornix Linnaeus, 1758",Corvus cornix,Corvidae,Russian Federation,2023,1,HUMAN_OBSERVATION
+4010508401,"Aegypius monachus (Linnaeus, 1766)",Aegypius monachus,Accipitridae,Russian Federation,2023,1,HUMAN_OBSERVATION
+4010508413,"Alcedo atthis (Linnaeus, 1758)",Alcedo atthis,Alcedinidae,Russian Federation,2023,1,HUMAN_OBSERVATION
+4010508414,"Corvus monedula Linnaeus, 1758",Coloeus monedula,Corvidae,Russian Federation,2023,1,HUMAN_OBSERVATION
+1291415457,"Neochmia phaeton phaeton (Hombron & Jacquinot, 1841)",Neochmia phaeton,Estrildidae,Australia,2024,1,PRESERVED_SPECIMEN
+1291504826,"Heterophasia picaoides (Hodgson, 1839)",Heterophasia picaoides,Leiothrichidae,,2024,1,PRESERVED_SPECIMEN
+2554266701,"Carduelis flammea (Linnaeus, 1758)",Acanthis flammea,Fringillidae,United States of America,2024,1,PRESERVED_SPECIMEN
+2554269725,"Carduelis flammea (Linnaeus, 1758)",Acanthis flammea,Fringillidae,United States of America,2024,1,PRESERVED_SPECIMEN
+4090615389,"Prunella modularis (Linnaeus, 1758)",Prunella modularis,Prunellidae,United Kingdom of Great Britain and Northern Ireland,2024,1,HUMAN_OBSERVATION
+4461268245,"Saxicola rubicola (Linnaeus, 1766)",Saxicola rubicola,Muscicapidae,Netherlands,2024,1,HUMAN_OBSERVATION
+4506686305,"Botaurus stellaris (Linnaeus, 1758)",Botaurus stellaris,Ardeidae,China,2024,1,HUMAN_OBSERVATION
+4506686306,"Rallus aquaticus Linnaeus, 1758",Rallus aquaticus,Rallidae,China,2024,1,HUMAN_OBSERVATION
+4506809410,"Anas platyrhynchos Linnaeus, 1758",Anas platyrhynchos,Anatidae,Russian Federation,2024,1,HUMAN_OBSERVATION
+4506899975,"Cyanistes caeruleus (Linnaeus, 1758)",Cyanistes caeruleus,Paridae,Sweden,2024,1,HUMAN_OBSERVATION
+4506899976,"Bombycilla garrulus (Linnaeus, 1758)",Bombycilla garrulus,Bombycillidae,Sweden,2024,1,HUMAN_OBSERVATION
+4506899977,"Bombycilla garrulus (Linnaeus, 1758)",Bombycilla garrulus,Bombycillidae,Sweden,2024,1,HUMAN_OBSERVATION
+4506899978,"Corvus cornix Linnaeus, 1758",Corvus cornix,Corvidae,Sweden,2024,1,HUMAN_OBSERVATION
+4506899979,"Turdus merula Linnaeus, 1758",Turdus merula,Turdidae,Sweden,2024,1,HUMAN_OBSERVATION
+4506899980,"Parus major Linnaeus, 1758",Parus major,Paridae,Sweden,2024,1,HUMAN_OBSERVATION
+4506899981,"Fulica atra Linnaeus, 1758",Fulica atra,Rallidae,Sweden,2024,1,HUMAN_OBSERVATION
+4506899982,"Anser albifrons (Scopoli, 1769)",Anser albifrons,Anatidae,Sweden,2024,1,HUMAN_OBSERVATION
+4506899984,"Aythya fuligula (Linnaeus, 1758)",Aythya fuligula,Anatidae,Sweden,2024,1,HUMAN_OBSERVATION
+4506899985,"Sitta europaea Linnaeus, 1758",Sitta europaea,Sittidae,Sweden,2024,1,HUMAN_OBSERVATION
+4506899986,"Pica pica (Linnaeus, 1758)",Pica pica,Corvidae,Sweden,2024,1,HUMAN_OBSERVATION
+4506899987,"Corvus cornix Linnaeus, 1758",Corvus cornix,Corvidae,Sweden,2024,1,HUMAN_OBSERVATION
+4506899988,"Pyrrhula pyrrhula (Linnaeus, 1758)",Pyrrhula pyrrhula,Fringillidae,Sweden,2024,1,HUMAN_OBSERVATION
+4506899989,"Columba palumbus Linnaeus, 1758",Columba palumbus,Columbidae,Sweden,2024,1,HUMAN_OBSERVATION
+4506899990,"Corvus corax Linnaeus, 1758",Corvus corax,Corvidae,Sweden,2024,1,HUMAN_OBSERVATION
+4506899991,"Coloeus monedula (Linnaeus, 1758)",Coloeus monedula,Corvidae,Sweden,2024,1,HUMAN_OBSERVATION
+4506899992,"Cygnus olor (J.F.Gmelin, 1789)",Cygnus olor,Anatidae,Sweden,2024,1,HUMAN_OBSERVATION
+4506899993,"Parus major Linnaeus, 1758",Parus major,Paridae,Sweden,2024,1,HUMAN_OBSERVATION
+4506899994,"Parus major Linnaeus, 1758",Parus major,Paridae,Sweden,2024,1,HUMAN_OBSERVATION
+4506899996,"Aegithalos caudatus (Linnaeus, 1758)",Aegithalos caudatus,Aegithalidae,Sweden,2024,1,HUMAN_OBSERVATION
+4506899997,"Aythya fuligula (Linnaeus, 1758)",Aythya fuligula,Anatidae,Sweden,2024,1,HUMAN_OBSERVATION
+4506899998,"Passer montanus (Linnaeus, 1758)",Passer montanus,Passeridae,Sweden,2024,1,HUMAN_OBSERVATION
+4506899999,"Melanitta fusca (Linnaeus, 1758)",Melanitta fusca,Anatidae,Sweden,2024,1,HUMAN_OBSERVATION
+4506900000,"Pica pica (Linnaeus, 1758)",Pica pica,Corvidae,Sweden,2024,1,HUMAN_OBSERVATION
+4506900001,"Bombycilla garrulus (Linnaeus, 1758)",Bombycilla garrulus,Bombycillidae,Sweden,2024,1,HUMAN_OBSERVATION
+1891617584,"Anas platyrhynchos Linnaeus, 1758",Anas platyrhynchos,Anatidae,France,2022,2,PRESERVED_SPECIMEN
+1891617732,"Anas platyrhynchos Linnaeus, 1758",Anas platyrhynchos,Anatidae,France,2022,2,PRESERVED_SPECIMEN
+1891617890,"Sturnus vulgaris Linnaeus, 1758",Sturnus vulgaris,Sturnidae,,2022,2,PRESERVED_SPECIMEN
+1891617917,"Sturnus vulgaris Linnaeus, 1758",Sturnus vulgaris,Sturnidae,,2022,2,PRESERVED_SPECIMEN
+3461185305,"Turdus merula Linnaeus, 1758",Turdus merula,Turdidae,Finland,2022,2,HUMAN_OBSERVATION
+3461224303,"Dendrocopos major (Linnaeus, 1758)",Dendrocopos major,Picidae,Finland,2022,2,HUMAN_OBSERVATION
+3461242308,"Parus major Linnaeus, 1758",Parus major,Paridae,Finland,2022,2,HUMAN_OBSERVATION
+3461256305,"Passer montanus (Linnaeus, 1758)",Passer montanus,Passeridae,Finland,2022,2,HUMAN_OBSERVATION
+3462680302,"Larus argentatus Pontoppidan, 1763",Larus argentatus,Laridae,Poland,2022,2,HUMAN_OBSERVATION
+3462680303,"Passer domesticus (Linnaeus, 1758)",Passer domesticus,Passeridae,Finland,2022,2,HUMAN_OBSERVATION
+3462680315,"Dryocopus martius (Linnaeus, 1758)",Dryocopus martius,Picidae,Finland,2022,2,HUMAN_OBSERVATION
+3462680334,"Dryocopus martius (Linnaeus, 1758)",Dryocopus martius,Picidae,Finland,2022,2,HUMAN_OBSERVATION
+3462680335,"Picus canus J.F.Gmelin, 1788",Picus canus,Picidae,Finland,2022,2,HUMAN_OBSERVATION
+3462680345,"Streptopelia decaocto (Frivaldszky, 1838)",Streptopelia decaocto,Columbidae,Finland,2022,2,HUMAN_OBSERVATION
+3462727306,"Bucephala clangula (Linnaeus, 1758)",Bucephala clangula,Anatidae,Norway,2022,2,HUMAN_OBSERVATION
+3462727309,"Larus argentatus Pontoppidan, 1763",Larus argentatus,Laridae,Norway,2022,2,HUMAN_OBSERVATION
+3462727310,"Turdus merula Linnaeus, 1758",Turdus merula,Turdidae,Norway,2022,2,HUMAN_OBSERVATION
+3462727311,"Fringilla montifringilla Linnaeus, 1758",Fringilla montifringilla,Fringillidae,Norway,2022,2,HUMAN_OBSERVATION
+3462727313,"Ardea cinerea Linnaeus, 1758",Ardea cinerea,Ardeidae,Norway,2022,2,HUMAN_OBSERVATION
+3462727320,"Sylvia atricapilla (Linnaeus, 1758)",Sylvia atricapilla,Sylviidae,Norway,2022,2,HUMAN_OBSERVATION
+3462727321,"Anas platyrhynchos Linnaeus, 1758",Anas platyrhynchos,Anatidae,Norway,2022,2,HUMAN_OBSERVATION
+3462727324,"Anas platyrhynchos Linnaeus, 1758",Anas platyrhynchos,Anatidae,Norway,2022,2,HUMAN_OBSERVATION
+3462727326,"Fringilla montifringilla Linnaeus, 1758",Fringilla montifringilla,Fringillidae,Norway,2022,2,HUMAN_OBSERVATION
+3462727330,"Columba palumbus Linnaeus, 1758",Columba palumbus,Columbidae,Norway,2022,2,HUMAN_OBSERVATION
+3462727331,"Pica pica (Linnaeus, 1758)",Pica pica,Corvidae,Norway,2022,2,HUMAN_OBSERVATION
+3462727337,"Passer domesticus (Linnaeus, 1758)",Passer domesticus,Passeridae,Norway,2022,2,HUMAN_OBSERVATION
+3462727339,"Parus major Linnaeus, 1758",Parus major,Paridae,Norway,2022,2,HUMAN_OBSERVATION
+3462727341,"Pyrrhula pyrrhula (Linnaeus, 1758)",Pyrrhula pyrrhula,Fringillidae,Norway,2022,2,HUMAN_OBSERVATION
+3462727342,"Pica pica (Linnaeus, 1758)",Pica pica,Corvidae,Norway,2022,2,HUMAN_OBSERVATION
+3462727345,"Accipiter gentilis (Linnaeus, 1758)",Accipiter gentilis,Accipitridae,Norway,2022,2,HUMAN_OBSERVATION
+3462727346,"Pyrrhula pyrrhula (Linnaeus, 1758)",Pyrrhula pyrrhula,Fringillidae,Norway,2022,2,HUMAN_OBSERVATION
+3462727348,"Turdus merula Linnaeus, 1758",Turdus merula,Turdidae,Norway,2022,2,HUMAN_OBSERVATION
+3462727354,"Pica pica (Linnaeus, 1758)",Pica pica,Corvidae,Norway,2022,2,HUMAN_OBSERVATION
+3462727356,"Picus viridis Linnaeus, 1758",Picus viridis,Picidae,Norway,2022,2,HUMAN_OBSERVATION
+2743088276,"Dryocopus pileatus (Linnaeus, 1758)",Dryocopus pileatus,Picidae,United States of America,2023,2,HUMAN_OBSERVATION
+2745280152,"Melanerpes carolinus (Linnaeus, 1758)",Melanerpes carolinus,Picidae,United States of America,2023,2,HUMAN_OBSERVATION
+2758787043,"Melanerpes erythrocephalus (Linnaeus, 1758)",Melanerpes erythrocephalus,Picidae,United States of America,2023,2,HUMAN_OBSERVATION
+2759881101,"Columbina passerina (Linnaeus, 1758)",Columbina passerina,Columbidae,United States of America,2023,2,HUMAN_OBSERVATION
+2770831147,"Buteo lineatus (Gmelin, 1788)",Buteo lineatus,Accipitridae,United States of America,2023,2,HUMAN_OBSERVATION
+2771234121,"Dryobates pubescens (Linnaeus, 1766)",Dryobates pubescens,Picidae,United States of America,2023,2,HUMAN_OBSERVATION
+3184635504,"Patagioenas nigrirostris (P.L.Sclater, 1860)",Patagioenas nigrirostris,Columbidae,Costa Rica,2023,2,HUMAN_OBSERVATION
+3184932461,"Ardea alba Linnaeus, 1758",Ardea alba,Ardeidae,Costa Rica,2023,2,HUMAN_OBSERVATION
+3185233478,"Heliomaster longirostris (Audebert & Vieillot, 1801)",Heliomaster longirostris,Trochilidae,Costa Rica,2023,2,HUMAN_OBSERVATION
+3185675649,"Ceratopipra mentalis (P.L.Sclater, 1857)",Pipra mentalis,Pipridae,Costa Rica,2023,2,HUMAN_OBSERVATION
+3185932470,"Euphonia gouldi P.L.Sclater, 1857",Euphonia gouldi,Fringillidae,Costa Rica,2023,2,HUMAN_OBSERVATION
+3186673534,"Vanellus chilensis (Molina, 1782)",Vanellus chilensis,Charadriidae,Costa Rica,2023,2,HUMAN_OBSERVATION
+3186782441,"Megaceryle torquata (Linnaeus, 1766)",Megaceryle torquata,Alcedinidae,Costa Rica,2023,2,HUMAN_OBSERVATION
+3187976361,"Chaetura cinereiventris P.L.Sclater, 1862",Chaetura cinereiventris,Apodidae,Costa Rica,2023,2,HUMAN_OBSERVATION
+3188385356,"Stelgidopteryx ruficollis (Vieillot, 1817)",Stelgidopteryx ruficollis,Hirundinidae,Costa Rica,2023,2,HUMAN_OBSERVATION
+3188888417,"Columbina talpacoti (Temminck, 1810)",Columbina talpacoti,Columbidae,Costa Rica,2023,2,HUMAN_OBSERVATION
+3189538490,"Crotophaga sulcirostris Swainson, 1827",Crotophaga sulcirostris,Cuculidae,Costa Rica,2023,2,HUMAN_OBSERVATION
+3189580809,"Buteo plagiatus (Schlegel, 1862)",Buteo nitidus,Accipitridae,Costa Rica,2023,2,HUMAN_OBSERVATION
+3189690446,"Tapera naevia (Linnaeus, 1766)",Tapera naevia,Cuculidae,Costa Rica,2023,2,HUMAN_OBSERVATION
+3189802489,"Tachycineta albilinea (Lawrence, 1863)",Tachycineta albilinea,Hirundinidae,Costa Rica,2023,2,HUMAN_OBSERVATION
+3190275291,"Setophaga pensylvanica (Linnaeus, 1766)",Setophaga pensylvanica,Parulidae,Costa Rica,2023,2,HUMAN_OBSERVATION
+3190570628,"Chloroceryle amazona (Latham, 1790)",Chloroceryle amazona,Alcedinidae,Costa Rica,2023,2,HUMAN_OBSERVATION
+3190602679,"Glaucis aeneus Lawrence, 1868",Glaucis aeneus,Trochilidae,Costa Rica,2023,2,HUMAN_OBSERVATION
+3190606777,"Saltator maximus (P.L.S.Müller, 1776)",Saltator maximus,Thraupidae,Costa Rica,2023,2,HUMAN_OBSERVATION
+3190660447,"Contopus virens (Linnaeus, 1766)",Contopus virens,Tyrannidae,Costa Rica,2023,2,HUMAN_OBSERVATION
+3190726525,"Todirostrum cinereum (Linnaeus, 1766)",Todirostrum cinereum,Tyrannidae,Costa Rica,2023,2,HUMAN_OBSERVATION
+3190905430,"Psarocolius montezuma (Lesson, 1830)",Psarocolius montezuma,Icteridae,Costa Rica,2023,2,HUMAN_OBSERVATION
+3191436320,"Phaeochroa cuvierii (Delattre & Bourcier, 1846)",Phaeochroa cuvierii,Trochilidae,Costa Rica,2023,2,HUMAN_OBSERVATION
+3191583526,Cardinalidae,,Cardinalidae,Costa Rica,2023,2,HUMAN_OBSERVATION
+3191604656,"Pachysylvia decurtata (Bonaparte, 1838)",Hylophilus decurtatus,Vireonidae,Costa Rica,2023,2,HUMAN_OBSERVATION
+3192025453,"Chloroceryle americana (J.F.Gmelin, 1788)",Chloroceryle americana,Alcedinidae,Costa Rica,2023,2,HUMAN_OBSERVATION
+3192243504,"Ramphastos sulfuratus R.Lesson, 1830",Ramphastos sulfuratus,Ramphastidae,Costa Rica,2023,2,HUMAN_OBSERVATION
+3192533353,"Baryphthengus martii (Spix, 1824)",Baryphthengus martii,Momotidae,Costa Rica,2023,2,HUMAN_OBSERVATION
+3193126058,"Phaethornis striigularis Gould, 1854",Phaethornis striigularis,Trochilidae,Costa Rica,2023,2,HUMAN_OBSERVATION
+2232929905,"Haliaeetus leucocephalus (Linnaeus, 1766)",Haliaeetus leucocephalus,Accipitridae,Canada,2024,2,HUMAN_OBSERVATION
+2554274082,"Carduelis flammea (Linnaeus, 1758)",Acanthis flammea,Fringillidae,United States of America,2024,2,PRESERVED_SPECIMEN
+3209927476,"Cardinalis cardinalis (Linnaeus, 1758)",Cardinalis cardinalis,Cardinalidae,United States of America,2024,2,HUMAN_OBSERVATION
+3212821401,"Zenaida macroura (Linnaeus, 1758)",Zenaida macroura,Columbidae,United States of America,2024,2,HUMAN_OBSERVATION
+3214913323,"Buteo jamaicensis (Gmelin, 1788)",Buteo jamaicensis,Accipitridae,United States of America,2024,2,HUMAN_OBSERVATION
+3697404034,"Asio otus (Linnaeus, 1758)",Asio otus,Strigidae,Sweden,2024,2,HUMAN_OBSERVATION
+4199859832,"Phoenicurus leucocephalus Vigors, 1831",Chaimarrornis leucocephalus,Muscicapidae,India,2024,2,HUMAN_OBSERVATION
+4200099352,"Motacilla cinerea Tunstall, 1771",Motacilla cinerea,Motacillidae,India,2024,2,HUMAN_OBSERVATION
+4200761071,"Pycnonotus leucogenys (J.E.Gray, 1835)",Pycnonotus leucogenys,Pycnonotidae,India,2024,2,HUMAN_OBSERVATION
+4220479175,"Turdus atrogularis Jarocki, 1819",Turdus atrogularis,Turdidae,India,2024,2,HUMAN_OBSERVATION
+4221803768,"Aegithalos concinnus (Gould, 1855)",Aegithalos concinnus,Aegithalidae,India,2024,2,HUMAN_OBSERVATION
+4228331563,"Saxicola ferreus J.E.Gray & G.R.Gray, 1847",Saxicola ferreus,Muscicapidae,India,2024,2,HUMAN_OBSERVATION
+4263223997,"Parus monticolus Vigors, 1831",Parus monticolus,Paridae,India,2024,2,HUMAN_OBSERVATION
+4284794974,"Motacilla cinerea Tunstall, 1771",Motacilla cinerea,Motacillidae,India,2024,2,HUMAN_OBSERVATION
+4306809996,"Enicurus maculatus Vigors, 1831",Enicurus maculatus,Muscicapidae,India,2024,2,HUMAN_OBSERVATION
+4307611198,"Pyrrhocorax pyrrhocorax (Linnaeus, 1758)",Pyrrhocorax pyrrhocorax,Corvidae,India,2024,2,HUMAN_OBSERVATION
+4314579809,"Phoenicurus leucocephalus Vigors, 1831",Chaimarrornis leucocephalus,Muscicapidae,India,2024,2,HUMAN_OBSERVATION
+4316472223,"Myophonus caeruleus (Scopoli, 1786)",Myophonus caeruleus,Muscicapidae,India,2024,2,HUMAN_OBSERVATION
+4323038649,"Lophura leucomelanos (Latham, 1790)",Lophura leucomelanos,Phasianidae,India,2024,2,HUMAN_OBSERVATION
+4324062988,"Phoenicurus fuliginosus Vigors, 1831",Phoenicurus fuliginosus,Muscicapidae,India,2024,2,HUMAN_OBSERVATION
+4330768056,"Saxicola ferreus J.E.Gray & G.R.Gray, 1847",Saxicola ferreus,Muscicapidae,India,2024,2,HUMAN_OBSERVATION
+4335889489,"Phoenicurus leucocephalus Vigors, 1831",Chaimarrornis leucocephalus,Muscicapidae,India,2024,2,HUMAN_OBSERVATION
+4350353683,"Monticola rufiventris (Jardine & Selby, 1833)",Monticola rufiventris,Muscicapidae,India,2024,2,HUMAN_OBSERVATION
+4352243069,"Gyps himalayensis Hume, 1869",Gyps himalayensis,Accipitridae,India,2024,2,HUMAN_OBSERVATION
+4355259210,"Alectoris chukar (J.E.Gray, 1830)",Alectoris chukar,Phasianidae,India,2024,2,HUMAN_OBSERVATION
+4365372781,"Pycnonotus leucogenys (J.E.Gray, 1835)",Pycnonotus leucogenys,Pycnonotidae,India,2024,2,HUMAN_OBSERVATION
+4516138301,"Branta canadensis (Linnaeus, 1758)",Branta canadensis,Anatidae,Belgium,2024,2,HUMAN_OBSERVATION
+4516138302,"Branta canadensis (Linnaeus, 1758)",Branta canadensis,Anatidae,Belgium,2024,2,HUMAN_OBSERVATION
+4516138304,"Psittacula krameri (Scopoli, 1769)",Psittacula krameri,Psittacidae,Belgium,2024,2,HUMAN_OBSERVATION
+4516138306,"Branta canadensis (Linnaeus, 1758)",Branta canadensis,Anatidae,Belgium,2024,2,HUMAN_OBSERVATION
+4517710308,"Psittacula krameri (Scopoli, 1769)",Psittacula krameri,Psittacidae,Belgium,2024,2,HUMAN_OBSERVATION
+4517846302,"Uria aalge (Pontoppidan, 1763)",Uria aalge,Alcidae,Norway,2024,2,HUMAN_OBSERVATION
+4517846305,"Surnia ulula (Linnaeus, 1758)",Surnia ulula,Strigidae,Norway,2024,2,HUMAN_OBSERVATION
+4517846306,"Phalacrocorax carbo (Linnaeus, 1758)",Phalacrocorax carbo,Phalacrocoracidae,Norway,2024,2,HUMAN_OBSERVATION
+859237093,"Acridotheres tristis (Linnaeus, 1766)",Acridotheres tristis,Sturnidae,Madagascar,2022,3,PRESERVED_SPECIMEN
+1891617779,"Chloris chloris (Linnaeus, 1758)",Chloris chloris,Fringillidae,Luxembourg,2022,3,PRESERVED_SPECIMEN
+1891617927,"Pica pica (Linnaeus, 1758)",Pica pica,Corvidae,France,2022,3,PRESERVED_SPECIMEN
+1891618008,"Crex crex (Linnaeus, 1758)",Crex crex,Rallidae,Belgium,2022,3,PRESERVED_SPECIMEN
+2250974008,BOLD:ADL7888,Nisaetus bartelsi,Accipitridae,Indonesia,2022,3,MATERIAL_SAMPLE
+3434924455,"Spinus spinus (Linnaeus, 1758)",Spinus spinus,Fringillidae,Finland,2022,3,HUMAN_OBSERVATION
+3434956437,"Cyanistes caeruleus (Linnaeus, 1758)",Cyanistes caeruleus,Paridae,Finland,2022,3,HUMAN_OBSERVATION
+3435136475,"Cyanistes caeruleus (Linnaeus, 1758)",Cyanistes caeruleus,Paridae,Finland,2022,3,HUMAN_OBSERVATION
+3435150464,"Cyanistes caeruleus (Linnaeus, 1758)",Cyanistes caeruleus,Paridae,Finland,2022,3,HUMAN_OBSERVATION
+3500546302,"Rissa tridactyla (Linnaeus, 1758)",Rissa tridactyla,Laridae,Norway,2022,3,HUMAN_OBSERVATION
+3503231303,"Bombycilla garrulus (Linnaeus, 1758)",Bombycilla garrulus,Bombycillidae,Finland,2022,3,HUMAN_OBSERVATION
+3503237301,"Bombycilla garrulus (Linnaeus, 1758)",Bombycilla garrulus,Bombycillidae,Finland,2022,3,HUMAN_OBSERVATION
+3503239303,"Perisoreus infaustus (Linnaeus, 1758)",Perisoreus infaustus,Corvidae,Finland,2022,3,HUMAN_OBSERVATION
+3503254302,"Bombycilla garrulus (Linnaeus, 1758)",Bombycilla garrulus,Bombycillidae,Finland,2022,3,HUMAN_OBSERVATION
+3503262302,"Acanthis flammea (Linnaeus, 1758)",Acanthis flammea,Fringillidae,Finland,2022,3,HUMAN_OBSERVATION
+3503269302,"Bombycilla garrulus (Linnaeus, 1758)",Bombycilla garrulus,Bombycillidae,Finland,2022,3,HUMAN_OBSERVATION
+3503272301,"Acanthis flammea (Linnaeus, 1758)",Acanthis flammea,Fringillidae,Finland,2022,3,HUMAN_OBSERVATION
+3503306344,"Dendrocopos major (Linnaeus, 1758)",Dendrocopos major,Picidae,Finland,2022,3,HUMAN_OBSERVATION
+3503307354,"Pica pica (Linnaeus, 1758)",Pica pica,Corvidae,Finland,2022,3,HUMAN_OBSERVATION
+3503307355,"Parus major Linnaeus, 1758",Parus major,Paridae,Finland,2022,3,HUMAN_OBSERVATION
+3503307356,"Branta canadensis (Linnaeus, 1758)",Branta canadensis,Anatidae,Finland,2022,3,HUMAN_OBSERVATION
+3503307419,"Parus major Linnaeus, 1758",Parus major,Paridae,Finland,2022,3,HUMAN_OBSERVATION
+3503309348,"Corvus corone Linnaeus, 1758",Corvus corone,Corvidae,Finland,2022,3,HUMAN_OBSERVATION
+3503309349,"Corvus corone Linnaeus, 1758",Corvus corone,Corvidae,Finland,2022,3,HUMAN_OBSERVATION
+3503309350,"Cyanistes caeruleus (Linnaeus, 1758)",Cyanistes caeruleus,Paridae,Finland,2022,3,HUMAN_OBSERVATION
+3503310341,"Regulus regulus (Linnaeus, 1758)",Regulus regulus,Regulidae,Finland,2022,3,HUMAN_OBSERVATION
+3503310397,Columba livia f. domestica,Columba livia,Columbidae,Finland,2022,3,HUMAN_OBSERVATION
+3503311348,"Passer montanus (Linnaeus, 1758)",Passer montanus,Passeridae,Finland,2022,3,HUMAN_OBSERVATION
+3503311349,"Coloeus monedula (Linnaeus, 1758)",Coloeus monedula,Corvidae,Finland,2022,3,HUMAN_OBSERVATION
+3503311415,"Chloris chloris (Linnaeus, 1758)",Chloris chloris,Fringillidae,Finland,2022,3,HUMAN_OBSERVATION
+3503312346,"Chloris chloris (Linnaeus, 1758)",Chloris chloris,Fringillidae,Finland,2022,3,HUMAN_OBSERVATION
+3503313343,"Passer montanus (Linnaeus, 1758)",Passer montanus,Passeridae,Finland,2022,3,HUMAN_OBSERVATION
+3503314346,"Anas platyrhynchos Linnaeus, 1758",Anas platyrhynchos,Anatidae,Finland,2022,3,HUMAN_OBSERVATION
+3503314413,"Larus Linnaeus, 1758",,Laridae,Finland,2022,3,HUMAN_OBSERVATION
+2650162208,"Gnorimopsar chopi (Vieillot, 1819)",Gnorimopsar chopi,Icteridae,Brazil,2023,3,PRESERVED_SPECIMEN
+2650162210,"Nothura maculosa (Temminck, 1815)",Nothura maculosa,Tinamidae,Brazil,2023,3,PRESERVED_SPECIMEN
+2650163140,"Troglodytes musculus J.F.Naumann, 1823",Troglodytes musculus,Troglodytidae,Brazil,2023,3,PRESERVED_SPECIMEN
+2713413505,"Columba livia J.F.Gmelin, 1789",Columba livia,Columbidae,United States of America,2023,3,HUMAN_OBSERVATION
+3904083629,"Saxicola rubicola (Linnaeus, 1766)",Saxicola rubicola,Muscicapidae,Germany,2023,3,HUMAN_OBSERVATION
+4021898305,"Larus fuscus graellsii A.E.Brehm, 1857",Larus fuscus,Laridae,United States of America,2023,3,PRESERVED_SPECIMEN
+4040410339,"Alopochen aegyptiaca (Linnaeus, 1766)",Alopochen aegyptiaca,Anatidae,Belgium,2023,3,HUMAN_OBSERVATION
+4041683307,"Mergus serrator Linnaeus, 1758",Mergus serrator,Anatidae,Norway,2023,3,HUMAN_OBSERVATION
+4041683310,"Dendrocopos major (Linnaeus, 1758)",Dendrocopos major,Picidae,Norway,2023,3,HUMAN_OBSERVATION
+4041683314,"Anas platyrhynchos Linnaeus, 1758",Anas platyrhynchos,Anatidae,Norway,2023,3,HUMAN_OBSERVATION
+4041683316,"Somateria mollissima (Linnaeus, 1758)",Somateria mollissima,Anatidae,Norway,2023,3,HUMAN_OBSERVATION
+4041683321,"Haliaeetus albicilla (Linnaeus, 1758)",Haliaeetus albicilla,Accipitridae,Norway,2023,3,HUMAN_OBSERVATION
+4041683324,"Clangula hyemalis (Linnaeus, 1758)",Clangula hyemalis,Anatidae,Norway,2023,3,HUMAN_OBSERVATION
+4041683326,"Melanitta fusca (Linnaeus, 1758)",Melanitta fusca,Anatidae,Norway,2023,3,HUMAN_OBSERVATION
+4041683331,"Corvus cornix Linnaeus, 1758",Corvus cornix,Corvidae,Norway,2023,3,HUMAN_OBSERVATION
+4041683334,"Cyanistes caeruleus (Linnaeus, 1758)",Cyanistes caeruleus,Paridae,Norway,2023,3,HUMAN_OBSERVATION
+4041683336,"Charadrius hiaticula Linnaeus, 1758",Charadrius hiaticula,Charadriidae,Norway,2023,3,HUMAN_OBSERVATION
+4041683337,"Numenius arquata (Linnaeus, 1758)",Numenius arquata,Scolopacidae,Norway,2023,3,HUMAN_OBSERVATION
+4041683338,"Gavia adamsii (G.R.Gray, 1859)",Gavia adamsii,Gaviidae,Norway,2023,3,HUMAN_OBSERVATION
+4041683345,"Larus marinus Linnaeus, 1758",Larus marinus,Laridae,Norway,2023,3,HUMAN_OBSERVATION
+4041683348,"Garrulus glandarius (Linnaeus, 1758)",Garrulus glandarius,Corvidae,Norway,2023,3,HUMAN_OBSERVATION
+4041683350,"Corvus cornix Linnaeus, 1758",Corvus cornix,Corvidae,Norway,2023,3,HUMAN_OBSERVATION
+4041683357,"Motacilla cinerea Tunstall, 1771",Motacilla cinerea,Motacillidae,Norway,2023,3,HUMAN_OBSERVATION
+4041683367,"Fringilla coelebs Linnaeus, 1758",Fringilla coelebs,Fringillidae,Norway,2023,3,HUMAN_OBSERVATION
+4041683379,"Mergellus albellus (Linnaeus, 1758)",Mergellus albellus,Anatidae,Norway,2023,3,HUMAN_OBSERVATION
+4041683380,"Parus major Linnaeus, 1758",Parus major,Paridae,Norway,2023,3,HUMAN_OBSERVATION
+4041683383,"Mergus serrator Linnaeus, 1758",Mergus serrator,Anatidae,Norway,2023,3,HUMAN_OBSERVATION
+4041683389,"Corvus cornix Linnaeus, 1758",Corvus cornix,Corvidae,Norway,2023,3,HUMAN_OBSERVATION
+4041683390,"Turdus merula Linnaeus, 1758",Turdus merula,Turdidae,Norway,2023,3,HUMAN_OBSERVATION
+4041683397,"Somateria mollissima (Linnaeus, 1758)",Somateria mollissima,Anatidae,Norway,2023,3,HUMAN_OBSERVATION
+4041683398,"Poecile palustris (Linnaeus, 1758)",Poecile palustris,Paridae,Norway,2023,3,HUMAN_OBSERVATION
+4041683404,"Melanitta nigra (Linnaeus, 1758)",Melanitta nigra,Anatidae,Norway,2023,3,HUMAN_OBSERVATION
+4041683407,"Branta canadensis (Linnaeus, 1758)",Branta canadensis,Anatidae,Norway,2023,3,HUMAN_OBSERVATION
+4041683411,"Somateria mollissima (Linnaeus, 1758)",Somateria mollissima,Anatidae,Norway,2023,3,HUMAN_OBSERVATION
+1291493924,"Acrocephalus stentoreus levantinus Roselaar, 1994",Acrocephalus stentoreus,Acrocephalidae,,2024,3,PRESERVED_SPECIMEN
+2650162078,"Thraupis palmarum (Wied-Neuwied, 1821)",Thraupis palmarum,Thraupidae,Brazil,2024,3,PRESERVED_SPECIMEN
+2650162089,"Neopelma pallescens (Lafresnaye, 1853)",Neopelma pallescens,Pipridae,Brazil,2024,3,PRESERVED_SPECIMEN
+2650162110,"Thraupis palmarum (Wied-Neuwied, 1821)",Thraupis palmarum,Thraupidae,Brazil,2024,3,PRESERVED_SPECIMEN
+2650162120,"Formicivora grisea (Boddaert, 1783)",Formicivora grisea,Thamnophilidae,Brazil,2024,3,PRESERVED_SPECIMEN
+2650163172,"Formicivora grisea (Boddaert, 1783)",Formicivora grisea,Thamnophilidae,Brazil,2024,3,PRESERVED_SPECIMEN
+4155484012,"Chloebia gouldiae (Gould, 1844)",Erythrura gouldiae,Estrildidae,Australia,2024,3,HUMAN_OBSERVATION
+4180625401,"Anthracothorax nigricollis (Vieillot, 1817)",Anthracothorax nigricollis,Trochilidae,Colombia,2024,3,HUMAN_OBSERVATION
+4181007777,"Troglodytes musculus J.F.Naumann, 1823",Troglodytes musculus,Troglodytidae,Colombia,2024,3,HUMAN_OBSERVATION
+4188701510,"Chlorostilbon melanorhynchus Gould, 1860",Chlorostilbon melanorhynchus,Trochilidae,Colombia,2024,3,HUMAN_OBSERVATION
+4192681795,"Spinus xanthogastrus (Du Bus de Gisignies, 1855)",Spinus xanthogastrus,Fringillidae,Colombia,2024,3,HUMAN_OBSERVATION
+4200599342,"Crotophaga ani Linnaeus, 1758",Crotophaga ani,Cuculidae,Colombia,2024,3,HUMAN_OBSERVATION
+4202511902,"Setophaga fusca (Statius Müller, 1776)",Setophaga fusca,Parulidae,Colombia,2024,3,HUMAN_OBSERVATION
+4204261071,"Ramphocelus flammigerus (Jardine & Selby, 1833)",Ramphocelus flammigerus,Thraupidae,Colombia,2024,3,HUMAN_OBSERVATION
+4206338204,"Turdus ignobilis P.L.Sclater, 1858",Turdus ignobilis,Turdidae,Colombia,2024,3,HUMAN_OBSERVATION
+4209905180,"Sayornis nigricans (Swainson, 1827)",Sayornis nigricans,Tyrannidae,Colombia,2024,3,HUMAN_OBSERVATION
+4212748775,"Stilpnia heinei (Cabanis, 1851)",Stilpnia heinei,Thraupidae,Colombia,2024,3,HUMAN_OBSERVATION
+4222497412,"Pyrocephalus rubinus (Boddaert, 1783)",Pyrocephalus rubinus,Tyrannidae,Colombia,2024,3,HUMAN_OBSERVATION
+4223700165,"Daptrius Vieillot, 1816",,Falconidae,Colombia,2024,3,HUMAN_OBSERVATION
+4227032388,"Psittacara wagleri (G.R.Gray, 1845)",Aratinga wagleri,Psittacidae,Colombia,2024,3,HUMAN_OBSERVATION
+4230969657,"Pitangus sulphuratus (Linnaeus, 1766)",Pitangus sulphuratus,Tyrannidae,Colombia,2024,3,HUMAN_OBSERVATION
+4231857451,"Aulacorhynchus albivitta (Boissonneau, 1840)",Aulacorhynchus albivitta,Ramphastidae,Colombia,2024,3,HUMAN_OBSERVATION
+4231890146,"Rupornis magnirostris (Gmelin, 1788)",Rupornis magnirostris,Accipitridae,Colombia,2024,3,HUMAN_OBSERVATION
+4233061549,"Myiozetetes cayanensis (Linnaeus, 1766)",Myiozetetes cayanensis,Tyrannidae,Colombia,2024,3,HUMAN_OBSERVATION
+4237483834,"Sporophila funerea (P.L.Sclater, 1860)",Sporophila funerea,Thraupidae,Colombia,2024,3,HUMAN_OBSERVATION
+4238353467,"Melanerpes formicivorus (Swainson, 1827)",Melanerpes formicivorus,Picidae,Colombia,2024,3,HUMAN_OBSERVATION
+4240806259,"Tyrannus melancholicus Vieillot, 1819",Tyrannus melancholicus,Tyrannidae,Colombia,2024,3,HUMAN_OBSERVATION
+4250199785,"Hypopyrrhus pyrohypogaster (Tarragon, 1847)",Hypopyrrhus pyrohypogaster,Icteridae,Colombia,2024,3,HUMAN_OBSERVATION
+4256941619,"Ortalis columbiana Hellmayr, 1906",Ortalis columbiana,Cracidae,Colombia,2024,3,HUMAN_OBSERVATION
+4260486777,"Myiozetetes similis (Spix, 1825)",Myiozetetes similis,Tyrannidae,Colombia,2024,3,HUMAN_OBSERVATION
+4262390263,"Piaya cayana (Linnaeus, 1766)",Piaya cayana,Cuculidae,Colombia,2024,3,HUMAN_OBSERVATION
+4262715861,"Spinus psaltria (Say, 1822)",Spinus psaltria,Fringillidae,Colombia,2024,3,HUMAN_OBSERVATION
+4264074170,"Melanerpes rubricapillus (Cabanis, 1862)",Melanerpes rubricapillus,Picidae,Colombia,2024,3,HUMAN_OBSERVATION
+4269521368,"Cardellina canadensis (Linnaeus, 1766)",Cardellina canadensis,Parulidae,Colombia,2024,3,HUMAN_OBSERVATION
+1670416513,"Columba palumbus Linnaeus, 1758",Columba palumbus,Columbidae,Sweden,2022,4,HUMAN_OBSERVATION
+1670416532,"Turdus merula Linnaeus, 1758",Turdus merula,Turdidae,Sweden,2022,4,HUMAN_OBSERVATION
+1749897224,"Poecile atricapillus (Linnaeus, 1766)",Poecile atricapillus,Paridae,United States of America,2022,4,HUMAN_OBSERVATION
+1749897229,"Passer domesticus (Linnaeus, 1758)",Passer domesticus,Passeridae,United States of America,2022,4,HUMAN_OBSERVATION
+1749897277,"Baeolophus bicolor (Linnaeus, 1766)",Baeolophus bicolor,Paridae,United States of America,2022,4,HUMAN_OBSERVATION
+1749897291,"Haemorhous purpureus (J.F.Gmelin, 1789)",Haemorhous purpureus,Fringillidae,United States of America,2022,4,HUMAN_OBSERVATION
+1891617757,"Grus grus (Linnaeus, 1758)",Grus grus,Gruidae,Germany,2022,4,PRESERVED_SPECIMEN
+1891617873,"Parus major Linnaeus, 1758",Parus major,Paridae,France,2022,4,PRESERVED_SPECIMEN
+1891618456,"Grus grus (Linnaeus, 1758)",Grus grus,Gruidae,Germany,2022,4,PRESERVED_SPECIMEN
+2057782853,"Cardinalis cardinalis (Linnaeus, 1758)",Cardinalis cardinalis,Cardinalidae,United States of America,2022,4,HUMAN_OBSERVATION
+2070942880,"Colaptes auratus (Linnaeus, 1758)",Colaptes auratus,Picidae,United States of America,2022,4,HUMAN_OBSERVATION
+2070944333,"Spinus tristis (Linnaeus, 1758)",Spinus tristis,Fringillidae,United States of America,2022,4,HUMAN_OBSERVATION
+2070944389,"Melospiza melodia (A.Wilson, 1810)",Melospiza melodia,Passerellidae,United States of America,2022,4,HUMAN_OBSERVATION
+2070944718,"Cyanocitta cristata (Linnaeus, 1758)",Cyanocitta cristata,Corvidae,United States of America,2022,4,HUMAN_OBSERVATION
+2070947032,"Sayornis phoebe (Latham, 1790)",Sayornis phoebe,Tyrannidae,United States of America,2022,4,HUMAN_OBSERVATION
+2070956910,"Melanerpes carolinus (Linnaeus, 1758)",Melanerpes carolinus,Picidae,United States of America,2022,4,HUMAN_OBSERVATION
+2076389486,"Agelaius phoeniceus (Linnaeus, 1766)",Agelaius phoeniceus,Icteridae,United States of America,2022,4,HUMAN_OBSERVATION
+2076396518,"Turdus migratorius Linnaeus, 1766",Turdus migratorius,Turdidae,United States of America,2022,4,HUMAN_OBSERVATION
+2076406557,"Mimus polyglottos (Linnaeus, 1758)",Mimus polyglottos,Mimidae,United States of America,2022,4,HUMAN_OBSERVATION
+2650161277,"Estrilda astrild (Linnaeus, 1758)",Estrilda astrild,Estrildidae,Brazil,2022,4,PRESERVED_SPECIMEN
+2670767699,"Ardea herodias Linnaeus, 1758",Ardea herodias,Ardeidae,United States of America,2022,4,HUMAN_OBSERVATION
+2670782645,"Pandion haliaetus (Linnaeus, 1758)",Pandion haliaetus,Pandionidae,United States of America,2022,4,HUMAN_OBSERVATION
+2672371515,"Cardinalis cardinalis (Linnaeus, 1758)",Cardinalis cardinalis,Cardinalidae,United States of America,2022,4,HUMAN_OBSERVATION
+2672396587,"Chaetura pelagica (Linnaeus, 1758)",Chaetura pelagica,Apodidae,United States of America,2022,4,HUMAN_OBSERVATION
+2672521416,"Myiarchus crinitus (Linnaeus, 1758)",Myiarchus crinitus,Tyrannidae,United States of America,2022,4,HUMAN_OBSERVATION
+2673624610,"Setophaga americana (Linnaeus, 1758)",Setophaga americana,Parulidae,United States of America,2022,4,HUMAN_OBSERVATION
+2673734616,"Melanerpes carolinus (Linnaeus, 1758)",Melanerpes carolinus,Picidae,United States of America,2022,4,HUMAN_OBSERVATION
+2675837856,"Zenaida macroura (Linnaeus, 1758)",Zenaida macroura,Columbidae,United States of America,2022,4,HUMAN_OBSERVATION
+2675986577,"Cyanocitta cristata (Linnaeus, 1758)",Cyanocitta cristata,Corvidae,United States of America,2022,4,HUMAN_OBSERVATION
+2676050404,"Sialia sialis (Linnaeus, 1758)",Sialia sialis,Turdidae,United States of America,2022,4,HUMAN_OBSERVATION
+2682049721,"Corvus brachyrhynchos C.L.Brehm, 1822",Corvus brachyrhynchos,Corvidae,United States of America,2022,4,HUMAN_OBSERVATION
+2682241511,"Baeolophus bicolor (Linnaeus, 1766)",Baeolophus bicolor,Paridae,United States of America,2022,4,HUMAN_OBSERVATION
+2686704529,"Mycteria americana Linnaeus, 1758",Mycteria americana,Ciconiidae,United States of America,2022,4,HUMAN_OBSERVATION
+3431625107,"Dendrocopos major (Linnaeus, 1758)",Dendrocopos major,Picidae,Sweden,2022,4,HUMAN_OBSERVATION
+1291397672,"Corvus brachyrhynchos brachyrhynchos C.L.Brehm, 1822",Corvus brachyrhynchos,Corvidae,,2023,4,PRESERVED_SPECIMEN
+1291408081,"Corvus brachyrhynchos brachyrhynchos C.L.Brehm, 1822",Corvus brachyrhynchos,Corvidae,,2023,4,PRESERVED_SPECIMEN
+1670550760,"Tadorna tadorna (Linnaeus, 1758)",Tadorna tadorna,Anatidae,Sweden,2023,4,HUMAN_OBSERVATION
+1670550770,"Anser albifrons (Scopoli, 1769)",Anser albifrons,Anatidae,Sweden,2023,4,HUMAN_OBSERVATION
+1670550773,"Anser albifrons (Scopoli, 1769)",Anser albifrons,Anatidae,Sweden,2023,4,HUMAN_OBSERVATION
+1670550775,"Anser anser (Linnaeus, 1758)",Anser anser,Anatidae,Sweden,2023,4,HUMAN_OBSERVATION
+2572725307,"Erithacus rubecula (Linnaeus, 1758)",Erithacus rubecula,Muscicapidae,Sweden,2023,4,HUMAN_OBSERVATION
+2718491294,"Cathartes aura (Linnaeus, 1758)",Cathartes aura,Cathartidae,Canada,2023,4,HUMAN_OBSERVATION
+2719341196,"Progne subis (Linnaeus, 1758)",Progne subis,Hirundinidae,Canada,2023,4,HUMAN_OBSERVATION
+3049474941,"Columba palumbus Linnaeus, 1758",Columba palumbus,Columbidae,Sweden,2023,4,HUMAN_OBSERVATION
+3542703477,"Psittacula alexandri (Linnaeus, 1758)",Psittacula alexandri,Psittacidae,Thailand,2023,4,HUMAN_OBSERVATION
+4013882699,"Turdus pilaris Linnaeus, 1758",Turdus pilaris,Turdidae,Sweden,2023,4,HUMAN_OBSERVATION
+4014121745,"Dendrocopos major (Linnaeus, 1758)",Dendrocopos major,Picidae,Sweden,2023,4,HUMAN_OBSERVATION
+4053420369,"Passer montanus (Linnaeus, 1758)",Passer montanus,Passeridae,Sweden,2023,4,HUMAN_OBSERVATION
+4065700302,"Sturnus vulgaris Linnaeus, 1758",Sturnus vulgaris,Sturnidae,Finland,2023,4,HUMAN_OBSERVATION
+4066808302,"Cygnus cygnus (Linnaeus, 1758)",Cygnus cygnus,Anatidae,Finland,2023,4,HUMAN_OBSERVATION
+4066809301,"Cygnus cygnus (Linnaeus, 1758)",Cygnus cygnus,Anatidae,Finland,2023,4,HUMAN_OBSERVATION
+4066809307,"Motacilla alba Linnaeus, 1758",Motacilla alba,Motacillidae,Finland,2023,4,HUMAN_OBSERVATION
+4066810305,"Motacilla alba Linnaeus, 1758",Motacilla alba,Motacillidae,Finland,2023,4,HUMAN_OBSERVATION
+4066813307,"Fringilla coelebs Linnaeus, 1758",Fringilla coelebs,Fringillidae,Finland,2023,4,HUMAN_OBSERVATION
+4069946412,"Phalacrocorax carbo (Linnaeus, 1758)",Phalacrocorax carbo,Phalacrocoracidae,Norway,2023,4,HUMAN_OBSERVATION
+4069947520,"Corvus cornix Linnaeus, 1758",Corvus cornix,Corvidae,Norway,2023,4,HUMAN_OBSERVATION
+4069948305,"Motacilla alba Linnaeus, 1758",Motacilla alba,Motacillidae,Norway,2023,4,HUMAN_OBSERVATION
+4069948333,"Parus major Linnaeus, 1758",Parus major,Paridae,Norway,2023,4,HUMAN_OBSERVATION
+4069948522,"Larus marinus Linnaeus, 1758",Larus marinus,Laridae,Norway,2023,4,HUMAN_OBSERVATION
+4069949306,"Chloris chloris (Linnaeus, 1758)",Chloris chloris,Fringillidae,Norway,2023,4,HUMAN_OBSERVATION
+4069949438,"Turdus merula Linnaeus, 1758",Turdus merula,Turdidae,Norway,2023,4,HUMAN_OBSERVATION
+4069949523,"Asio otus (Linnaeus, 1758)",Asio otus,Strigidae,Norway,2023,4,HUMAN_OBSERVATION
+4069951333,"Motacilla cinerea Tunstall, 1771",Motacilla cinerea,Motacillidae,Norway,2023,4,HUMAN_OBSERVATION
+4069951413,"Pyrrhula pyrrhula (Linnaeus, 1758)",Pyrrhula pyrrhula,Fringillidae,Norway,2023,4,HUMAN_OBSERVATION
+4069951464,"Erithacus rubecula (Linnaeus, 1758)",Erithacus rubecula,Muscicapidae,Norway,2023,4,HUMAN_OBSERVATION
+4069952409,"Ardea cinerea Linnaeus, 1758",Ardea cinerea,Ardeidae,Norway,2023,4,HUMAN_OBSERVATION
+4069952421,"Anthus petrosus (Montagu, 1798)",Anthus petrosus,Motacillidae,Norway,2023,4,HUMAN_OBSERVATION
+4069952525,"Cygnus cygnus (Linnaeus, 1758)",Cygnus cygnus,Anatidae,Norway,2023,4,HUMAN_OBSERVATION
+1291434317,"Coccothraustes coccothraustes coccothraustes (Linnaeus, 1758)",Coccothraustes coccothraustes,Fringillidae,Romania,2024,4,PRESERVED_SPECIMEN
+2650162096,"Zonotrichia capensis (P.L.S.Müller, 1776)",Zonotrichia capensis,Passerellidae,Brazil,2024,4,PRESERVED_SPECIMEN
+2650162117,"Arremon taciturnus (Hermann, 1783)",Arremon taciturnus,Passerellidae,Brazil,2024,4,PRESERVED_SPECIMEN
+2676734274,"Melanerpes carolinus (Linnaeus, 1758)",Melanerpes carolinus,Picidae,United States of America,2024,4,HUMAN_OBSERVATION
+2679506135,"Corvus brachyrhynchos C.L.Brehm, 1822",Corvus brachyrhynchos,Corvidae,United States of America,2024,4,HUMAN_OBSERVATION
+2680204182,"Buteo lineatus (Gmelin, 1788)",Buteo lineatus,Accipitridae,United States of America,2024,4,HUMAN_OBSERVATION
+2680536132,"Bubo virginianus (J.F.Gmelin, 1788)",Bubo virginianus,Strigidae,United States of America,2024,4,HUMAN_OBSERVATION
+2682097293,"Quiscalus quiscula (Linnaeus, 1758)",Quiscalus quiscula,Icteridae,United States of America,2024,4,HUMAN_OBSERVATION
+2685980126,"Dryobates villosus (Linnaeus, 1766)",Leuconotopicus villosus,Picidae,United States of America,2024,4,HUMAN_OBSERVATION
+2782313076,"Zenaida macroura (Linnaeus, 1758)",Zenaida macroura,Columbidae,United States of America,2024,4,HUMAN_OBSERVATION
+2782454013,"Cyanocitta cristata (Linnaeus, 1758)",Cyanocitta cristata,Corvidae,United States of America,2024,4,HUMAN_OBSERVATION
+2783099089,"Cardinalis cardinalis (Linnaeus, 1758)",Cardinalis cardinalis,Cardinalidae,United States of America,2024,4,HUMAN_OBSERVATION
+2788576082,"Cathartes aura (Linnaeus, 1758)",Cathartes aura,Cathartidae,United States of America,2024,4,HUMAN_OBSERVATION
+2789024214,"Ardea herodias Linnaeus, 1758",Ardea herodias,Ardeidae,United States of America,2024,4,HUMAN_OBSERVATION
+3135468431,"Centropus sinensis (Stephens, 1815)",Centropus sinensis,Cuculidae,Cambodia,2024,4,HUMAN_OBSERVATION
+3135561375,"Aerodramus fuciphagus (Thunberg, 1812)",Aerodramus fuciphagus,Apodidae,Cambodia,2024,4,HUMAN_OBSERVATION
+3135744393,"Falco peregrinus Tunstall, 1771",Falco peregrinus,Falconidae,Cambodia,2024,4,HUMAN_OBSERVATION
+3136133283,"Acridotheres tristis (Linnaeus, 1766)",Acridotheres tristis,Sturnidae,Cambodia,2024,4,HUMAN_OBSERVATION
+3136433435,"Icthyophaga ichthyaetus (Horsfield, 1821)",Icthyophaga ichthyaetus,Accipitridae,Cambodia,2024,4,HUMAN_OBSERVATION
+3136753403,"Ardea intermedia Wagler, 1829",Egretta intermedia,Ardeidae,Cambodia,2024,4,HUMAN_OBSERVATION
+3136807408,"Plegadis falcinellus (Linnaeus, 1766)",Plegadis falcinellus,Threskiornithidae,Cambodia,2024,4,HUMAN_OBSERVATION
+3136811302,"Mixornis gularis (Horsfield, 1822)",Macronus gularis,Timaliidae,Cambodia,2024,4,HUMAN_OBSERVATION
+3136826389,"Botaurus Stephens, 1819",,Ardeidae,Cambodia,2024,4,HUMAN_OBSERVATION
+3136914462,"Halcyon smyrnensis (Linnaeus, 1758)",Halcyon smyrnensis,Alcedinidae,Cambodia,2024,4,HUMAN_OBSERVATION
+3137126433,"Columba livia J.F.Gmelin, 1789",Columba livia,Columbidae,Cambodia,2024,4,HUMAN_OBSERVATION
+3137307454,"Ardea alba Linnaeus, 1758",Ardea alba,Ardeidae,Cambodia,2024,4,HUMAN_OBSERVATION
+3137315427,"Butorides striata (Linnaeus, 1758)",Butorides striata,Ardeidae,Cambodia,2024,4,HUMAN_OBSERVATION
+3137381552,"Corvus macrorhynchos Wagler, 1827",Corvus macrorhynchos,Corvidae,Cambodia,2024,4,HUMAN_OBSERVATION
+3137410578,"Leptoptilos javanicus (Horsfield, 1821)",Leptoptilos javanicus,Ciconiidae,Cambodia,2024,4,HUMAN_OBSERVATION
+3137711426,"Anastomus oscitans (Boddaert, 1783)",Anastomus oscitans,Ciconiidae,Cambodia,2024,4,HUMAN_OBSERVATION
+3137757467,"Passer domesticus (Linnaeus, 1758)",Passer domesticus,Passeridae,Cambodia,2024,4,HUMAN_OBSERVATION
+3137849457,"Phalacrocorax fuscicollis Stephens, 1826",Phalacrocorax fuscicollis,Phalacrocoracidae,Cambodia,2024,4,HUMAN_OBSERVATION
+3138439392,"Leptoptilos dubius (Gmelin, 1789)",Leptoptilos dubius,Ciconiidae,Cambodia,2024,4,HUMAN_OBSERVATION
+3139889386,"Merops philippinus Linnaeus, 1767",Merops philippinus,Meropidae,Cambodia,2024,4,HUMAN_OBSERVATION
+1291434557,"Fringilla coelebs gengleri O.Kleinschmidt, 1909",Fringilla coelebs,Fringillidae,United Kingdom of Great Britain and Northern Ireland,2022,5,PRESERVED_SPECIMEN
+1291434558,"Fringilla coelebs gengleri O.Kleinschmidt, 1909",Fringilla coelebs,Fringillidae,United Kingdom of Great Britain and Northern Ireland,2022,5,PRESERVED_SPECIMEN
+1291434563,"Carduelis chloris chloris (Linnaeus, 1758)",Chloris chloris,Fringillidae,United Kingdom of Great Britain and Northern Ireland,2022,5,PRESERVED_SPECIMEN
+1291434569,"Carduelis chloris chloris (Linnaeus, 1758)",Chloris chloris,Fringillidae,United Kingdom of Great Britain and Northern Ireland,2022,5,PRESERVED_SPECIMEN
+1291434570,"Carduelis chloris chloris (Linnaeus, 1758)",Chloris chloris,Fringillidae,United Kingdom of Great Britain and Northern Ireland,2022,5,PRESERVED_SPECIMEN
+1291434579,"Fringilla coelebs gengleri O.Kleinschmidt, 1909",Fringilla coelebs,Fringillidae,United Kingdom of Great Britain and Northern Ireland,2022,5,PRESERVED_SPECIMEN
+1432555389,"Anthus petrosus (Montagu, 1798)",Anthus petrosus,Motacillidae,Sweden,2022,5,HUMAN_OBSERVATION
+1432555395,"Motacilla alba Linnaeus, 1758",Motacilla alba,Motacillidae,Sweden,2022,5,HUMAN_OBSERVATION
+1432555423,"Delichon urbicum (Linnaeus, 1758)",Delichon urbicum,Hirundinidae,Sweden,2022,5,HUMAN_OBSERVATION
+1432555430,"Phalacrocorax aristotelis (Linnaeus, 1761)",Phalacrocorax aristotelis,Phalacrocoracidae,Sweden,2022,5,HUMAN_OBSERVATION
+1432555434,"Phalacrocorax carbo (Linnaeus, 1758)",Phalacrocorax carbo,Phalacrocoracidae,Sweden,2022,5,HUMAN_OBSERVATION
+1432555442,"Fratercula arctica (Linnaeus, 1758)",Fratercula arctica,Alcidae,Sweden,2022,5,HUMAN_OBSERVATION
+1432555446,"Cepphus grylle (Linnaeus, 1758)",Cepphus grylle,Alcidae,Sweden,2022,5,HUMAN_OBSERVATION
+1432555450,"Sterna hirundo Linnaeus, 1758",Sterna hirundo,Laridae,Sweden,2022,5,HUMAN_OBSERVATION
+1432555455,"Thalasseus sandvicensis (Latham, 1787)",Thalasseus sandvicensis,Laridae,Sweden,2022,5,HUMAN_OBSERVATION
+1432555459,"Larus fuscus Linnaeus, 1758",Larus fuscus,Laridae,Sweden,2022,5,HUMAN_OBSERVATION
+1432555467,"Larus marinus Linnaeus, 1758",Larus marinus,Laridae,Sweden,2022,5,HUMAN_OBSERVATION
+1432555483,"Chroicocephalus ridibundus (Linnaeus, 1766)",Chroicocephalus ridibundus,Laridae,Sweden,2022,5,HUMAN_OBSERVATION
+1432555494,"Arenaria interpres (Linnaeus, 1758)",Arenaria interpres,Scolopacidae,Sweden,2022,5,HUMAN_OBSERVATION
+1432555497,"Charadrius hiaticula Linnaeus, 1758",Charadrius hiaticula,Charadriidae,Sweden,2022,5,HUMAN_OBSERVATION
+1432555501,"Haematopus ostralegus Linnaeus, 1758",Haematopus ostralegus,Haematopodidae,Sweden,2022,5,HUMAN_OBSERVATION
+1432555505,"Rallus aquaticus Linnaeus, 1758",Rallus aquaticus,Rallidae,Sweden,2022,5,HUMAN_OBSERVATION
+1432555512,"Mergus serrator Linnaeus, 1758",Mergus serrator,Anatidae,Sweden,2022,5,HUMAN_OBSERVATION
+1432555515,"Melanitta nigra (Linnaeus, 1758)",Melanitta nigra,Anatidae,Sweden,2022,5,HUMAN_OBSERVATION
+1432555519,"Somateria mollissima (Linnaeus, 1758)",Somateria mollissima,Anatidae,Sweden,2022,5,HUMAN_OBSERVATION
+1432555522,"Anas platyrhynchos Linnaeus, 1758",Anas platyrhynchos,Anatidae,Sweden,2022,5,HUMAN_OBSERVATION
+1432555531,"Anser anser (Linnaeus, 1758)",Anser anser,Anatidae,Sweden,2022,5,HUMAN_OBSERVATION
+1836096216,"Pyrrhocorax pyrrhocorax himalayanus (Gould, 1862)",Pyrrhocorax pyrrhocorax,Corvidae,China,2022,5,PRESERVED_SPECIMEN
+2031818934,"Junco hyemalis (Linnaeus, 1758)",Junco hyemalis,Passerellidae,United States of America,2022,5,HUMAN_OBSERVATION
+2038197412,"Baeolophus bicolor (Linnaeus, 1766)",Baeolophus bicolor,Paridae,United States of America,2022,5,HUMAN_OBSERVATION
+2038197736,"Haemorhous mexicanus (P.L.Statius Müller, 1776)",Haemorhous mexicanus,Fringillidae,United States of America,2022,5,HUMAN_OBSERVATION
+2039636913,"Sitta carolinensis Latham, 1790",Sitta carolinensis,Sittidae,United States of America,2022,5,HUMAN_OBSERVATION
+2039639043,"Zonotrichia albicollis (J.F.Gmelin, 1789)",Zonotrichia albicollis,Passerellidae,United States of America,2022,5,HUMAN_OBSERVATION
+2039643817,"Poecile atricapillus (Linnaeus, 1766)",Poecile atricapillus,Paridae,United States of America,2022,5,HUMAN_OBSERVATION
+819857280,"Baeolophus bicolor (Linnaeus, 1766)",Baeolophus bicolor,Paridae,United States of America,2023,5,HUMAN_OBSERVATION
+820378134,"Archilochus colubris (Linnaeus, 1758)",Archilochus colubris,Trochilidae,United States of America,2023,5,HUMAN_OBSERVATION
+822436769,"Cathartes aura (Linnaeus, 1758)",Cathartes aura,Cathartidae,United States of America,2023,5,HUMAN_OBSERVATION
+823333578,"Cardinalis cardinalis (Linnaeus, 1758)",Cardinalis cardinalis,Cardinalidae,United States of America,2023,5,HUMAN_OBSERVATION
+826670896,"Cyanocitta cristata (Linnaeus, 1758)",Cyanocitta cristata,Corvidae,United States of America,2023,5,HUMAN_OBSERVATION
+831190874,"Haemorhous purpureus (J.F.Gmelin, 1789)",Haemorhous purpureus,Fringillidae,United States of America,2023,5,HUMAN_OBSERVATION
+831717376,"Icterus galbula (Linnaeus, 1758)",Icterus galbula,Icteridae,United States of America,2023,5,HUMAN_OBSERVATION
+838297673,"Poecile atricapillus (Linnaeus, 1766)",Poecile atricapillus,Paridae,United States of America,2023,5,HUMAN_OBSERVATION
+838888837,"Dryobates pubescens (Linnaeus, 1766)",Dryobates pubescens,Picidae,United States of America,2023,5,HUMAN_OBSERVATION
+839609652,"Pipilo erythrophthalmus (Linnaeus, 1758)",Pipilo erythrophthalmus,Passerellidae,United States of America,2023,5,HUMAN_OBSERVATION
+842325681,"Spinus tristis (Linnaeus, 1758)",Spinus tristis,Fringillidae,United States of America,2023,5,HUMAN_OBSERVATION
+842496533,"Sitta carolinensis Latham, 1790",Sitta carolinensis,Sittidae,United States of America,2023,5,HUMAN_OBSERVATION
+843673602,"Spizella passerina (Bechstein, 1798)",Spizella passerina,Passerellidae,United States of America,2023,5,HUMAN_OBSERVATION
+844297591,"Sialia sialis (Linnaeus, 1758)",Sialia sialis,Turdidae,United States of America,2023,5,HUMAN_OBSERVATION
+846707122,"Zenaida macroura (Linnaeus, 1758)",Zenaida macroura,Columbidae,United States of America,2023,5,HUMAN_OBSERVATION
+847756706,"Thryothorus ludovicianus (Latham, 1790)",Thryothorus ludovicianus,Troglodytidae,United States of America,2023,5,HUMAN_OBSERVATION
+848658870,"Turdus migratorius Linnaeus, 1766",Turdus migratorius,Turdidae,United States of America,2023,5,HUMAN_OBSERVATION
+1291520889,Saxicola ferreus ferreus,Saxicola ferreus,Muscicapidae,India,2023,5,PRESERVED_SPECIMEN
+1291521237,"Seicercus castaniceps castaniceps (Hodgson, 1845)",Seicercus castaniceps,Phylloscopidae,India,2023,5,PRESERVED_SPECIMEN
+1891619627,"Corvus corax Linnaeus, 1758",Corvus corax,Corvidae,Luxembourg,2023,5,PRESERVED_SPECIMEN
+1891619634,"Corvus corax Linnaeus, 1758",Corvus corax,Corvidae,Luxembourg,2023,5,PRESERVED_SPECIMEN
+1891619840,"Corvus corax Linnaeus, 1758",Corvus corax,Corvidae,Luxembourg,2023,5,PRESERVED_SPECIMEN
+1891619849,"Corvus corax Linnaeus, 1758",Corvus corax,Corvidae,Luxembourg,2023,5,PRESERVED_SPECIMEN
+1891619869,"Corvus corax Linnaeus, 1758",Corvus corax,Corvidae,Germany,2023,5,PRESERVED_SPECIMEN
+3270260993,"Tyto furcata (Temminck, 1827)",Tyto furcata,Tytonidae,United States of America,2023,5,HUMAN_OBSERVATION
+3271338025,"Charadrius vociferus Linnaeus, 1758",Charadrius vociferus,Charadriidae,United States of America,2023,5,HUMAN_OBSERVATION
+3275755870,"Zenaida macroura (Linnaeus, 1758)",Zenaida macroura,Columbidae,United States of America,2023,5,HUMAN_OBSERVATION
+3276782997,"Dryobates pubescens (Linnaeus, 1766)",Dryobates pubescens,Picidae,United States of America,2023,5,HUMAN_OBSERVATION
+3277230885,"Passer domesticus (Linnaeus, 1758)",Passer domesticus,Passeridae,United States of America,2023,5,HUMAN_OBSERVATION
+3277408997,"Poecile carolinensis (Audubon, 1834)",Poecile carolinensis,Paridae,United States of America,2023,5,HUMAN_OBSERVATION
+3279120179,"Molothrus ater (Boddaert, 1783)",Molothrus ater,Icteridae,United States of America,2023,5,HUMAN_OBSERVATION
+3281331034,"Cyanocitta cristata (Linnaeus, 1758)",Cyanocitta cristata,Corvidae,United States of America,2023,5,HUMAN_OBSERVATION
+3281807966,"Cardinalis cardinalis (Linnaeus, 1758)",Cardinalis cardinalis,Cardinalidae,United States of America,2023,5,HUMAN_OBSERVATION
+3281977927,"Astur Lacepède, 1799",,Accipitridae,United States of America,2023,5,HUMAN_OBSERVATION
+1962664344,"Tringa ochropus Linnaeus, 1758",Tringa ochropus,Scolopacidae,Netherlands,2024,5,HUMAN_OBSERVATION
+2160934443,"Icterus galbula (Linnaeus, 1758)",Icterus galbula,Icteridae,United States of America,2024,5,HUMAN_OBSERVATION
+2650162095,"Cyclarhis gujanensis (Gmelin, 1789)",Cyclarhis gujanensis,Vireonidae,Brazil,2024,5,PRESERVED_SPECIMEN
+2650162103,"Chloroceryle aenea (Pallas, 1764)",Chloroceryle aenea,Alcedinidae,Brazil,2024,5,PRESERVED_SPECIMEN
+2650162124,"Cyclarhis gujanensis (Gmelin, 1789)",Cyclarhis gujanensis,Vireonidae,Brazil,2024,5,PRESERVED_SPECIMEN
+2650162162,"Polioptila P.L.Sclater, 1855",,Polioptilidae,Brazil,2024,5,PRESERVED_SPECIMEN
+2650162175,"Chloroceryle aenea (Pallas, 1764)",Chloroceryle aenea,Alcedinidae,Brazil,2024,5,PRESERVED_SPECIMEN
+2650163146,"Loriotus cristatus (Linnaeus, 1766)",Loriotus cristatus,Thraupidae,Brazil,2024,5,PRESERVED_SPECIMEN
+2650163147,"Myrmotherula axillaris (Vieillot, 1817)",Myrmotherula axillaris,Thamnophilidae,Brazil,2024,5,PRESERVED_SPECIMEN
+2650163151,"Leptotila verreauxi Bonaparte, 1855",Leptotila verreauxi,Columbidae,Brazil,2024,5,PRESERVED_SPECIMEN
+2650163159,"Rhytipterna simplex (Lichtenstein, 1823)",Rhytipterna simplex,Tyrannidae,Brazil,2024,5,PRESERVED_SPECIMEN
+2763307824,"Melanerpes erythrocephalus (Linnaeus, 1758)",Melanerpes erythrocephalus,Picidae,United States of America,2024,5,HUMAN_OBSERVATION
+4125486720,"Spatula querquedula (Linnaeus, 1758)",Spatula querquedula,Anatidae,Sweden,2024,5,HUMAN_OBSERVATION
+4523092437,"Coccothraustes coccothraustes (Linnaeus, 1758)",Coccothraustes coccothraustes,Fringillidae,Sweden,2024,5,HUMAN_OBSERVATION
+4597952313,"Cuculus canorus Linnaeus, 1758",Cuculus canorus,Cuculidae,Finland,2024,5,HUMAN_OBSERVATION
+4597955315,"Cuculus canorus Linnaeus, 1758",Cuculus canorus,Cuculidae,Finland,2024,5,HUMAN_OBSERVATION
+4597957310,"Cuculus canorus Linnaeus, 1758",Cuculus canorus,Cuculidae,Finland,2024,5,HUMAN_OBSERVATION
+4600561421,"Cuculus canorus Linnaeus, 1758",Cuculus canorus,Cuculidae,Finland,2024,5,HUMAN_OBSERVATION
+4600561422,"Motacilla alba Linnaeus, 1758",Motacilla alba,Motacillidae,Finland,2024,5,HUMAN_OBSERVATION
+4600561438,"Turdus iliacus Linnaeus, 1758",Turdus iliacus,Turdidae,Finland,2024,5,HUMAN_OBSERVATION
+4600562367,"Motacilla alba Linnaeus, 1758",Motacilla alba,Motacillidae,Finland,2024,5,HUMAN_OBSERVATION
+4600562429,"Cuculus canorus Linnaeus, 1758",Cuculus canorus,Cuculidae,Finland,2024,5,HUMAN_OBSERVATION
+4600562437,"Cuculus canorus Linnaeus, 1758",Cuculus canorus,Cuculidae,Finland,2024,5,HUMAN_OBSERVATION
+4600562438,"Cuculus canorus Linnaeus, 1758",Cuculus canorus,Cuculidae,Finland,2024,5,HUMAN_OBSERVATION
+4600562440,"Fringilla coelebs Linnaeus, 1758",Fringilla coelebs,Fringillidae,Finland,2024,5,HUMAN_OBSERVATION
+4600562450,"Cuculus canorus Linnaeus, 1758",Cuculus canorus,Cuculidae,Finland,2024,5,HUMAN_OBSERVATION
+4600563420,"Cuculus canorus Linnaeus, 1758",Cuculus canorus,Cuculidae,Finland,2024,5,HUMAN_OBSERVATION
+4600563451,"Cuculus canorus Linnaeus, 1758",Cuculus canorus,Cuculidae,Finland,2024,5,HUMAN_OBSERVATION
+4600564466,"Cuculus canorus Linnaeus, 1758",Cuculus canorus,Cuculidae,Finland,2024,5,HUMAN_OBSERVATION
+4600565372,"Motacilla alba Linnaeus, 1758",Motacilla alba,Motacillidae,Finland,2024,5,HUMAN_OBSERVATION
+4600565439,"Cuculus canorus Linnaeus, 1758",Cuculus canorus,Cuculidae,Finland,2024,5,HUMAN_OBSERVATION
+4600565441,"Cuculus canorus Linnaeus, 1758",Cuculus canorus,Cuculidae,Finland,2024,5,HUMAN_OBSERVATION
+4600565443,"Fringilla coelebs Linnaeus, 1758",Fringilla coelebs,Fringillidae,Finland,2024,5,HUMAN_OBSERVATION
+4600565451,"Cuculus canorus Linnaeus, 1758",Cuculus canorus,Cuculidae,Finland,2024,5,HUMAN_OBSERVATION
+1432927073,"Tadorna tadorna (Linnaeus, 1758)",Tadorna tadorna,Anatidae,Sweden,2022,6,HUMAN_OBSERVATION
+2650162330,"Geotrygon montana (Linnaeus, 1758)",Geotrygon montana,Columbidae,Brazil,2022,6,PRESERVED_SPECIMEN
+2679098739,"Tachyspiza Kaup, 1844",,,India,2022,6,HUMAN_OBSERVATION
+2777241376,"Eudynamys scolopaceus (Linnaeus, 1758)",Eudynamys scolopaceus,Cuculidae,India,2022,6,HUMAN_OBSERVATION
+2777548310,"Terpsiphone paradisi (Linnaeus, 1758)",Terpsiphone paradisi,Monarchidae,India,2022,6,HUMAN_OBSERVATION
+2777593464,"Cyornis rubeculoides (Vigors, 1831)",Cyornis rubeculoides,Muscicapidae,India,2022,6,HUMAN_OBSERVATION
+2779777330,"Ploceus philippinus (Linnaeus, 1766)",Ploceus philippinus,Ploceidae,India,2022,6,HUMAN_OBSERVATION
+2785014293,"Sturnia pagodarum (Gmelin, 1789)",Sturnia pagodarum,Sturnidae,India,2022,6,HUMAN_OBSERVATION
+2785316271,"Streptopelia orientalis (Latham, 1790)",Streptopelia orientalis,Columbidae,India,2022,6,HUMAN_OBSERVATION
+2785494292,"Halcyon smyrnensis (Linnaeus, 1758)",Halcyon smyrnensis,Alcedinidae,India,2022,6,HUMAN_OBSERVATION
+3160373771,"Cyanocitta cristata (Linnaeus, 1758)",Cyanocitta cristata,Corvidae,United States of America,2022,6,HUMAN_OBSERVATION
+3434906488,"Larus marinus Linnaeus, 1758",Larus marinus,Laridae,Finland,2022,6,HUMAN_OBSERVATION
+3434986222,"Turdus iliacus Linnaeus, 1758",Turdus iliacus,Turdidae,Finland,2022,6,HUMAN_OBSERVATION
+3435073247,"Turdus iliacus Linnaeus, 1758",Turdus iliacus,Turdidae,Finland,2022,6,HUMAN_OBSERVATION
+3697380904,"Sturnus vulgaris Linnaeus, 1758",Sturnus vulgaris,Sturnidae,Sweden,2022,6,HUMAN_OBSERVATION
+3697704538,"Parus major Linnaeus, 1758",Parus major,Paridae,Sweden,2022,6,HUMAN_OBSERVATION
+3697784518,"Cyanistes caeruleus (Linnaeus, 1758)",Cyanistes caeruleus,Paridae,Sweden,2022,6,HUMAN_OBSERVATION
+3713445337,"Cuculus canorus Linnaeus, 1758",Cuculus canorus,Cuculidae,Finland,2022,6,HUMAN_OBSERVATION
+3713450330,"Cuculus canorus Linnaeus, 1758",Cuculus canorus,Cuculidae,Finland,2022,6,HUMAN_OBSERVATION
+3713454355,"Cuculus canorus Linnaeus, 1758",Cuculus canorus,Cuculidae,Finland,2022,6,HUMAN_OBSERVATION
+3743624327,"Fringilla coelebs Linnaeus, 1758",Fringilla coelebs,Fringillidae,Finland,2022,6,HUMAN_OBSERVATION
+3743627334,"Cuculus canorus Linnaeus, 1758",Cuculus canorus,Cuculidae,Finland,2022,6,HUMAN_OBSERVATION
+3743630323,"Fringilla coelebs Linnaeus, 1758",Fringilla coelebs,Fringillidae,Finland,2022,6,HUMAN_OBSERVATION
+3747952323,"Cuculus canorus Linnaeus, 1758",Cuculus canorus,Cuculidae,Finland,2022,6,HUMAN_OBSERVATION
+3747961323,"Motacilla alba Linnaeus, 1758",Motacilla alba,Motacillidae,Finland,2022,6,HUMAN_OBSERVATION
+3747964323,"Fringilla coelebs Linnaeus, 1758",Fringilla coelebs,Fringillidae,Finland,2022,6,HUMAN_OBSERVATION
+3751389343,"Motacilla alba Linnaeus, 1758",Motacilla alba,Motacillidae,Finland,2022,6,HUMAN_OBSERVATION
+3751389372,"Cuculus canorus Linnaeus, 1758",Cuculus canorus,Cuculidae,Finland,2022,6,HUMAN_OBSERVATION
+3751391358,"Fringilla coelebs Linnaeus, 1758",Fringilla coelebs,Fringillidae,Finland,2022,6,HUMAN_OBSERVATION
+3751392346,"Cuculus canorus Linnaeus, 1758",Cuculus canorus,Cuculidae,Finland,2022,6,HUMAN_OBSERVATION
+3751393340,"Motacilla alba Linnaeus, 1758",Motacilla alba,Motacillidae,Finland,2022,6,HUMAN_OBSERVATION
+3751394369,"Cuculus canorus Linnaeus, 1758",Cuculus canorus,Cuculidae,Finland,2022,6,HUMAN_OBSERVATION
+3751396350,"Cuculus canorus Linnaeus, 1758",Cuculus canorus,Cuculidae,Finland,2022,6,HUMAN_OBSERVATION
+3751396365,"Cuculus canorus Linnaeus, 1758",Cuculus canorus,Cuculidae,Finland,2022,6,HUMAN_OBSERVATION
+1291518871,"Plectoramphus Gray, 1840",,Meliphagidae,Australia,2023,6,PRESERVED_SPECIMEN
+3781482179,"Aquila audax (Latham, 1802)",Aquila audax,Accipitridae,Australia,2023,6,HUMAN_OBSERVATION
+3856749567,"Phoenicurus phoenicurus (Linnaeus, 1758)",Phoenicurus phoenicurus,Muscicapidae,Sweden,2023,6,HUMAN_OBSERVATION
+4021412303,"Alopochen aegyptiaca (Linnaeus, 1766)",Alopochen aegyptiaca,Anatidae,Belgium,2023,6,HUMAN_OBSERVATION
+4070240739,"Cyanistes caeruleus (Linnaeus, 1758)",Cyanistes caeruleus,Paridae,Finland,2023,6,HUMAN_OBSERVATION
+4070240762,"Spinus spinus (Linnaeus, 1758)",Spinus spinus,Fringillidae,Finland,2023,6,HUMAN_OBSERVATION
+4074225455,"Cuculus canorus Linnaeus, 1758",Cuculus canorus,Cuculidae,Finland,2023,6,HUMAN_OBSERVATION
+4074225462,"Motacilla alba Linnaeus, 1758",Motacilla alba,Motacillidae,Finland,2023,6,HUMAN_OBSERVATION
+4074226312,"Cuculus canorus Linnaeus, 1758",Cuculus canorus,Cuculidae,Finland,2023,6,HUMAN_OBSERVATION
+4074226449,"Motacilla alba Linnaeus, 1758",Motacilla alba,Motacillidae,Finland,2023,6,HUMAN_OBSERVATION
+4074228443,"Cuculus canorus Linnaeus, 1758",Cuculus canorus,Cuculidae,Finland,2023,6,HUMAN_OBSERVATION
+4074228444,"Cuculus canorus Linnaeus, 1758",Cuculus canorus,Cuculidae,Finland,2023,6,HUMAN_OBSERVATION
+4074230311,"Cuculus canorus Linnaeus, 1758",Cuculus canorus,Cuculidae,Finland,2023,6,HUMAN_OBSERVATION
+4074231443,"Fringilla coelebs Linnaeus, 1758",Fringilla coelebs,Fringillidae,Finland,2023,6,HUMAN_OBSERVATION
+4074231491,"Cuculus canorus Linnaeus, 1758",Cuculus canorus,Cuculidae,Finland,2023,6,HUMAN_OBSERVATION
+4074232444,"Fringilla coelebs Linnaeus, 1758",Fringilla coelebs,Fringillidae,Finland,2023,6,HUMAN_OBSERVATION
+4074232491,"Cuculus canorus Linnaeus, 1758",Cuculus canorus,Cuculidae,Finland,2023,6,HUMAN_OBSERVATION
+4077161392,"Fringilla coelebs Linnaeus, 1758",Fringilla coelebs,Fringillidae,Finland,2023,6,HUMAN_OBSERVATION
+4077162375,"Fringilla coelebs Linnaeus, 1758",Fringilla coelebs,Fringillidae,Finland,2023,6,HUMAN_OBSERVATION
+4077163406,"Motacilla alba Linnaeus, 1758",Motacilla alba,Motacillidae,Finland,2023,6,HUMAN_OBSERVATION
+4077164412,"Motacilla alba Linnaeus, 1758",Motacilla alba,Motacillidae,Finland,2023,6,HUMAN_OBSERVATION
+4077166378,"Cuculus canorus Linnaeus, 1758",Cuculus canorus,Cuculidae,Finland,2023,6,HUMAN_OBSERVATION
+4077166399,"Fringilla coelebs Linnaeus, 1758",Fringilla coelebs,Fringillidae,Finland,2023,6,HUMAN_OBSERVATION
+4078875467,"Cuculus canorus Linnaeus, 1758",Cuculus canorus,Cuculidae,Finland,2023,6,HUMAN_OBSERVATION
+4078875482,"Cuculus canorus Linnaeus, 1758",Cuculus canorus,Cuculidae,Finland,2023,6,HUMAN_OBSERVATION
+4078875486,"Cuculus canorus Linnaeus, 1758",Cuculus canorus,Cuculidae,Finland,2023,6,HUMAN_OBSERVATION
+4078875491,"Fringilla coelebs Linnaeus, 1758",Fringilla coelebs,Fringillidae,Finland,2023,6,HUMAN_OBSERVATION
+4078876480,"Cuculus canorus Linnaeus, 1758",Cuculus canorus,Cuculidae,Finland,2023,6,HUMAN_OBSERVATION
+4078877568,"Cuculus canorus Linnaeus, 1758",Cuculus canorus,Cuculidae,Finland,2023,6,HUMAN_OBSERVATION
+4078878489,"Cuculus canorus Linnaeus, 1758",Cuculus canorus,Cuculidae,Finland,2023,6,HUMAN_OBSERVATION
+4078878499,"Fringilla coelebs Linnaeus, 1758",Fringilla coelebs,Fringillidae,Finland,2023,6,HUMAN_OBSERVATION
+4078879499,"Fringilla coelebs Linnaeus, 1758",Fringilla coelebs,Fringillidae,Finland,2023,6,HUMAN_OBSERVATION
+4078879502,"Cuculus canorus Linnaeus, 1758",Cuculus canorus,Cuculidae,Finland,2023,6,HUMAN_OBSERVATION
+4078880479,"Fringilla coelebs Linnaeus, 1758",Fringilla coelebs,Fringillidae,Finland,2023,6,HUMAN_OBSERVATION
+1291372501,"Aplonis panayensis strigata (Horsfield, 1821)",Aplonis panayensis,Sturnidae,Malaysia,2024,6,PRESERVED_SPECIMEN
+1291390535,"Pyrrhula pyrrhula (Linnaeus, 1758)",Pyrrhula pyrrhula,Fringillidae,,2024,6,PRESERVED_SPECIMEN
+1291409461,"Passer domesticus domesticus (Linnaeus, 1758)",Passer domesticus,Passeridae,France,2024,6,PRESERVED_SPECIMEN
+1291415907,"Nectarinia pulchella (Linnaeus, 1766)",Cinnyris pulchellus,Nectariniidae,Niger,2024,6,PRESERVED_SPECIMEN
+1291427855,"Catharus ustulatus (Nuttall, 1840)",Catharus ustulatus,Turdidae,Canada,2024,6,PRESERVED_SPECIMEN
+1291428930,"Nectarinia asiatica (Latham, 1790)",Cinnyris asiaticus,Nectariniidae,India,2024,6,PRESERVED_SPECIMEN
+1291438918,"Dendroica magnolia (A.Wilson, 1811)",Setophaga magnolia,Parulidae,Canada,2024,6,PRESERVED_SPECIMEN
+1291439564,"Ficedula basilanica samarensis (Bourns & Worcester, 1894)",Ficedula basilanica,Muscicapidae,Philippines,2024,6,PRESERVED_SPECIMEN
+1291446804,"Heterophasia picaoides picaoides (Hodgson, 1839)",Heterophasia picaoides,Leiothrichidae,India,2024,6,PRESERVED_SPECIMEN
+1291453036,"Molothrus ater (Boddaert, 1783)",Molothrus ater,Icteridae,United States of America,2024,6,PRESERVED_SPECIMEN
+1291489141,"Calamospiza melanocorys Stejneger, 1885",Calamospiza melanocorys,Passerellidae,,2024,6,PRESERVED_SPECIMEN
+2554285835,"Turdus migratorius Linnaeus, 1766",Turdus migratorius,Turdidae,United States of America,2024,6,PRESERVED_SPECIMEN
+3916000368,"Alcedo atthis (Linnaeus, 1758)",Alcedo atthis,Alcedinidae,Denmark,2024,6,HUMAN_OBSERVATION
+4413206966,"Cyanopica cyanus (Pallas, 1776)",Cyanopica cyanus,Corvidae,Spain,2024,6,PRESERVED_SPECIMEN
+4413214449,"Cyanopica cyanus (Pallas, 1776)",Cyanopica cyanus,Corvidae,Spain,2024,6,PRESERVED_SPECIMEN
+4413231235,"Cyanopica cyanus (Pallas, 1776)",Cyanopica cyanus,Corvidae,Spain,2024,6,PRESERVED_SPECIMEN
+4600399720,"Corvus cornix Linnaeus, 1758",Corvus cornix,Corvidae,Sweden,2024,6,HUMAN_OBSERVATION
+4600564455,"Cuculus canorus Linnaeus, 1758",Cuculus canorus,Cuculidae,Finland,2024,6,HUMAN_OBSERVATION
+4600564458,"Fringilla coelebs Linnaeus, 1758",Fringilla coelebs,Fringillidae,Finland,2024,6,HUMAN_OBSERVATION
+4606377523,"Alauda arvensis Linnaeus, 1758",Alauda arvensis,Alaudidae,Sweden,2024,6,HUMAN_OBSERVATION
+4606490527,"Tringa totanus (Linnaeus, 1758)",Tringa totanus,Scolopacidae,Sweden,2024,6,HUMAN_OBSERVATION
+4614093975,"Merops apiaster Linnaeus, 1758",Merops apiaster,Meropidae,Spain,2024,6,HUMAN_OBSERVATION
+4633881160,"Sturnus vulgaris Linnaeus, 1758",Sturnus vulgaris,Sturnidae,United States of America,2024,6,HUMAN_OBSERVATION
+4648595917,"Serinus serinus (Linnaeus, 1766)",Serinus serinus,Fringillidae,Spain,2024,6,HUMAN_OBSERVATION
+4660584834,"Turdus philomelos C.L.Brehm, 1831",Turdus philomelos,Turdidae,Spain,2024,6,HUMAN_OBSERVATION
+4663592611,"Luscinia megarhynchos C.L.Brehm, 1831",Luscinia megarhynchos,Muscicapidae,Spain,2024,6,HUMAN_OBSERVATION
+4665203893,"Poecile atricapillus (Linnaeus, 1766)",Poecile atricapillus,Paridae,United States of America,2024,6,HUMAN_OBSERVATION
+4670602657,"Passer montanus (Linnaeus, 1758)",Passer montanus,Passeridae,United States of America,2024,6,HUMAN_OBSERVATION
+4671517731,"Quiscalus quiscula (Linnaeus, 1758)",Quiscalus quiscula,Icteridae,United States of America,2024,6,HUMAN_OBSERVATION
+4675440630,"Cuculus canorus Linnaeus, 1758",Cuculus canorus,Cuculidae,Finland,2024,6,HUMAN_OBSERVATION
+4675440631,"Fringilla coelebs Linnaeus, 1758",Fringilla coelebs,Fringillidae,Finland,2024,6,HUMAN_OBSERVATION
+4675440696,"Cuculus canorus Linnaeus, 1758",Cuculus canorus,Cuculidae,Finland,2024,6,HUMAN_OBSERVATION
+4675440699,"Fringilla coelebs Linnaeus, 1758",Fringilla coelebs,Fringillidae,Finland,2024,6,HUMAN_OBSERVATION
+4675440700,"Motacilla alba Linnaeus, 1758",Motacilla alba,Motacillidae,Finland,2024,6,HUMAN_OBSERVATION
+1703588183,"Vanellus vanellus (Linnaeus, 1758)",Vanellus vanellus,Charadriidae,Sweden,2022,7,HUMAN_OBSERVATION
+1836094889,"Pyrrhocorax pyrrhocorax himalayanus (Gould, 1862)",Pyrrhocorax pyrrhocorax,Corvidae,China,2022,7,PRESERVED_SPECIMEN
+1836094891,"Pyrrhocorax pyrrhocorax himalayanus (Gould, 1862)",Pyrrhocorax pyrrhocorax,Corvidae,China,2022,7,PRESERVED_SPECIMEN
+1836094896,"Pyrrhocorax pyrrhocorax himalayanus (Gould, 1862)",Pyrrhocorax pyrrhocorax,Corvidae,China,2022,7,PRESERVED_SPECIMEN
+2554291999,"Sturnus vulgaris Linnaeus, 1758",Sturnus vulgaris,Sturnidae,United States of America,2022,7,PRESERVED_SPECIMEN
+3419397520,"Ramphastos brevis Meyer de Schauensee, 1945",Ramphastos brevis,Ramphastidae,Ecuador,2022,7,HUMAN_OBSERVATION
+3828395323,"Grus grus (Linnaeus, 1758)",Grus grus,Gruidae,Finland,2022,7,HUMAN_OBSERVATION
+3828395347,"Ficedula hypoleuca (Pallas, 1764)",Ficedula hypoleuca,Muscicapidae,Finland,2022,7,HUMAN_OBSERVATION
+3828395353,"Gallinula chloropus (Linnaeus, 1758)",Gallinula chloropus,Rallidae,Finland,2022,7,HUMAN_OBSERVATION
+3828395367,"Anas crecca Linnaeus, 1758",Anas crecca,Anatidae,Finland,2022,7,HUMAN_OBSERVATION
+3828395384,"Phoenicurus phoenicurus (Linnaeus, 1758)",Phoenicurus phoenicurus,Muscicapidae,Finland,2022,7,HUMAN_OBSERVATION
+3828395398,"Saxicola rubetra (Linnaeus, 1758)",Saxicola rubetra,Muscicapidae,Finland,2022,7,HUMAN_OBSERVATION
+3828395439,"Saxicola rubetra (Linnaeus, 1758)",Saxicola rubetra,Muscicapidae,Finland,2022,7,HUMAN_OBSERVATION
+3828395442,"Phoenicurus phoenicurus (Linnaeus, 1758)",Phoenicurus phoenicurus,Muscicapidae,Finland,2022,7,HUMAN_OBSERVATION
+3828395443,"Oenanthe oenanthe (Linnaeus, 1758)",Oenanthe oenanthe,Muscicapidae,Finland,2022,7,HUMAN_OBSERVATION
+3828395446,"Picus canus J.F.Gmelin, 1788",Picus canus,Picidae,Finland,2022,7,HUMAN_OBSERVATION
+3828395452,"Hirundo rustica Linnaeus, 1758",Hirundo rustica,Hirundinidae,Finland,2022,7,HUMAN_OBSERVATION
+3828395454,"Acrocephalus schoenobaenus (Linnaeus, 1758)",Acrocephalus schoenobaenus,Acrocephalidae,Finland,2022,7,HUMAN_OBSERVATION
+3828395462,"Curruca communis (Latham, 1787)",Sylvia communis,Sylviidae,Finland,2022,7,HUMAN_OBSERVATION
+3828395466,"Podiceps cristatus (Linnaeus, 1758)",Podiceps cristatus,Podicipedidae,Finland,2022,7,HUMAN_OBSERVATION
+3828395473,"Ficedula hypoleuca (Pallas, 1764)",Ficedula hypoleuca,Muscicapidae,Finland,2022,7,HUMAN_OBSERVATION
+3828395491,"Emberiza schoeniclus (Linnaeus, 1758)",Emberiza schoeniclus,Emberizidae,Finland,2022,7,HUMAN_OBSERVATION
+3828395527,"Turdus pilaris Linnaeus, 1758",Turdus pilaris,Turdidae,Finland,2022,7,HUMAN_OBSERVATION
+3830642361,"Podiceps cristatus (Linnaeus, 1758)",Podiceps cristatus,Podicipedidae,Finland,2022,7,HUMAN_OBSERVATION
+3830642388,"Tringa glareola Linnaeus, 1758",Tringa glareola,Scolopacidae,Finland,2022,7,HUMAN_OBSERVATION
+3830642426,"Bucephala clangula (Linnaeus, 1758)",Bucephala clangula,Anatidae,Finland,2022,7,HUMAN_OBSERVATION
+3830642427,"Bucephala clangula (Linnaeus, 1758)",Bucephala clangula,Anatidae,Finland,2022,7,HUMAN_OBSERVATION
+3830642428,"Anas crecca Linnaeus, 1758",Anas crecca,Anatidae,Finland,2022,7,HUMAN_OBSERVATION
+3830642471,"Larus canus Linnaeus, 1758",Larus canus,Laridae,Finland,2022,7,HUMAN_OBSERVATION
+3830642472,"Gavia arctica (Linnaeus, 1758)",Gavia arctica,Gaviidae,Finland,2022,7,HUMAN_OBSERVATION
+3830642473,"Motacilla alba Linnaeus, 1758",Motacilla alba,Motacillidae,Finland,2022,7,HUMAN_OBSERVATION
+3830642477,"Mergus merganser Linnaeus, 1758",Mergus merganser,Anatidae,Finland,2022,7,HUMAN_OBSERVATION
+3830642479,"Anas platyrhynchos Linnaeus, 1758",Anas platyrhynchos,Anatidae,Finland,2022,7,HUMAN_OBSERVATION
+3830642480,"Larus canus Linnaeus, 1758",Larus canus,Laridae,Finland,2022,7,HUMAN_OBSERVATION
+2685137098,"Streptopelia orientalis (Latham, 1790)",Streptopelia orientalis,Columbidae,Bhutan,2023,7,HUMAN_OBSERVATION
+2700015300,"Halcyon smyrnensis (Linnaeus, 1758)",Halcyon smyrnensis,Alcedinidae,India,2023,7,HUMAN_OBSERVATION
+2701893523,"Passer montanus (Linnaeus, 1758)",Passer montanus,Passeridae,Bhutan,2023,7,HUMAN_OBSERVATION
+2702103071,"Amaurornis phoenicurus (Pennant, 1769)",Amaurornis phoenicurus,Rallidae,India,2023,7,HUMAN_OBSERVATION
+2702338956,"Hierococcyx varius (Vahl, 1797)",Cuculus varius,Cuculidae,India,2023,7,HUMAN_OBSERVATION
+2702730511,"Corvus splendens Vieillot, 1817",Corvus splendens,Corvidae,Bhutan,2023,7,HUMAN_OBSERVATION
+2702944955,"Tachyspiza Kaup, 1844",,,India,2023,7,HUMAN_OBSERVATION
+2703396887,"Treron phayrei (Blyth, 1862)",Treron phayrei,Columbidae,India,2023,7,HUMAN_OBSERVATION
+2703498629,"Tragopan satyra (Linnaeus, 1758)",Tragopan satyra,Phasianidae,Bhutan,2023,7,HUMAN_OBSERVATION
+2703716515,"Carpodacus sipahi (Hodgson, 1836)",Carpodacus sipahi,Fringillidae,Bhutan,2023,7,HUMAN_OBSERVATION
+2703960873,"Gracula religiosa Linnaeus, 1758",Gracula religiosa,Sturnidae,India,2023,7,HUMAN_OBSERVATION
+2704038062,"Halcyon coromanda (Latham, 1790)",Halcyon coromanda,Alcedinidae,India,2023,7,HUMAN_OBSERVATION
+2704570441,"Muscicapa sibirica Gmelin, 1789",Muscicapa sibirica,Muscicapidae,Bhutan,2023,7,HUMAN_OBSERVATION
+2704829802,"Spilopelia chinensis (Scopoli, 1786)",Spilopelia chinensis,Columbidae,India,2023,7,HUMAN_OBSERVATION
+2704979721,"Acridotheres fuscus (Wagler, 1827)",Acridotheres fuscus,Sturnidae,India,2023,7,HUMAN_OBSERVATION
+2705020702,"Upupa epops Linnaeus, 1758",Upupa epops,Upupidae,Bhutan,2023,7,HUMAN_OBSERVATION
+2705256039,"Sturnia malabarica (Gmelin, 1789)",Sturnia malabarica,Sturnidae,India,2023,7,HUMAN_OBSERVATION
+2705384597,"Lophura leucomelanos (Latham, 1790)",Lophura leucomelanos,Phasianidae,Bhutan,2023,7,HUMAN_OBSERVATION
+2705476881,"Amaurornis phoenicurus (Pennant, 1769)",Amaurornis phoenicurus,Rallidae,India,2023,7,HUMAN_OBSERVATION
+2705776058,"Rubigula flaviventris (Tickell, 1833)",Pycnonotus flaviventris,Pycnonotidae,India,2023,7,HUMAN_OBSERVATION
+2705985721,"Chalcophaps indica (Linnaeus, 1758)",Chalcophaps indica,Columbidae,India,2023,7,HUMAN_OBSERVATION
+2706194075,"Oriolus xanthornus (Linnaeus, 1758)",Oriolus xanthornus,Oriolidae,India,2023,7,HUMAN_OBSERVATION
+2706289463,"Carpodacus thura Bonaparte & Schlegel, 1850",Carpodacus thura,Fringillidae,Bhutan,2023,7,HUMAN_OBSERVATION
+2706390196,"Sitta frontalis Swainson, 1820",Sitta frontalis,Sittidae,India,2023,7,HUMAN_OBSERVATION
+2706397689,"Gracupica contra (Linnaeus, 1758)",Gracupica contra,Sturnidae,India,2023,7,HUMAN_OBSERVATION
+2706469544,"Carpodacus erythrinus (Pallas, 1770)",Carpodacus erythrinus,Fringillidae,Bhutan,2023,7,HUMAN_OBSERVATION
+2706562859,"Dendrocygna javanica (Horsfield, 1821)",Dendrocygna javanica,Anatidae,India,2023,7,HUMAN_OBSERVATION
+2706589847,"Cypsiurus balasiensis (J.E.Gray, 1829)",Cypsiurus balasiensis,Apodidae,India,2023,7,HUMAN_OBSERVATION
+2707276446,"Cuculus canorus Linnaeus, 1758",Cuculus canorus,Cuculidae,Bhutan,2023,7,HUMAN_OBSERVATION
+2707426259,"Ardeola grayii (Sykes, 1832)",Ardeola grayii,Ardeidae,India,2023,7,HUMAN_OBSERVATION
+2707774141,"Treron phoenicopterus (Latham, 1790)",Treron phoenicopterus,Columbidae,India,2023,7,HUMAN_OBSERVATION
+2707843078,"Psittacula krameri (Scopoli, 1769)",Psittacula krameri,Psittacidae,India,2023,7,HUMAN_OBSERVATION
+2707843084,"Chloropsis aurifrons (Temminck, 1829)",Chloropsis aurifrons,Chloropseidae,India,2023,7,HUMAN_OBSERVATION
+2709062681,"Trochalopteron affine (Blyth, 1843)",Trochalopteron affine,Leiothrichidae,Bhutan,2023,7,HUMAN_OBSERVATION
+1291386083,"Meliphaga penicillata Gould, 1837",Ptilotula penicillata,Meliphagidae,Australia,2024,7,PRESERVED_SPECIMEN
+1291405777,"Dicrurus macrocercus albirictus (Hodgson, 1836)",Dicrurus macrocercus,Dicruridae,,2024,7,PRESERVED_SPECIMEN
+2554291743,"Carduelis flammea (Linnaeus, 1758)",Acanthis flammea,Fringillidae,United States of America,2024,7,PRESERVED_SPECIMEN
+2770999191,"Nycticorax nycticorax (Linnaeus, 1758)",Nycticorax nycticorax,Ardeidae,United States of America,2024,7,HUMAN_OBSERVATION
+2815718495,"Podiceps cristatus (Linnaeus, 1758)",Podiceps cristatus,Podicipedidae,Sweden,2024,7,HUMAN_OBSERVATION
+4609229532,"Monasa nigrifrons (von Spix, 1824)",Monasa nigrifrons,Bucconidae,Colombia,2024,7,HUMAN_OBSERVATION
+4609771698,"Thraupis palmarum (Wied-Neuwied, 1821)",Thraupis palmarum,Thraupidae,Colombia,2024,7,HUMAN_OBSERVATION
+4611316249,"Attila spadiceus (Gmelin, 1789)",Attila spadiceus,Tyrannidae,Colombia,2024,7,HUMAN_OBSERVATION
+4616901959,"Troglodytes musculus J.F.Naumann, 1823",Troglodytes musculus,Troglodytidae,Colombia,2024,7,HUMAN_OBSERVATION
+4617184115,"Dendrocolaptes picumnus Lichtenstein, 1820",Dendrocolaptes picumnus,Furnariidae,Colombia,2024,7,HUMAN_OBSERVATION
+4618369821,"Chloroceryle americana (J.F.Gmelin, 1788)",Chloroceryle americana,Alcedinidae,Colombia,2024,7,HUMAN_OBSERVATION
+4619255363,"Butorides striata (Linnaeus, 1758)",Butorides striata,Ardeidae,Colombia,2024,7,HUMAN_OBSERVATION
+4621346839,"Megarynchus pitangua (Linnaeus, 1766)",Megarynchus pitangua,Tyrannidae,Colombia,2024,7,HUMAN_OBSERVATION
+4622704264,"Psarocolius angustifrons (Spix, 1824)",Psarocolius angustifrons,Icteridae,Colombia,2024,7,HUMAN_OBSERVATION
+4624660461,"Celeus torquatus (Boddaert, 1783)",Celeus torquatus,Picidae,Colombia,2024,7,HUMAN_OBSERVATION
+4624660462,"Ardea cocoi Linnaeus, 1766",Ardea cocoi,Ardeidae,Colombia,2024,7,HUMAN_OBSERVATION
+4625225840,"Gymnoderus foetidus (Linnaeus, 1758)",Gymnoderus foetidus,Cotingidae,Colombia,2024,7,HUMAN_OBSERVATION
+4626798241,"Leptotila rufaxilla (Richard & Bernard, 1792)",Leptotila rufaxilla,Columbidae,Colombia,2024,7,HUMAN_OBSERVATION
+4630719862,"Thraupis episcopus (Linnaeus, 1766)",Thraupis episcopus,Thraupidae,Colombia,2024,7,HUMAN_OBSERVATION
+4631218347,"Ortalis guttata (Spix, 1825)",Ortalis guttata,Cracidae,Colombia,2024,7,HUMAN_OBSERVATION
+4640872047,"Cyanocorax violaceus Du Bus de Gisignies, 1847",Cyanocorax violaceus,Corvidae,Colombia,2024,7,HUMAN_OBSERVATION
+4641387935,"Herpetotheres cachinnans (Linnaeus, 1758)",Herpetotheres cachinnans,Falconidae,Colombia,2024,7,HUMAN_OBSERVATION
+4643400562,"Ardea alba Linnaeus, 1758",Ardea alba,Ardeidae,Colombia,2024,7,HUMAN_OBSERVATION
+4644558300,"Taraba major (Vieillot, 1816)",Taraba major,Thamnophilidae,Colombia,2024,7,HUMAN_OBSERVATION
+4650584152,"Opisthocomus hoazin (Statius Muller, 1776)",Opisthocomus hoazin,Opisthocomidae,Colombia,2024,7,HUMAN_OBSERVATION
+4651628211,"Capito aurovirens (Cuvier, 1829)",Capito aurovirens,Capitonidae,Colombia,2024,7,HUMAN_OBSERVATION
+4651776213,"Corthylio calendula (Linnaeus, 1766)",Regulus calendula,Regulidae,United States of America,2024,7,HUMAN_OBSERVATION
+4654673759,"Xiphorhynchus guttatus (Lichtenstein, 1820)",Xiphorhynchus guttatus,Furnariidae,Colombia,2024,7,HUMAN_OBSERVATION
+4655253950,"Egretta thula (Molina, 1782)",Egretta thula,Ardeidae,Colombia,2024,7,HUMAN_OBSERVATION
+4658577145,"Daptrius Vieillot, 1816",,Falconidae,Colombia,2024,7,HUMAN_OBSERVATION
+4658735600,"Myadestes townsendi (Audubon, 1838)",Myadestes townsendi,Turdidae,United States of America,2024,7,HUMAN_OBSERVATION
+4660131229,"Butorides striata (Linnaeus, 1758)",Butorides striata,Ardeidae,Colombia,2024,7,HUMAN_OBSERVATION
+4663415385,"Crypturellus undulatus (Temminck, 1815)",Crypturellus undulatus,Tinamidae,Colombia,2024,7,HUMAN_OBSERVATION
+4664791041,"Tachycineta thalassina (Swainson, 1827)",Tachycineta thalassina,Hirundinidae,United States of America,2024,7,HUMAN_OBSERVATION
+2554275796,"Columba livia J.F.Gmelin, 1789",Columba livia,Columbidae,United States of America,2022,8,PRESERVED_SPECIMEN
+3385702462,"Thalasseus sandvicensis (Latham, 1787)",Thalasseus sandvicensis,Laridae,France,2022,8,HUMAN_OBSERVATION
+3763205681,"Lanius collurio Linnaeus, 1758",Lanius collurio,Laniidae,Sweden,2022,8,HUMAN_OBSERVATION
+3874296305,"Picus canus J.F.Gmelin, 1788",Picus canus,Picidae,Finland,2022,8,HUMAN_OBSERVATION
+3874296306,"Grus grus (Linnaeus, 1758)",Grus grus,Gruidae,Finland,2022,8,HUMAN_OBSERVATION
+3874898319,"Carduelis carduelis (Linnaeus, 1758)",Carduelis carduelis,Fringillidae,Finland,2022,8,HUMAN_OBSERVATION
+3874898346,"Dryocopus martius (Linnaeus, 1758)",Dryocopus martius,Picidae,Finland,2022,8,HUMAN_OBSERVATION
+3878857301,"Riparia riparia (Linnaeus, 1758)",Riparia riparia,Hirundinidae,Norway,2022,8,HUMAN_OBSERVATION
+3878857318,"Numenius phaeopus (Linnaeus, 1758)",Numenius phaeopus,Scolopacidae,Norway,2022,8,HUMAN_OBSERVATION
+3878857323,"Sturnus vulgaris Linnaeus, 1758",Sturnus vulgaris,Sturnidae,Norway,2022,8,HUMAN_OBSERVATION
+3878857331,"Tringa ochropus Linnaeus, 1758",Tringa ochropus,Scolopacidae,Norway,2022,8,HUMAN_OBSERVATION
+3878857333,"Phylloscopus trochilus (Linnaeus, 1758)",Phylloscopus trochilus,Phylloscopidae,Norway,2022,8,HUMAN_OBSERVATION
+3878857339,"Parus major Linnaeus, 1758",Parus major,Paridae,Norway,2022,8,HUMAN_OBSERVATION
+3878857343,"Sterna hirundo Linnaeus, 1758",Sterna hirundo,Laridae,Norway,2022,8,HUMAN_OBSERVATION
+3878857351,"Anthus trivialis (Linnaeus, 1758)",Anthus trivialis,Motacillidae,Norway,2022,8,HUMAN_OBSERVATION
+3878857363,"Fulica atra Linnaeus, 1758",Fulica atra,Rallidae,Norway,2022,8,HUMAN_OBSERVATION
+3878857381,"Charadrius hiaticula Linnaeus, 1758",Charadrius hiaticula,Charadriidae,Norway,2022,8,HUMAN_OBSERVATION
+3878857382,"Circus aeruginosus (Linnaeus, 1758)",Circus aeruginosus,Accipitridae,Norway,2022,8,HUMAN_OBSERVATION
+3878857403,"Turdus iliacus Linnaeus, 1758",Turdus iliacus,Turdidae,Norway,2022,8,HUMAN_OBSERVATION
+3878857406,"Larus marinus Linnaeus, 1758",Larus marinus,Laridae,Norway,2022,8,HUMAN_OBSERVATION
+3878857418,"Corvus corax Linnaeus, 1758",Corvus corax,Corvidae,Norway,2022,8,HUMAN_OBSERVATION
+3878857419,"Fringilla coelebs Linnaeus, 1758",Fringilla coelebs,Fringillidae,Norway,2022,8,HUMAN_OBSERVATION
+3878857426,"Larus canus Linnaeus, 1758",Larus canus,Laridae,Norway,2022,8,HUMAN_OBSERVATION
+3878857428,"Cinclus cinclus (Linnaeus, 1758)",Cinclus cinclus,Cinclidae,Norway,2022,8,HUMAN_OBSERVATION
+3878857444,"Ardea cinerea Linnaeus, 1758",Ardea cinerea,Ardeidae,Norway,2022,8,HUMAN_OBSERVATION
+3878857447,"Stercorarius parasiticus (Linnaeus, 1758)",Stercorarius parasiticus,Stercorariidae,Norway,2022,8,HUMAN_OBSERVATION
+3878857450,"Motacilla flava Linnaeus, 1758",Motacilla flava,Motacillidae,Norway,2022,8,HUMAN_OBSERVATION
+3878857451,"Ficedula hypoleuca (Pallas, 1764)",Ficedula hypoleuca,Muscicapidae,Norway,2022,8,HUMAN_OBSERVATION
+3878857452,"Ficedula hypoleuca (Pallas, 1764)",Ficedula hypoleuca,Muscicapidae,Norway,2022,8,HUMAN_OBSERVATION
+3878857453,"Hirundo rustica Linnaeus, 1758",Hirundo rustica,Hirundinidae,Norway,2022,8,HUMAN_OBSERVATION
+3878857455,"Somateria mollissima (Linnaeus, 1758)",Somateria mollissima,Anatidae,Norway,2022,8,HUMAN_OBSERVATION
+3878857465,"Larus canus Linnaeus, 1758",Larus canus,Laridae,Norway,2022,8,HUMAN_OBSERVATION
+3878857470,"Larus canus Linnaeus, 1758",Larus canus,Laridae,Norway,2022,8,HUMAN_OBSERVATION
+3878857472,"Morus bassanus (Linnaeus, 1758)",Morus bassanus,Sulidae,Norway,2022,8,HUMAN_OBSERVATION
+2685728607,"Copsychus saularis (Linnaeus, 1758)",Copsychus saularis,Muscicapidae,Bhutan,2023,8,HUMAN_OBSERVATION
+2695399674,"Dicrurus macrocercus Vieillot, 1817",Dicrurus macrocercus,Dicruridae,Bhutan,2023,8,HUMAN_OBSERVATION
+3090189412,"Puffinus gravis (O'Reilly, 1818)",Puffinus gravis,Procellariidae,Ireland,2023,8,MACHINE_OBSERVATION
+3090189535,"Puffinus gravis (O'Reilly, 1818)",Puffinus gravis,Procellariidae,,2023,8,MACHINE_OBSERVATION
+3697542819,"Cuculus canorus Linnaeus, 1758",Cuculus canorus,Cuculidae,Sweden,2023,8,HUMAN_OBSERVATION
+3948014687,"Vanellus vanellus (Linnaeus, 1758)",Vanellus vanellus,Charadriidae,Denmark,2023,8,HUMAN_OBSERVATION
+3948017716,"Phasianus colchicus Linnaeus, 1758",Phasianus colchicus,Phasianidae,Denmark,2023,8,HUMAN_OBSERVATION
+3948019710,"Circus aeruginosus (Linnaeus, 1758)",Circus aeruginosus,Accipitridae,Denmark,2023,8,HUMAN_OBSERVATION
+3948021723,"Troglodytes troglodytes (Linnaeus, 1758)",Troglodytes troglodytes,Troglodytidae,Denmark,2023,8,HUMAN_OBSERVATION
+3948022720,"Larus canus Linnaeus, 1758",Larus canus,Laridae,Denmark,2023,8,HUMAN_OBSERVATION
+3948025725,"Cygnus olor (J.F.Gmelin, 1789)",Cygnus olor,Anatidae,Denmark,2023,8,HUMAN_OBSERVATION
+3948025731,"Alcedo atthis (Linnaeus, 1758)",Alcedo atthis,Alcedinidae,Denmark,2023,8,HUMAN_OBSERVATION
+3948026715,"Ardea cinerea Linnaeus, 1758",Ardea cinerea,Ardeidae,Denmark,2023,8,HUMAN_OBSERVATION
+3948028689,"Tringa totanus (Linnaeus, 1758)",Tringa totanus,Scolopacidae,Denmark,2023,8,HUMAN_OBSERVATION
+3948029715,"Anas crecca Linnaeus, 1758",Anas crecca,Anatidae,Denmark,2023,8,HUMAN_OBSERVATION
+3948031710,"Delichon urbicum (Linnaeus, 1758)",Delichon urbicum,Hirundinidae,Denmark,2023,8,HUMAN_OBSERVATION
+3948032680,"Tringa ochropus Linnaeus, 1758",Tringa ochropus,Scolopacidae,Denmark,2023,8,HUMAN_OBSERVATION
+3948034719,"Hydroprogne caspia (Pallas, 1770)",Hydroprogne caspia,Laridae,Denmark,2023,8,HUMAN_OBSERVATION
+3948047720,"Motacilla flava Linnaeus, 1758",Motacilla flava,Motacillidae,Denmark,2023,8,HUMAN_OBSERVATION
+3948051726,"Saxicola rubetra (Linnaeus, 1758)",Saxicola rubetra,Muscicapidae,Denmark,2023,8,HUMAN_OBSERVATION
+3948051728,"Phalacrocorax carbo (Linnaeus, 1758)",Phalacrocorax carbo,Phalacrocoracidae,Denmark,2023,8,HUMAN_OBSERVATION
+3948052724,"Passer montanus (Linnaeus, 1758)",Passer montanus,Passeridae,Denmark,2023,8,HUMAN_OBSERVATION
+3948060727,"Dendrocopos major (Linnaeus, 1758)",Dendrocopos major,Picidae,Denmark,2023,8,HUMAN_OBSERVATION
+3948064731,"Accipiter nisus (Linnaeus, 1758)",Accipiter nisus,Accipitridae,Denmark,2023,8,HUMAN_OBSERVATION
+3948064732,"Corvus corone cornix Linnaeus, 1758",Corvus cornix,Corvidae,Denmark,2023,8,HUMAN_OBSERVATION
+3948074726,"Cyanistes caeruleus (Linnaeus, 1758)",Cyanistes caeruleus,Paridae,Denmark,2023,8,HUMAN_OBSERVATION
+3948075699,"Circus aeruginosus (Linnaeus, 1758)",Circus aeruginosus,Accipitridae,Denmark,2023,8,HUMAN_OBSERVATION
+3948077719,"Aythya fuligula (Linnaeus, 1758)",Aythya fuligula,Anatidae,Denmark,2023,8,HUMAN_OBSERVATION
+3948079726,"Larus argentatus Pontoppidan, 1763",Larus argentatus,Laridae,Denmark,2023,8,HUMAN_OBSERVATION
+3948085726,"Chroicocephalus ridibundus (Linnaeus, 1766)",Chroicocephalus ridibundus,Laridae,Denmark,2023,8,HUMAN_OBSERVATION
+3948086719,"Turdus merula Linnaeus, 1758",Turdus merula,Turdidae,Denmark,2023,8,HUMAN_OBSERVATION
+3948094703,"Bucephala clangula (Linnaeus, 1758)",Bucephala clangula,Anatidae,Denmark,2023,8,HUMAN_OBSERVATION
+3948101701,"Fulica atra Linnaeus, 1758",Fulica atra,Rallidae,Denmark,2023,8,HUMAN_OBSERVATION
+3948111706,"Charadrius hiaticula Linnaeus, 1758",Charadrius hiaticula,Charadriidae,Denmark,2023,8,HUMAN_OBSERVATION
+1291378747,"Meliphaga penicillata Gould, 1837",Ptilotula penicillata,Meliphagidae,Australia,2024,8,PRESERVED_SPECIMEN
+4247499961,"Branta canadensis (Linnaeus, 1758)",Branta canadensis,Anatidae,United States of America,2024,8,HUMAN_OBSERVATION
+4255967077,"Sturnus vulgaris Linnaeus, 1758",Sturnus vulgaris,Sturnidae,United States of America,2024,8,HUMAN_OBSERVATION
+4261076722,"Agelaius phoeniceus (Linnaeus, 1766)",Agelaius phoeniceus,Icteridae,United States of America,2024,8,HUMAN_OBSERVATION
+4269979188,"Charadrius vociferus Linnaeus, 1758",Charadrius vociferus,Charadriidae,United States of America,2024,8,HUMAN_OBSERVATION
+4296822789,"Rallus elegans Audubon, 1834",Rallus elegans,Rallidae,United States of America,2024,8,HUMAN_OBSERVATION
+4348727071,"Cathartes aura (Linnaeus, 1758)",Cathartes aura,Cathartidae,United States of America,2024,8,HUMAN_OBSERVATION
+4371454379,"Melospiza melodia (A.Wilson, 1810)",Melospiza melodia,Passerellidae,United States of America,2024,8,HUMAN_OBSERVATION
+4383978079,"Spinus tristis (Linnaeus, 1758)",Spinus tristis,Fringillidae,United States of America,2024,8,HUMAN_OBSERVATION
+4413158148,"Cyanocorax chrysops chrysops (Vieillot, 1818)",Cyanocorax chrysops,Corvidae,Bolivia (Plurinational State of),2024,8,PRESERVED_SPECIMEN
+4711880999,"Pernis apivorus (Linnaeus, 1758)",Pernis apivorus,Accipitridae,Spain,2024,8,HUMAN_OBSERVATION
+4876504967,"Tringa nebularia (Gunnerus, 1767)",Tringa nebularia,Scolopacidae,Netherlands,2024,8,HUMAN_OBSERVATION
+4892752335,"Vanellus miles (Boddaert, 1783)",Vanellus miles,Charadriidae,Australia,2024,8,HUMAN_OBSERVATION
+4892753175,"Pachycephala rufiventris (Latham, 1802)",Pachycephala rufiventris,Pachycephalidae,Australia,2024,8,HUMAN_OBSERVATION
+4892753257,"Acridotheres tristis (Linnaeus, 1766)",Acridotheres tristis,Sturnidae,Australia,2024,8,HUMAN_OBSERVATION
+4892753742,"Manorina melanocephala (Latham, 1801)",Manorina melanocephala,Meliphagidae,Australia,2024,8,HUMAN_OBSERVATION
+4892754060,"Platycercus adscitus (Latham, 1790)",Platycercus adscitus,Psittacidae,Australia,2024,8,HUMAN_OBSERVATION
+4892754358,"Sphecotheres vieilloti Vigors & Horsfield, 1827",Sphecotheres vieilloti,Oriolidae,Australia,2024,8,HUMAN_OBSERVATION
+4892754650,"Chenonetta jubata (Latham, 1801)",Chenonetta jubata,Anatidae,Australia,2024,8,HUMAN_OBSERVATION
+4892754786,"Rhipidura leucophrys (Latham, 1802)",Rhipidura leucophrys,Rhipiduridae,Australia,2024,8,HUMAN_OBSERVATION
+4892755890,"Platalea regia Gould, 1838",Platalea regia,Threskiornithidae,Australia,2024,8,HUMAN_OBSERVATION
+4892756260,"Gallinula tenebrosa Gould, 1846",Gallinula tenebrosa,Rallidae,Australia,2024,8,HUMAN_OBSERVATION
+4892756388,"Merops ornatus Latham, 1801",Merops ornatus,Meropidae,Australia,2024,8,HUMAN_OBSERVATION
+4892757468,"Coracina novaehollandiae (Gmelin, 1789)",Coracina novaehollandiae,Campephagidae,Australia,2024,8,HUMAN_OBSERVATION
+4892758865,"Anseranas semipalmata (Latham, 1798)",Anseranas semipalmata,Anseranatidae,Australia,2024,8,HUMAN_OBSERVATION
+4892759388,"Dicaeum hirundinaceum (Shaw, 1792)",Dicaeum hirundinaceum,Dicaeidae,Australia,2024,8,HUMAN_OBSERVATION
+4892760556,"Meliphaga lewinii (Swainson, 1837)",Meliphaga lewinii,Meliphagidae,Australia,2024,8,HUMAN_OBSERVATION
+4892761105,"Grallina cyanoleuca (Latham, 1802)",Grallina cyanoleuca,Monarchidae,Australia,2024,8,HUMAN_OBSERVATION
+4892762105,"Rhipidura albiscapa Gould, 1840",Rhipidura albiscapa,Rhipiduridae,Australia,2024,8,HUMAN_OBSERVATION
+4892763599,"Trichoglossus moluccanus (Gmelin, 1788)",Trichoglossus haematodus,Psittacidae,Australia,2024,8,HUMAN_OBSERVATION
+4892764060,"Aviceda subcristata (Gould, 1838)",Aviceda subcristata,Accipitridae,Australia,2024,8,HUMAN_OBSERVATION
+4892765474,"Columba livia J.F.Gmelin, 1789",Columba livia,Columbidae,Australia,2024,8,HUMAN_OBSERVATION
+4892765901,"Anas superciliosa J.F.Gmelin, 1789",Anas superciliosa,Anatidae,Australia,2024,8,HUMAN_OBSERVATION
+4892767504,"Chroicocephalus novaehollandiae (Stephens, 1826)",Chroicocephalus novaehollandiae,Laridae,Australia,2024,8,HUMAN_OBSERVATION
+1833382084,"Calidris minuta (Leisler, 1812)",Calidris minuta,Scolopacidae,Sweden,2022,9,HUMAN_OBSERVATION
+1891619699,"Sturnus vulgaris Linnaeus, 1758",Sturnus vulgaris,Sturnidae,Luxembourg,2022,9,PRESERVED_SPECIMEN
+1891619742,"Spheniscus humboldti Meyen, 1834",Spheniscus humboldti,Spheniscidae,Luxembourg,2022,9,PRESERVED_SPECIMEN
+1891619898,"Sturnus vulgaris Linnaeus, 1758",Sturnus vulgaris,Sturnidae,Luxembourg,2022,9,PRESERVED_SPECIMEN
+3385695385,"Actitis hypoleucos (Linnaeus, 1758)",Actitis hypoleucos,Scolopacidae,Germany,2022,9,HUMAN_OBSERVATION
+3508311759,"Geothlypis philadelphia (A.Wilson, 1810)",Geothlypis philadelphia,Parulidae,Colombia,2022,9,HUMAN_OBSERVATION
+3508938541,"Arremon brunneinucha (Lafresnaye, 1839)",Arremon brunneinucha,Passerellidae,Colombia,2022,9,HUMAN_OBSERVATION
+3514650560,"Picumnus granadensis Lafresnaye, 1847",Picumnus granadensis,Picidae,Colombia,2022,9,HUMAN_OBSERVATION
+3539247316,"Micrastur ruficollis (Vieillot, 1817)",Micrastur ruficollis,Falconidae,Colombia,2022,9,HUMAN_OBSERVATION
+3540759628,"Setophaga cerulea (A.Wilson, 1810)",Setophaga cerulea,Parulidae,Colombia,2022,9,HUMAN_OBSERVATION
+3543637208,"Piranga flava (Vieillot, 1822)",Piranga flava,Cardinalidae,Colombia,2022,9,HUMAN_OBSERVATION
+3544161601,"Stelgidopteryx ruficollis (Vieillot, 1817)",Stelgidopteryx ruficollis,Hirundinidae,Colombia,2022,9,HUMAN_OBSERVATION
+3546204446,"Cinclus leucocephalus Tschudi, 1844",Cinclus leucocephalus,Cinclidae,Colombia,2022,9,HUMAN_OBSERVATION
+3553227279,"Mionectes oleagineus (Lichtenstein, 1823)",Mionectes oleagineus,Tyrannidae,Colombia,2022,9,HUMAN_OBSERVATION
+3555797045,"Dryobates fumigatus (d'Orbigny, 1840)",Leuconotopicus fumigatus,Picidae,Colombia,2022,9,HUMAN_OBSERVATION
+3562896195,"Colibri delphinae (R.Lesson, 1839)",Colibri delphinae,Trochilidae,Colombia,2022,9,HUMAN_OBSERVATION
+3570641711,"Dryobates pubescens (Linnaeus, 1766)",Dryobates pubescens,Picidae,United States of America,2022,9,HUMAN_OBSERVATION
+3572275801,"Buteo jamaicensis (Gmelin, 1788)",Buteo jamaicensis,Accipitridae,United States of America,2022,9,HUMAN_OBSERVATION
+3575909569,"Branta canadensis (Linnaeus, 1758)",Branta canadensis,Anatidae,United States of America,2022,9,HUMAN_OBSERVATION
+3578122841,"Leptopogon superciliaris Tschudi, 1844",Leptopogon superciliaris,Tyrannidae,Colombia,2022,9,HUMAN_OBSERVATION
+3579289673,"Corvus brachyrhynchos C.L.Brehm, 1822",Corvus brachyrhynchos,Corvidae,United States of America,2022,9,HUMAN_OBSERVATION
+3579935828,"Spinus tristis (Linnaeus, 1758)",Spinus tristis,Fringillidae,United States of America,2022,9,HUMAN_OBSERVATION
+3581596967,"Turdus migratorius Linnaeus, 1766",Turdus migratorius,Turdidae,United States of America,2022,9,HUMAN_OBSERVATION
+3581700843,"Cyanocitta cristata (Linnaeus, 1758)",Cyanocitta cristata,Corvidae,United States of America,2022,9,HUMAN_OBSERVATION
+3583959996,"Stilpnia heinei (Cabanis, 1851)",Stilpnia heinei,Thraupidae,Colombia,2022,9,HUMAN_OBSERVATION
+3590616297,"Florisuga mellivora (Linnaeus, 1758)",Florisuga mellivora,Trochilidae,Colombia,2022,9,HUMAN_OBSERVATION
+3595278042,"Crypturellus soui (Hermann, 1783)",Crypturellus soui,Tinamidae,Colombia,2022,9,HUMAN_OBSERVATION
+3595688451,"Rupornis magnirostris (Gmelin, 1788)",Rupornis magnirostris,Accipitridae,Colombia,2022,9,HUMAN_OBSERVATION
+3598255956,"Sicalis flaveola (Linnaeus, 1766)",Sicalis flaveola,Thraupidae,Colombia,2022,9,HUMAN_OBSERVATION
+3600526444,"Cranioleuca erythrops (P.L.Sclater, 1860)",Cranioleuca erythrops,Furnariidae,Colombia,2022,9,HUMAN_OBSERVATION
+3602232597,"Eubucco bourcierii (Lafresnaye, 1845)",Eubucco bourcierii,Capitonidae,Colombia,2022,9,HUMAN_OBSERVATION
+3602922646,"Myioborus miniatus (Swainson, 1827)",Myioborus miniatus,Parulidae,Colombia,2022,9,HUMAN_OBSERVATION
+3604073743,"Coragyps atratus (Bechstein, 1793)",Coragyps atratus,Cathartidae,Colombia,2022,9,HUMAN_OBSERVATION
+3606283148,Cardinalidae,,Cardinalidae,Colombia,2022,9,HUMAN_OBSERVATION
+1891619673,"Nestor notabilis Gould, 1856",Nestor notabilis,Psittacidae,Luxembourg,2023,9,PRESERVED_SPECIMEN
+1891619879,"Nestor notabilis Gould, 1856",Nestor notabilis,Psittacidae,Luxembourg,2023,9,PRESERVED_SPECIMEN
+2688610755,"Xanthocephalus xanthocephalus (Bonaparte, 1826)",Xanthocephalus xanthocephalus,Icteridae,United States of America,2023,9,HUMAN_OBSERVATION
+2690225612,"Sturnus vulgaris Linnaeus, 1758",Sturnus vulgaris,Sturnidae,United States of America,2023,9,HUMAN_OBSERVATION
+2690561565,"Calidris bairdii (Coues, 1861)",Calidris bairdii,Scolopacidae,United States of America,2023,9,HUMAN_OBSERVATION
+2691739574,"Molothrus ater (Boddaert, 1783)",Molothrus ater,Icteridae,United States of America,2023,9,HUMAN_OBSERVATION
+2692023620,"Charadrius vociferus Linnaeus, 1758",Charadrius vociferus,Charadriidae,United States of America,2023,9,HUMAN_OBSERVATION
+2693446528,"Quiscalus mexicanus (Gmelin, 1788)",Quiscalus mexicanus,Icteridae,United States of America,2023,9,HUMAN_OBSERVATION
+2701911646,"Tringa melanoleuca (J.F.Gmelin, 1789)",Tringa melanoleuca,Scolopacidae,United States of America,2023,9,HUMAN_OBSERVATION
+2703535579,"Chondestes grammacus (Say, 1822)",Chondestes grammacus,Passerellidae,United States of America,2023,9,HUMAN_OBSERVATION
+2706456748,"Larus delawarensis Ord, 1815",Larus delawarensis,Laridae,United States of America,2023,9,HUMAN_OBSERVATION
+2706605670,"Streptopelia decaocto (Frivaldszky, 1838)",Streptopelia decaocto,Columbidae,United States of America,2023,9,HUMAN_OBSERVATION
+2715112424,"Zenaida macroura (Linnaeus, 1758)",Zenaida macroura,Columbidae,United States of America,2023,9,HUMAN_OBSERVATION
+3090190045,"Puffinus gravis (O'Reilly, 1818)",Puffinus gravis,Procellariidae,,2023,9,MACHINE_OBSERVATION
+4216633105,"Mimus polyglottos (Linnaeus, 1758)",Mimus polyglottos,Mimidae,United States of America,2023,9,HUMAN_OBSERVATION
+4252002043,"Corvus brachyrhynchos C.L.Brehm, 1822",Corvus brachyrhynchos,Corvidae,United States of America,2023,9,HUMAN_OBSERVATION
+4252275654,"Branta canadensis (Linnaeus, 1758)",Branta canadensis,Anatidae,United States of America,2023,9,HUMAN_OBSERVATION
+4296529164,"Buteo lineatus (Gmelin, 1788)",Buteo lineatus,Accipitridae,United States of America,2023,9,HUMAN_OBSERVATION
+4334872812,"Charadrius vociferus Linnaeus, 1758",Charadrius vociferus,Charadriidae,United States of America,2023,9,HUMAN_OBSERVATION
+4344801124,"Calidris minutilla (Vieillot, 1819)",Calidris minutilla,Scolopacidae,United States of America,2023,9,HUMAN_OBSERVATION
+4350435171,"Sturnella magna (Linnaeus, 1758)",Sturnella magna,Icteridae,United States of America,2023,9,HUMAN_OBSERVATION
+4403539483,"Ardea alba Linnaeus, 1758",Ardea alba,Ardeidae,Finland,2023,9,HUMAN_OBSERVATION
+4403539484,"Spinus spinus (Linnaeus, 1758)",Spinus spinus,Fringillidae,Finland,2023,9,HUMAN_OBSERVATION
+4403539840,"Carduelis carduelis (Linnaeus, 1758)",Carduelis carduelis,Fringillidae,Finland,2023,9,HUMAN_OBSERVATION
+4403539841,"Larus argentatus Pontoppidan, 1763",Larus argentatus,Laridae,Finland,2023,9,HUMAN_OBSERVATION
+4403539842,"Phylloscopus collybita (Vieillot, 1817)",Phylloscopus collybita,Phylloscopidae,Finland,2023,9,HUMAN_OBSERVATION
+4403539853,"Larus canus Linnaeus, 1758",Larus canus,Laridae,Finland,2023,9,HUMAN_OBSERVATION
+4403539858,"Parus major Linnaeus, 1758",Parus major,Paridae,Finland,2023,9,HUMAN_OBSERVATION
+4403539859,"Regulus regulus (Linnaeus, 1758)",Regulus regulus,Regulidae,Finland,2023,9,HUMAN_OBSERVATION
+4403539860,"Chloris chloris (Linnaeus, 1758)",Chloris chloris,Fringillidae,Finland,2023,9,HUMAN_OBSERVATION
+4403540481,"Hirundo rustica Linnaeus, 1758",Hirundo rustica,Hirundinidae,Finland,2023,9,HUMAN_OBSERVATION
+4403540484,"Corvus corone Linnaeus, 1758",Corvus corone,Corvidae,Finland,2023,9,HUMAN_OBSERVATION
+4403540497,"Hirundo rustica Linnaeus, 1758",Hirundo rustica,Hirundinidae,Finland,2023,9,HUMAN_OBSERVATION
+4403540871,"Turdus merula Linnaeus, 1758",Turdus merula,Turdidae,Finland,2023,9,HUMAN_OBSERVATION
+4927598003,"Columba palumbus Linnaeus, 1758",Columba palumbus,Columbidae,Finland,2024,9,HUMAN_OBSERVATION
+4927598004,"Scolopax rusticola Linnaeus, 1758",Scolopax rusticola,Scolopacidae,Finland,2024,9,HUMAN_OBSERVATION
+4927598040,"Certhia familiaris Linnaeus, 1758",Certhia familiaris,Certhiidae,Finland,2024,9,HUMAN_OBSERVATION
+4927598042,"Anthus trivialis (Linnaeus, 1758)",Anthus trivialis,Motacillidae,Finland,2024,9,HUMAN_OBSERVATION
+4927598312,"Branta leucopsis (Bechstein, 1803)",Branta leucopsis,Anatidae,Finland,2024,9,HUMAN_OBSERVATION
+4927598317,"Sturnus vulgaris Linnaeus, 1758",Sturnus vulgaris,Sturnidae,Finland,2024,9,HUMAN_OBSERVATION
+4927598355,"Turdus philomelos C.L.Brehm, 1831",Turdus philomelos,Turdidae,Finland,2024,9,HUMAN_OBSERVATION
+4927598627,"Anthus trivialis (Linnaeus, 1758)",Anthus trivialis,Motacillidae,Finland,2024,9,HUMAN_OBSERVATION
+4927598630,"Hirundo rustica Linnaeus, 1758",Hirundo rustica,Hirundinidae,Finland,2024,9,HUMAN_OBSERVATION
+4927598928,"Corvus corone Linnaeus, 1758",Corvus corone,Corvidae,Finland,2024,9,HUMAN_OBSERVATION
+4927598933,"Motacilla alba Linnaeus, 1758",Motacilla alba,Motacillidae,Finland,2024,9,HUMAN_OBSERVATION
+4927598934,"Acanthis flammea (Linnaeus, 1758)",Acanthis flammea,Fringillidae,Finland,2024,9,HUMAN_OBSERVATION
+4927598939,"Corvus corone Linnaeus, 1758",Corvus corone,Corvidae,Finland,2024,9,HUMAN_OBSERVATION
+4927599270,"Anser anser (Linnaeus, 1758)",Anser anser,Anatidae,Finland,2024,9,HUMAN_OBSERVATION
+4927599273,"Falco tinnunculus Linnaeus, 1758",Falco tinnunculus,Falconidae,Finland,2024,9,HUMAN_OBSERVATION
+4927599311,"Turdus viscivorus Linnaeus, 1758",Turdus viscivorus,Turdidae,Finland,2024,9,HUMAN_OBSERVATION
+4927599576,"Ardea cinerea Linnaeus, 1758",Ardea cinerea,Ardeidae,Finland,2024,9,HUMAN_OBSERVATION
+4927599580,"Fringilla coelebs Linnaeus, 1758",Fringilla coelebs,Fringillidae,Finland,2024,9,HUMAN_OBSERVATION
+4927599634,"Parus major Linnaeus, 1758",Parus major,Paridae,Finland,2024,9,HUMAN_OBSERVATION
+4927599906,"Motacilla alba Linnaeus, 1758",Motacilla alba,Motacillidae,Finland,2024,9,HUMAN_OBSERVATION
+4927599909,"Dryocopus martius (Linnaeus, 1758)",Dryocopus martius,Picidae,Finland,2024,9,HUMAN_OBSERVATION
+4927599954,"Falco Linnaeus, 1758",,Falconidae,Finland,2024,9,HUMAN_OBSERVATION
+4927600210,"Larus Linnaeus, 1758",,Laridae,Finland,2024,9,HUMAN_OBSERVATION
+4927600214,"Parus major Linnaeus, 1758",Parus major,Paridae,Finland,2024,9,HUMAN_OBSERVATION
+4927600216,"Cyanistes caeruleus (Linnaeus, 1758)",Cyanistes caeruleus,Paridae,Finland,2024,9,HUMAN_OBSERVATION
+4927600220,"Sylvia atricapilla (Linnaeus, 1758)",Sylvia atricapilla,Sylviidae,Finland,2024,9,HUMAN_OBSERVATION
+4927600609,"Erithacus rubecula (Linnaeus, 1758)",Erithacus rubecula,Muscicapidae,Finland,2024,9,HUMAN_OBSERVATION
+4927600611,"Grus grus (Linnaeus, 1758)",Grus grus,Gruidae,Finland,2024,9,HUMAN_OBSERVATION
+4927600853,"Motacilla flava Linnaeus, 1758",Motacilla flava,Motacillidae,Finland,2024,9,HUMAN_OBSERVATION
+4927600863,"Passer Brisson, 1760",,Passeridae,Finland,2024,9,HUMAN_OBSERVATION
+4927600953,"Phylloscopus collybita (Vieillot, 1817)",Phylloscopus collybita,Phylloscopidae,Finland,2024,9,HUMAN_OBSERVATION
+4927601237,"Falco columbarius Linnaeus, 1758",Falco columbarius,Falconidae,Finland,2024,9,HUMAN_OBSERVATION
+4927601255,"Phylloscopus collybita (Vieillot, 1817)",Phylloscopus collybita,Phylloscopidae,Finland,2024,9,HUMAN_OBSERVATION
+4927601297,"Troglodytes troglodytes (Linnaeus, 1758)",Troglodytes troglodytes,Troglodytidae,Finland,2024,9,HUMAN_OBSERVATION
+1891619689,"Phasianus colchicus Linnaeus, 1758",Phasianus colchicus,Phasianidae,,2022,10,PRESERVED_SPECIMEN
+1891619728,"Corvus monedula Linnaeus, 1758",Coloeus monedula,Corvidae,Luxembourg,2022,10,PRESERVED_SPECIMEN
+1891619888,"Phasianus colchicus Linnaeus, 1758",Phasianus colchicus,Phasianidae,,2022,10,PRESERVED_SPECIMEN
+1891619907,"Corvus monedula Linnaeus, 1758",Coloeus monedula,Corvidae,Luxembourg,2022,10,PRESERVED_SPECIMEN
+2554270510,"Bonasa umbellus (Linnaeus, 1766)",Bonasa umbellus,Phasianidae,United States of America,2022,10,PRESERVED_SPECIMEN
+2650162199,"Falco sparverius Linnaeus, 1758",Falco sparverius,Falconidae,Brazil,2022,10,PRESERVED_SPECIMEN
+2650162265,"Coereba flaveola (Linnaeus, 1758)",Coereba flaveola,Thraupidae,Brazil,2022,10,PRESERVED_SPECIMEN
+2650162287,"Columbina talpacoti (Temminck, 1810)",Columbina talpacoti,Columbidae,Brazil,2022,10,PRESERVED_SPECIMEN
+3541058570,"Camptostoma obsoletum (Temminck, 1824)",Camptostoma obsoletum,Tyrannidae,Colombia,2022,10,HUMAN_OBSERVATION
+3542308758,"Patagioenas cayennensis (Bonnaterre, 1792)",Patagioenas cayennensis,Columbidae,Colombia,2022,10,HUMAN_OBSERVATION
+3544988585,"Anthracothorax nigricollis (Vieillot, 1817)",Anthracothorax nigricollis,Trochilidae,Colombia,2022,10,HUMAN_OBSERVATION
+3547058831,"Thraupis episcopus (Linnaeus, 1766)",Thraupis episcopus,Thraupidae,Colombia,2022,10,HUMAN_OBSERVATION
+3551441255,"Momotus aequatorialis Gould, 1858",Momotus aequatorialis,Momotidae,Colombia,2022,10,HUMAN_OBSERVATION
+3552456404,"Pygochelidon cyanoleuca (Vieillot, 1817)",Notiochelidon cyanoleuca,Hirundinidae,Colombia,2022,10,HUMAN_OBSERVATION
+3554089661,"Melanerpes rubricapillus (Cabanis, 1862)",Melanerpes rubricapillus,Picidae,Colombia,2022,10,HUMAN_OBSERVATION
+3554722885,"Tangara labradorides (Boissonneau, 1840)",Tangara labradorides,Thraupidae,Colombia,2022,10,HUMAN_OBSERVATION
+3554816813,"Chlorostilbon melanorhynchus Gould, 1860",Chlorostilbon melanorhynchus,Trochilidae,Colombia,2022,10,HUMAN_OBSERVATION
+3555812219,"Zenaida macroura (Linnaeus, 1758)",Zenaida macroura,Columbidae,United States of America,2022,10,HUMAN_OBSERVATION
+3556306831,"Zenaida auriculata (Des Murs, 1847)",Zenaida auriculata,Columbidae,Colombia,2022,10,HUMAN_OBSERVATION
+3556518490,"Saxicola caprata (Linnaeus, 1766)",Saxicola caprata,Muscicapidae,India,2022,10,HUMAN_OBSERVATION
+3558800295,"Vanellus indicus (Boddaert, 1783)",Vanellus indicus,Charadriidae,India,2022,10,HUMAN_OBSERVATION
+3561452552,"Sitta carolinensis Latham, 1790",Sitta carolinensis,Sittidae,United States of America,2022,10,HUMAN_OBSERVATION
+3561739575,"Apus affinis (J.E.Gray, 1830)",Apus affinis,Apodidae,India,2022,10,HUMAN_OBSERVATION
+3566714028,"Alcedo atthis (Linnaeus, 1758)",Alcedo atthis,Alcedinidae,India,2022,10,HUMAN_OBSERVATION
+3567241199,"Piranga rubra (Linnaeus, 1758)",Piranga rubra,Cardinalidae,Colombia,2022,10,HUMAN_OBSERVATION
+3569289822,"Phalacrocorax carbo (Linnaeus, 1758)",Phalacrocorax carbo,Phalacrocoracidae,India,2022,10,HUMAN_OBSERVATION
+3569588381,"Pitangus sulphuratus (Linnaeus, 1766)",Pitangus sulphuratus,Tyrannidae,Colombia,2022,10,HUMAN_OBSERVATION
+3572920303,"Sturnus vulgaris Linnaeus, 1758",Sturnus vulgaris,Sturnidae,United States of America,2022,10,HUMAN_OBSERVATION
+3574984683,"Dryobates fumigatus (d'Orbigny, 1840)",Leuconotopicus fumigatus,Picidae,Colombia,2022,10,HUMAN_OBSERVATION
+3575209902,"Cyanocitta cristata (Linnaeus, 1758)",Cyanocitta cristata,Corvidae,United States of America,2022,10,HUMAN_OBSERVATION
+3576371826,"Cecropis daurica (Laxmann, 1769)",Cecropis daurica,Hirundinidae,India,2022,10,HUMAN_OBSERVATION
+3576757474,"Spizella passerina (Bechstein, 1798)",Spizella passerina,Passerellidae,United States of America,2022,10,HUMAN_OBSERVATION
+3578854583,"Crotophaga ani Linnaeus, 1758",Crotophaga ani,Cuculidae,Colombia,2022,10,HUMAN_OBSERVATION
+3581339126,"Branta canadensis (Linnaeus, 1758)",Branta canadensis,Anatidae,United States of America,2022,10,HUMAN_OBSERVATION
+1915537530,"Parvipsitta pusilla (Shaw, 1790)",Parvipsitta pusilla,Psittaculidae,Australia,2023,10,HUMAN_OBSERVATION
+1916233320,"Lophoictinia isura (Gould, 1838)",Lophoictinia isura,Accipitridae,Australia,2023,10,HUMAN_OBSERVATION
+2205852751,"Falco sparverius Linnaeus, 1758",Falco sparverius,Falconidae,United States of America,2023,10,HUMAN_OBSERVATION
+2209221741,"Cathartes aura (Linnaeus, 1758)",Cathartes aura,Cathartidae,United States of America,2023,10,HUMAN_OBSERVATION
+2218475913,"Corvus corax Linnaeus, 1758",Corvus corax,Corvidae,United States of America,2023,10,HUMAN_OBSERVATION
+2592988637,"Columba palumbus Linnaeus, 1758",Columba palumbus,Columbidae,Sweden,2023,10,HUMAN_OBSERVATION
+2671582125,"Anas bahamensis Linnaeus, 1758",Anas bahamensis,Anatidae,Peru,2023,10,HUMAN_OBSERVATION
+2672062280,"Chroicocephalus cirrocephalus (Vieillot, 1818)",Chroicocephalus cirrocephalus,Laridae,Peru,2023,10,HUMAN_OBSERVATION
+2672416308,"Nycticorax nycticorax (Linnaeus, 1758)",Nycticorax nycticorax,Ardeidae,Peru,2023,10,HUMAN_OBSERVATION
+2672783333,"Botaurus Stephens, 1819",,Ardeidae,Peru,2023,10,HUMAN_OBSERVATION
+2673324165,"Nannopterum brasilianum (J.F.Gmelin, 1789)",Phalacrocorax brasilianus,Phalacrocoracidae,Peru,2023,10,HUMAN_OBSERVATION
+2673448345,"Nycticorax nycticorax (Linnaeus, 1758)",Nycticorax nycticorax,Ardeidae,Peru,2023,10,HUMAN_OBSERVATION
+2673572141,"Spatula cyanoptera (Vieillot, 1816)",Spatula cyanoptera,Anatidae,Peru,2023,10,HUMAN_OBSERVATION
+2674529106,"Ardea ibis Linnaeus, 1758",Bubulcus ibis,Ardeidae,Peru,2023,10,HUMAN_OBSERVATION
+2674623524,"Phleocryptes melanops (Vieillot, 1817)",Phleocryptes melanops,Furnariidae,Peru,2023,10,HUMAN_OBSERVATION
+2674879336,"Egretta caerulea (Linnaeus, 1758)",Egretta caerulea,Ardeidae,Peru,2023,10,HUMAN_OBSERVATION
+2675248277,"Leucophaeus pipixcan (Wagler, 1831)",Leucophaeus pipixcan,Laridae,Peru,2023,10,HUMAN_OBSERVATION
+2675630189,"Larus belcheri Vigors, 1829",Larus belcheri,Laridae,Peru,2023,10,HUMAN_OBSERVATION
+2675644244,"Gallinula galeata (Lichtenstein & Mhc, 1818)",Gallinula chloropus,Rallidae,Peru,2023,10,HUMAN_OBSERVATION
+2675685495,"Fulica ardesiaca Tschudi, 1843",Fulica ardesiaca,Rallidae,Peru,2023,10,HUMAN_OBSERVATION
+2676944368,"Podiceps major (Boddaert, 1783)",Podiceps major,Podicipedidae,Peru,2023,10,HUMAN_OBSERVATION
+2677109152,"Zenaida meloda (Tschudi, 1843)",Zenaida meloda,Columbidae,Peru,2023,10,HUMAN_OBSERVATION
+2677468373,"Nannopterum brasilianum (J.F.Gmelin, 1789)",Phalacrocorax brasilianus,Phalacrocoracidae,Peru,2023,10,HUMAN_OBSERVATION
+2682448332,"Tachuris rubrigastra (Vieillot, 1817)",Tachuris rubrigastra,Tyrannidae,Peru,2023,10,HUMAN_OBSERVATION
+2683326242,"Egretta thula (Molina, 1782)",Egretta thula,Ardeidae,Peru,2023,10,HUMAN_OBSERVATION
+2683538163,"Charadrius vociferus Linnaeus, 1758",Charadrius vociferus,Charadriidae,Peru,2023,10,HUMAN_OBSERVATION
+2683766416,"Podilymbus podiceps (Linnaeus, 1758)",Podilymbus podiceps,Podicipedidae,Peru,2023,10,HUMAN_OBSERVATION
+2684270414,"Butorides striata (Linnaeus, 1758)",Butorides striata,Ardeidae,Peru,2023,10,HUMAN_OBSERVATION
+2684435277,"Pardirallus sanguinolentus (Swainson, 1838)",Pardirallus sanguinolentus,Rallidae,Peru,2023,10,HUMAN_OBSERVATION
+2686725296,"Dives warczewiczi (Cabanis, 1861)",Dives warczewiczi,Icteridae,Peru,2023,10,HUMAN_OBSERVATION
+2687827324,"Parabuteo unicinctus (Temminck, 1824)",Parabuteo unicinctus,Accipitridae,Peru,2023,10,HUMAN_OBSERVATION
+2687955296,"Numenius phaeopus (Linnaeus, 1758)",Numenius phaeopus,Scolopacidae,Peru,2023,10,HUMAN_OBSERVATION
+2688524274,"Egretta thula (Molina, 1782)",Egretta thula,Ardeidae,Peru,2023,10,HUMAN_OBSERVATION
+2690342176,"Coragyps atratus (Bechstein, 1793)",Coragyps atratus,Cathartidae,Peru,2023,10,HUMAN_OBSERVATION
+1291400734,"Meliphaga orientalis (A.B.Meyer, 1894)",Microptilotis orientalis,Meliphagidae,,2024,10,PRESERVED_SPECIMEN
+1291473969,"Molothrus bonariensis (Gmelin, 1789)",Molothrus bonariensis,Icteridae,Argentina,2024,10,PRESERVED_SPECIMEN
+2463969505,"Pinicola enucleator (Linnaeus, 1758)",Pinicola enucleator,Fringillidae,Sweden,2024,10,HUMAN_OBSERVATION
+2698308335,"Ardea herodias Linnaeus, 1758",Ardea herodias,Ardeidae,United States of America,2024,10,HUMAN_OBSERVATION
+4616731271,"Trichoglossus moluccanus (Gmelin, 1788)",Trichoglossus haematodus,Psittacidae,Australia,2024,10,HUMAN_OBSERVATION
+4636057468,"Entomyzon cyanotis (Latham, 1801)",Entomyzon cyanotis,Meliphagidae,Australia,2024,10,HUMAN_OBSERVATION
+4647525721,"Spilopelia chinensis (Scopoli, 1786)",Spilopelia chinensis,Columbidae,Australia,2024,10,HUMAN_OBSERVATION
+4695468489,"Threskiornis molucca (Cuvier, 1829)",Threskiornis molucca,Threskiornithidae,Australia,2024,10,HUMAN_OBSERVATION
+4721817268,"Chroicocephalus novaehollandiae (Stephens, 1826)",Chroicocephalus novaehollandiae,Laridae,Australia,2024,10,HUMAN_OBSERVATION
+4724679892,"Nettapus coromandelianus (J.F.Gmelin, 1789)",Nettapus coromandelianus,Anatidae,Australia,2024,10,HUMAN_OBSERVATION
+4725740172,"Gymnorhina tibicen (Latham, 1802)",Gymnorhina tibicen,Cracticidae,Australia,2024,10,HUMAN_OBSERVATION
+4726295817,"Ocyphaps lophotes (Temminck, 1822)",Ocyphaps lophotes,Columbidae,Australia,2024,10,HUMAN_OBSERVATION
+4727616918,"Manorina melanocephala (Latham, 1801)",Manorina melanocephala,Meliphagidae,Australia,2024,10,HUMAN_OBSERVATION
+4741547963,"Eolophus roseicapilla (Vieillot, 1817)",Eolophus roseicapilla,Psittacidae,Australia,2024,10,HUMAN_OBSERVATION
+4742473866,"Dacelo novaeguineae (Hermann, 1783)",Dacelo novaeguineae,Alcedinidae,Australia,2024,10,HUMAN_OBSERVATION
+4802145906,"Falco columbarius Linnaeus, 1758",Falco columbarius,Falconidae,United States of America,2024,10,HUMAN_OBSERVATION
+4810887063,"Nymphicus hollandicus (Kerr, 1792)",Nymphicus hollandicus,Psittacidae,Australia,2024,10,HUMAN_OBSERVATION
+4817927299,"Alectura lathami J.E.Gray, 1831",Alectura lathami,Megapodiidae,Australia,2024,10,HUMAN_OBSERVATION
+4835421297,"Vanellus miles (Boddaert, 1783)",Vanellus miles,Charadriidae,Australia,2024,10,HUMAN_OBSERVATION
+4857353306,"Scolopax minor J.F.Gmelin, 1789",Scolopax minor,Scolopacidae,United States of America,2024,10,PRESERVED_SPECIMEN
+4876505232,"Haematopus ostralegus Linnaeus, 1758",Haematopus ostralegus,Haematopodidae,Netherlands,2024,10,HUMAN_OBSERVATION
+4892755425,"Stizoptera bichenovii (Vigors & Horsfield, 1827)",Taeniopygia bichenovii,Estrildidae,Australia,2024,10,HUMAN_OBSERVATION
+4892756039,"Melithreptus albogularis Gould, 1848",Melithreptus albogularis,Meliphagidae,Australia,2024,10,HUMAN_OBSERVATION
+4900699546,"Hylocichla mustelina (Gmelin, 1789)",Hylocichla mustelina,Turdidae,United States of America,2024,10,PRESERVED_SPECIMEN
+4948247959,"Strix aluco Linnaeus, 1758",Strix aluco,Strigidae,Norway,2024,10,HUMAN_OBSERVATION
+4949707317,"Alopochen aegyptiaca (Linnaeus, 1766)",Alopochen aegyptiaca,Anatidae,Belgium,2024,10,HUMAN_OBSERVATION
+4949727441,"Dendrocopos leucotos (Bechstein, 1802)",Dendrocopos leucotos,Picidae,Norway,2024,10,HUMAN_OBSERVATION
+4949727745,"Poecile montanus (Conrad von Baldenstein, 1827)",Poecile montanus,Paridae,Norway,2024,10,HUMAN_OBSERVATION
+4950623328,"Picoides tridactylus (Linnaeus, 1758)",Picoides tridactylus,Picidae,Norway,2024,10,HUMAN_OBSERVATION
+4950623353,"Chloris chloris (Linnaeus, 1758)",Chloris chloris,Fringillidae,Norway,2024,10,HUMAN_OBSERVATION
+4950623461,"Cinclus cinclus (Linnaeus, 1758)",Cinclus cinclus,Cinclidae,Norway,2024,10,HUMAN_OBSERVATION
+4950623512,"Perisoreus infaustus (Linnaeus, 1758)",Perisoreus infaustus,Corvidae,Norway,2024,10,HUMAN_OBSERVATION
+4950623533,"Emberiza citrinella Linnaeus, 1758",Emberiza citrinella,Emberizidae,Norway,2024,10,HUMAN_OBSERVATION
+4950623644,"Dryocopus martius (Linnaeus, 1758)",Dryocopus martius,Picidae,Norway,2024,10,HUMAN_OBSERVATION
+3474705438,"Buteo buteo (Linnaeus, 1758)",Buteo buteo,Accipitridae,France,2022,11,HUMAN_OBSERVATION
+3746805317,"Oreothlypis peregrina (A.Wilson, 1811)",Leiothlypis peregrina,Parulidae,United States of America,2022,11,PRESERVED_SPECIMEN
+3953243339,"Falco tinnunculus Linnaeus, 1758",Falco tinnunculus,Falconidae,Russian Federation,2022,11,HUMAN_OBSERVATION
+3953243348,"Passer montanus (Linnaeus, 1758)",Passer montanus,Passeridae,Russian Federation,2022,11,HUMAN_OBSERVATION
+3953243394,"Anas platyrhynchos Linnaeus, 1758",Anas platyrhynchos,Anatidae,Russian Federation,2022,11,HUMAN_OBSERVATION
+3953243447,"Columba livia J.F.Gmelin, 1789",Columba livia,Columbidae,Russian Federation,2022,11,HUMAN_OBSERVATION
+3953243506,"Dendrocopos major (Linnaeus, 1758)",Dendrocopos major,Picidae,Russian Federation,2022,11,HUMAN_OBSERVATION
+3953243507,"Pica pica (Linnaeus, 1758)",Pica pica,Corvidae,Russian Federation,2022,11,HUMAN_OBSERVATION
+3953243562,"Anas platyrhynchos Linnaeus, 1758",Anas platyrhynchos,Anatidae,Russian Federation,2022,11,HUMAN_OBSERVATION
+3953244341,"Pyrrhula pyrrhula (Linnaeus, 1758)",Pyrrhula pyrrhula,Fringillidae,Russian Federation,2022,11,HUMAN_OBSERVATION
+3953244392,"Corvus cornix Linnaeus, 1758",Corvus cornix,Corvidae,Russian Federation,2022,11,HUMAN_OBSERVATION
+3953244417,"Columba livia J.F.Gmelin, 1789",Columba livia,Columbidae,Russian Federation,2022,11,HUMAN_OBSERVATION
+3953244498,"Accipiter gentilis (Linnaeus, 1758)",Accipiter gentilis,Accipitridae,Russian Federation,2022,11,HUMAN_OBSERVATION
+3953244499,"Cyanistes caeruleus (Linnaeus, 1758)",Cyanistes caeruleus,Paridae,Russian Federation,2022,11,HUMAN_OBSERVATION
+3953244552,"Bucephala clangula (Linnaeus, 1758)",Bucephala clangula,Anatidae,Russian Federation,2022,11,HUMAN_OBSERVATION
+3953244553,"Pica pica (Linnaeus, 1758)",Pica pica,Corvidae,Russian Federation,2022,11,HUMAN_OBSERVATION
+3953245341,"Anas platyrhynchos Linnaeus, 1758",Anas platyrhynchos,Anatidae,Russian Federation,2022,11,HUMAN_OBSERVATION
+3953245393,"Larus canus Linnaeus, 1758",Larus canus,Laridae,Russian Federation,2022,11,HUMAN_OBSERVATION
+3953245394,"Cyanistes caeruleus (Linnaeus, 1758)",Cyanistes caeruleus,Paridae,Russian Federation,2022,11,HUMAN_OBSERVATION
+3953245418,"Corvus cornix Linnaeus, 1758",Corvus cornix,Corvidae,Russian Federation,2022,11,HUMAN_OBSERVATION
+3953245512,"Larus argentatus Pontoppidan, 1763",Larus argentatus,Laridae,Russian Federation,2022,11,HUMAN_OBSERVATION
+3953245513,"Sitta europaea Linnaeus, 1758",Sitta europaea,Sittidae,Russian Federation,2022,11,HUMAN_OBSERVATION
+3953245514,"Garrulus glandarius (Linnaeus, 1758)",Garrulus glandarius,Corvidae,Russian Federation,2022,11,HUMAN_OBSERVATION
+3953245567,"Cyanistes caeruleus (Linnaeus, 1758)",Cyanistes caeruleus,Paridae,Russian Federation,2022,11,HUMAN_OBSERVATION
+3953245568,"Podiceps cristatus (Linnaeus, 1758)",Podiceps cristatus,Podicipedidae,Russian Federation,2022,11,HUMAN_OBSERVATION
+3953246339,"Dendrocopos major (Linnaeus, 1758)",Dendrocopos major,Picidae,Russian Federation,2022,11,HUMAN_OBSERVATION
+3953246378,"Dendrocopos major (Linnaeus, 1758)",Dendrocopos major,Picidae,Russian Federation,2022,11,HUMAN_OBSERVATION
+3953246396,"Corvus cornix Linnaeus, 1758",Corvus cornix,Corvidae,Russian Federation,2022,11,HUMAN_OBSERVATION
+3953246419,"Cygnus olor (J.F.Gmelin, 1789)",Cygnus olor,Anatidae,Russian Federation,2022,11,HUMAN_OBSERVATION
+3953246509,"Fringilla coelebs Linnaeus, 1758",Fringilla coelebs,Fringillidae,Russian Federation,2022,11,HUMAN_OBSERVATION
+3953246510,"Corvus cornix Linnaeus, 1758",Corvus cornix,Corvidae,Russian Federation,2022,11,HUMAN_OBSERVATION
+3953246565,"Parus major Linnaeus, 1758",Parus major,Paridae,Russian Federation,2022,11,HUMAN_OBSERVATION
+3953246566,"Anas platyrhynchos Linnaeus, 1758",Anas platyrhynchos,Anatidae,Russian Federation,2022,11,HUMAN_OBSERVATION
+3953257340,"Larus argentatus Pontoppidan, 1763",Larus argentatus,Laridae,Russian Federation,2022,11,HUMAN_OBSERVATION
+2650162134,"Chionomesa fimbriata (J.F.Gmelin, 1788)",Chionomesa fimbriata,Trochilidae,Brazil,2023,11,PRESERVED_SPECIMEN
+2650162144,"Myiobius barbatus (Gmelin, 1789)",Myiobius barbatus,Tyrannidae,Brazil,2023,11,PRESERVED_SPECIMEN
+2650162150,"Chiroxiphia pareola (Linnaeus, 1766)",Chiroxiphia pareola,Pipridae,Brazil,2023,11,PRESERVED_SPECIMEN
+4191906276,"Quiscalus mexicanus (Gmelin, 1788)",Quiscalus mexicanus,Icteridae,United States of America,2023,11,HUMAN_OBSERVATION
+4199568557,"Sturnus vulgaris Linnaeus, 1758",Sturnus vulgaris,Sturnidae,United States of America,2023,11,HUMAN_OBSERVATION
+4286804488,"Setophaga coronata (Linnaeus, 1766)",Setophaga coronata,Parulidae,United States of America,2023,11,HUMAN_OBSERVATION
+4292481525,"Streptopelia decaocto (Frivaldszky, 1838)",Streptopelia decaocto,Columbidae,United States of America,2023,11,HUMAN_OBSERVATION
+4293256317,"Molothrus aeneus (Wagler, 1829)",Molothrus aeneus,Icteridae,United States of America,2023,11,HUMAN_OBSERVATION
+4328499519,"Columba livia J.F.Gmelin, 1789",Columba livia,Columbidae,United States of America,2023,11,HUMAN_OBSERVATION
+4340389323,"Passer domesticus (Linnaeus, 1758)",Passer domesticus,Passeridae,United States of America,2023,11,HUMAN_OBSERVATION
+4343170262,"Parabuteo unicinctus (Temminck, 1824)",Parabuteo unicinctus,Accipitridae,United States of America,2023,11,HUMAN_OBSERVATION
+4388824831,"Zenaida macroura (Linnaeus, 1758)",Zenaida macroura,Columbidae,United States of America,2023,11,HUMAN_OBSERVATION
+4429921302,"Nipponia nippon (Temminck, 1835)",Nipponia nippon,Threskiornithidae,China,2023,11,HUMAN_OBSERVATION
+4434917258,"Cygnus olor (J.F.Gmelin, 1789)",Cygnus olor,Anatidae,Sweden,2023,11,HUMAN_OBSERVATION
+4434917260,"Melanitta nigra (Linnaeus, 1758)",Melanitta nigra,Anatidae,Sweden,2023,11,HUMAN_OBSERVATION
+4434917262,"Coloeus monedula (Linnaeus, 1758)",Coloeus monedula,Corvidae,Sweden,2023,11,HUMAN_OBSERVATION
+4434917263,"Loxia pytyopsittacus von Borkhausen, 1793",Loxia pytyopsittacus,Fringillidae,Sweden,2023,11,HUMAN_OBSERVATION
+4434917264,"Dendrocopos major (Linnaeus, 1758)",Dendrocopos major,Picidae,Sweden,2023,11,HUMAN_OBSERVATION
+4434917265,"Mareca strepera (Linnaeus, 1758)",Mareca strepera,Anatidae,Sweden,2023,11,HUMAN_OBSERVATION
+4434917266,"Chloris chloris (Linnaeus, 1758)",Chloris chloris,Fringillidae,Sweden,2023,11,HUMAN_OBSERVATION
+4434917267,"Pyrrhula pyrrhula (Linnaeus, 1758)",Pyrrhula pyrrhula,Fringillidae,Sweden,2023,11,HUMAN_OBSERVATION
+4434917268,"Mareca strepera (Linnaeus, 1758)",Mareca strepera,Anatidae,Sweden,2023,11,HUMAN_OBSERVATION
+4434917269,"Anas platyrhynchos Linnaeus, 1758",Anas platyrhynchos,Anatidae,Sweden,2023,11,HUMAN_OBSERVATION
+4434917273,"Acanthis flammea (Linnaeus, 1758)",Acanthis flammea,Fringillidae,Sweden,2023,11,HUMAN_OBSERVATION
+4434917274,"Bombycilla garrulus (Linnaeus, 1758)",Bombycilla garrulus,Bombycillidae,Sweden,2023,11,HUMAN_OBSERVATION
+4434917275,"Larus canus Linnaeus, 1758",Larus canus,Laridae,Sweden,2023,11,HUMAN_OBSERVATION
+4434917276,"Rallus aquaticus Linnaeus, 1758",Rallus aquaticus,Rallidae,Sweden,2023,11,HUMAN_OBSERVATION
+4434917277,"Troglodytes troglodytes (Linnaeus, 1758)",Troglodytes troglodytes,Troglodytidae,Sweden,2023,11,HUMAN_OBSERVATION
+4434917278,"Corvus cornix Linnaeus, 1758",Corvus cornix,Corvidae,Sweden,2023,11,HUMAN_OBSERVATION
+4434917279,"Anthus pratensis (Linnaeus, 1758)",Anthus pratensis,Motacillidae,Sweden,2023,11,HUMAN_OBSERVATION
+4434917280,"Cygnus olor (J.F.Gmelin, 1789)",Cygnus olor,Anatidae,Sweden,2023,11,HUMAN_OBSERVATION
+4434917281,"Turdus philomelos C.L.Brehm, 1831",Turdus philomelos,Turdidae,Sweden,2023,11,HUMAN_OBSERVATION
+4434917282,"Pica pica (Linnaeus, 1758)",Pica pica,Corvidae,Sweden,2023,11,HUMAN_OBSERVATION
+4434917283,"Larus argentatus Pontoppidan, 1763",Larus argentatus,Laridae,Sweden,2023,11,HUMAN_OBSERVATION
+1291416738,"Acanthiza pusilla (Shaw, 1790)",Acanthiza pusilla,Acanthizidae,Australia,2024,11,PRESERVED_SPECIMEN
+1291493143,"Euplectes hordeaceus hordeaceus (Linnaeus, 1758)",Euplectes hordeaceus,Ploceidae,Cameroon,2024,11,PRESERVED_SPECIMEN
+3506843403,"Sitta canadensis Linnaeus, 1766",Sitta canadensis,Sittidae,United States of America,2024,11,HUMAN_OBSERVATION
+3508461490,"Junco hyemalis (Linnaeus, 1758)",Junco hyemalis,Passerellidae,United States of America,2024,11,HUMAN_OBSERVATION
+3511672989,"Dryobates villosus (Linnaeus, 1766)",Leuconotopicus villosus,Picidae,United States of America,2024,11,HUMAN_OBSERVATION
+3512674000,"Zenaida macroura (Linnaeus, 1758)",Zenaida macroura,Columbidae,United States of America,2024,11,HUMAN_OBSERVATION
+3513217608,"Cardinalis cardinalis (Linnaeus, 1758)",Cardinalis cardinalis,Cardinalidae,United States of America,2024,11,HUMAN_OBSERVATION
+4612221608,"Furnarius rufus (Gmelin, 1788)",Furnarius rufus,Furnariidae,Brazil,2024,11,HUMAN_OBSERVATION
+4612339651,"Thraupis sayaca (Linnaeus, 1766)",Thraupis sayaca,Thraupidae,Brazil,2024,11,HUMAN_OBSERVATION
+4612339654,"Spinus magellanicus (Vieillot, 1805)",Spinus magellanicus,Fringillidae,Brazil,2024,11,HUMAN_OBSERVATION
+4615022132,"Nannopterum brasilianum (J.F.Gmelin, 1789)",Phalacrocorax brasilianus,Phalacrocoracidae,Brazil,2024,11,HUMAN_OBSERVATION
+4615790950,"Leptotila verreauxi Bonaparte, 1855",Leptotila verreauxi,Columbidae,Brazil,2024,11,HUMAN_OBSERVATION
+4617449709,"Thamnophilus caerulescens Vieillot, 1816",Thamnophilus caerulescens,Thamnophilidae,Brazil,2024,11,HUMAN_OBSERVATION
+4621001165,"Polioptila dumicola (Vieillot, 1817)",Polioptila dumicola,Polioptilidae,Brazil,2024,11,HUMAN_OBSERVATION
+4621906752,"Egretta thula (Molina, 1782)",Egretta thula,Ardeidae,Brazil,2024,11,HUMAN_OBSERVATION
+4628094662,"Anthus chii Vieillot, 1818",Anthus chii,Motacillidae,Brazil,2024,11,HUMAN_OBSERVATION
+4632558643,"Vanellus chilensis (Molina, 1782)",Vanellus chilensis,Charadriidae,Brazil,2024,11,HUMAN_OBSERVATION
+4636281469,"Paroaria coronata (J.F.Miller, 1776)",Paroaria coronata,Thraupidae,Brazil,2024,11,HUMAN_OBSERVATION
+4639611081,"Rupornis magnirostris (Gmelin, 1788)",Rupornis magnirostris,Accipitridae,Brazil,2024,11,HUMAN_OBSERVATION
+4642153697,"Icterus pyrrhopterus (Vieillot, 1819)",Icterus cayanensis,Icteridae,Brazil,2024,11,HUMAN_OBSERVATION
+4643647693,"Sicalis luteola (Sparrman, 1789)",Sicalis luteola,Thraupidae,Brazil,2024,11,HUMAN_OBSERVATION
+4644272379,"Synallaxis spixi P.L.Sclater, 1856",Synallaxis spixi,Furnariidae,Brazil,2024,11,HUMAN_OBSERVATION
+4649551734,"Hylocharis chrysura (Shaw, 1812)",Hylocharis chrysura,Trochilidae,Brazil,2024,11,HUMAN_OBSERVATION
+4651900519,"Setophaga pitiayumi (Vieillot, 1817)",Setophaga pitiayumi,Parulidae,Brazil,2024,11,HUMAN_OBSERVATION
+4653105584,"Pseudoleistes virescens (Vieillot, 1819)",Pseudoleistes virescens,Icteridae,Brazil,2024,11,HUMAN_OBSERVATION
+4657838306,"Tyrannus melancholicus Vieillot, 1819",Tyrannus melancholicus,Tyrannidae,Brazil,2024,11,HUMAN_OBSERVATION
+4657956600,"Zonotrichia capensis (P.L.S.Müller, 1776)",Zonotrichia capensis,Passerellidae,Brazil,2024,11,HUMAN_OBSERVATION
+4658411329,"Anumbius annumbi (Vieillot, 1817)",Anumbius annumbi,Furnariidae,Brazil,2024,11,HUMAN_OBSERVATION
+4660142475,"Ardea ibis Linnaeus, 1758",Bubulcus ibis,Ardeidae,Brazil,2024,11,HUMAN_OBSERVATION
+4660497390,"Euphonia chlorotica (Linnaeus, 1766)",Euphonia chlorotica,Fringillidae,Brazil,2024,11,HUMAN_OBSERVATION
+4660807065,"Ardea alba Linnaeus, 1758",Ardea alba,Ardeidae,Brazil,2024,11,HUMAN_OBSERVATION
+4665026499,"Dendrocygna viduata (Linnaeus, 1766)",Dendrocygna viduata,Anatidae,Brazil,2024,11,HUMAN_OBSERVATION
+4666868640,"Megaceryle torquata (Linnaeus, 1766)",Megaceryle torquata,Alcedinidae,Brazil,2024,11,HUMAN_OBSERVATION
+4668105558,"Leistes superciliaris (Bonaparte, 1850)",Sturnella superciliaris,Icteridae,Brazil,2024,11,HUMAN_OBSERVATION
+1891618030,"Eudromia elegans I.Geoffroy Saint-Hilaire, 1832",Eudromia elegans,Tinamidae,France,2022,12,PRESERVED_SPECIMEN
+1891619646,"Alopochen aegyptiaca (Linnaeus, 1766)",Alopochen aegyptiaca,Anatidae,France,2022,12,PRESERVED_SPECIMEN
+1891619714,"Scolopax rusticola Linnaeus, 1758",Scolopax rusticola,Scolopacidae,France,2022,12,PRESERVED_SPECIMEN
+1891619861,"Alopochen aegyptiaca (Linnaeus, 1766)",Alopochen aegyptiaca,Anatidae,France,2022,12,PRESERVED_SPECIMEN
+2650162213,"Conirostrum speciosum (Temminck, 1824)",Conirostrum speciosum,Thraupidae,Brazil,2022,12,PRESERVED_SPECIMEN
+2650162217,"Coryphospingus pileatus (Wied-Neuwied, 1821)",Coryphospingus pileatus,Thraupidae,Brazil,2022,12,PRESERVED_SPECIMEN
+2650162219,"Coryphospingus pileatus (Wied-Neuwied, 1821)",Coryphospingus pileatus,Thraupidae,Brazil,2022,12,PRESERVED_SPECIMEN
+2650162224,"Coryphospingus pileatus (Wied-Neuwied, 1821)",Coryphospingus pileatus,Thraupidae,Brazil,2022,12,PRESERVED_SPECIMEN
+2650163137,"Phaeomyias murina (Spix, 1825)",Phaeomyias murina,Tyrannidae,Brazil,2022,12,PRESERVED_SPECIMEN
+3583875421,"Asio stygius (Wagler, 1832)",Asio stygius,Strigidae,Colombia,2022,12,HUMAN_OBSERVATION
+3669721254,"Spinus psaltria (Say, 1822)",Spinus psaltria,Fringillidae,Colombia,2022,12,HUMAN_OBSERVATION
+3886889953,"Vanellus chilensis (Molina, 1782)",Vanellus chilensis,Charadriidae,Colombia,2022,12,HUMAN_OBSERVATION
+3886891632,"Thraupis episcopus (Linnaeus, 1766)",Thraupis episcopus,Thraupidae,Colombia,2022,12,HUMAN_OBSERVATION
+3886891637,"Tyrannus melancholicus Vieillot, 1819",Tyrannus melancholicus,Tyrannidae,Colombia,2022,12,HUMAN_OBSERVATION
+3886891642,"Tyrannus savana Vieillot, 1808",Tyrannus savana,Tyrannidae,Colombia,2022,12,HUMAN_OBSERVATION
+3886891643,"Ramphastos tucanus Linnaeus, 1758",Ramphastos tucanus,Ramphastidae,Colombia,2022,12,HUMAN_OBSERVATION
+3886891649,"Machetornis rixosa (Vieillot, 1819)",Machetornis rixosa,Tyrannidae,Colombia,2022,12,HUMAN_OBSERVATION
+3886891650,"Syrigma sibilatrix (Temminck, 1824)",Syrigma sibilatrix,Ardeidae,Colombia,2022,12,HUMAN_OBSERVATION
+3886891651,"Opisthocomus hoazin (Statius Muller, 1776)",Opisthocomus hoazin,Opisthocomidae,Colombia,2022,12,HUMAN_OBSERVATION
+3886891653,"Gymnomystax Reichenbach, 1850",,Icteridae,Colombia,2022,12,HUMAN_OBSERVATION
+3886891657,"Jabiru mycteria (Lichtenstein, 1819)",Jabiru mycteria,Ciconiidae,Colombia,2022,12,HUMAN_OBSERVATION
+3886891660,"Forpus conspicillatus (Lafresnaye, 1848)",Forpus conspicillatus,Psittacidae,Colombia,2022,12,HUMAN_OBSERVATION
+3886891665,"Phimosus infuscatus (Lichtenstein, 1823)",Phimosus infuscatus,Threskiornithidae,Colombia,2022,12,HUMAN_OBSERVATION
+3886891666,"Rupornis magnirostris (Gmelin, 1788)",Rupornis magnirostris,Accipitridae,Colombia,2022,12,HUMAN_OBSERVATION
+3886891668,"Bubulcus ibis (Linnaeus, 1758)",Bubulcus ibis,Ardeidae,Colombia,2022,12,HUMAN_OBSERVATION
+3886891669,"Cathartes aura (Linnaeus, 1758)",Cathartes aura,Cathartidae,Colombia,2022,12,HUMAN_OBSERVATION
+3886891670,"Eudocimus ruber (Linnaeus, 1758)",Eudocimus ruber,Threskiornithidae,Colombia,2022,12,HUMAN_OBSERVATION
+3886891673,"Amazona ochrocephala (Gmelin, 1788)",Amazona ochrocephala,Psittacidae,Colombia,2022,12,HUMAN_OBSERVATION
+3886891676,"Cathartes aura (Linnaeus, 1758)",Cathartes aura,Cathartidae,Colombia,2022,12,HUMAN_OBSERVATION
+3886891678,"Mimus gilvus (Vieillot, 1808)",Mimus gilvus,Mimidae,Colombia,2022,12,HUMAN_OBSERVATION
+3886891683,"Dendrocygna autumnalis (Linnaeus, 1758)",Dendrocygna autumnalis,Anatidae,Colombia,2022,12,HUMAN_OBSERVATION
+3946207260,"Actitis hypoleucos (Linnaeus, 1758)",Actitis hypoleucos,Scolopacidae,Chinese Taipei,2022,12,HUMAN_OBSERVATION
+3946207261,"Cyanoderma ruficeps (Blyth, 1847)",Stachyridopsis ruficeps,Timaliidae,Chinese Taipei,2022,12,HUMAN_OBSERVATION
+3946207262,"Hypsipetes leucocephalus (Gmelin, 1789)",Hypsipetes leucocephalus,Pycnonotidae,Chinese Taipei,2022,12,HUMAN_OBSERVATION
+2650162147,"Chiroxiphia pareola (Linnaeus, 1766)",Chiroxiphia pareola,Pipridae,Brazil,2023,12,PRESERVED_SPECIMEN
+2709195579,"Gallinula galeata (Lichtenstein & Mhc, 1818)",Gallinula chloropus,Rallidae,United States of America,2023,12,HUMAN_OBSERVATION
+2711580429,"Agelaius phoeniceus (Linnaeus, 1766)",Agelaius phoeniceus,Icteridae,United States of America,2023,12,HUMAN_OBSERVATION
+2712194350,"Nannopterum auritum (R.P.Lesson, 1831)",Phalacrocorax auritus,Phalacrocoracidae,United States of America,2023,12,HUMAN_OBSERVATION
+2712245522,"Quiscalus major Vieillot, 1819",Quiscalus major,Icteridae,United States of America,2023,12,HUMAN_OBSERVATION
+2712399542,"Haliaeetus leucocephalus (Linnaeus, 1766)",Haliaeetus leucocephalus,Accipitridae,United States of America,2023,12,HUMAN_OBSERVATION
+2712963372,"Cathartes aura (Linnaeus, 1758)",Cathartes aura,Cathartidae,United States of America,2023,12,HUMAN_OBSERVATION
+2713657746,"Ardea alba Linnaeus, 1758",Ardea alba,Ardeidae,United States of America,2023,12,HUMAN_OBSERVATION
+2715188564,"Plegadis falcinellus (Linnaeus, 1766)",Plegadis falcinellus,Threskiornithidae,United States of America,2023,12,HUMAN_OBSERVATION
+2718956852,"Butorides virescens (Linnaeus, 1758)",Butorides virescens,Ardeidae,United States of America,2023,12,HUMAN_OBSERVATION
+2721551966,"Nycticorax nycticorax (Linnaeus, 1758)",Nycticorax nycticorax,Ardeidae,United States of America,2023,12,HUMAN_OBSERVATION
+2722136263,"Rallus elegans Audubon, 1834",Rallus elegans,Rallidae,United States of America,2023,12,HUMAN_OBSERVATION
+2723751384,"Egretta tricolor (Statius Muller, 1776)",Egretta tricolor,Ardeidae,United States of America,2023,12,HUMAN_OBSERVATION
+2725111342,"Podilymbus podiceps (Linnaeus, 1758)",Podilymbus podiceps,Podicipedidae,United States of America,2023,12,HUMAN_OBSERVATION
+2762508377,"Megaceryle alcyon (Linnaeus, 1758)",Megaceryle alcyon,Alcedinidae,United States of America,2023,12,HUMAN_OBSERVATION
+2766360441,"Anhinga anhinga (Linnaeus, 1766)",Anhinga anhinga,Anhingidae,United States of America,2023,12,HUMAN_OBSERVATION
+2771149504,"Spatula discors (Linnaeus, 1766)",Spatula discors,Anatidae,United States of America,2023,12,HUMAN_OBSERVATION
+2772658438,"Egretta caerulea (Linnaeus, 1758)",Egretta caerulea,Ardeidae,United States of America,2023,12,HUMAN_OBSERVATION
+2772982484,"Fulica americana Gmelin, 1789",Fulica americana,Rallidae,United States of America,2023,12,HUMAN_OBSERVATION
+2777350277,"Tringa melanoleuca (J.F.Gmelin, 1789)",Tringa melanoleuca,Scolopacidae,United States of America,2023,12,HUMAN_OBSERVATION
+2778909792,"Setophaga palmarum (J.F.Gmelin, 1789)",Setophaga palmarum,Parulidae,United States of America,2023,12,HUMAN_OBSERVATION
+2780206602,"Circus hudsonius (Linnaeus, 1766)",Circus cyaneus,Accipitridae,United States of America,2023,12,HUMAN_OBSERVATION
+2782399578,"Porzana carolina (Linnaeus, 1758)",Porzana carolina,Rallidae,United States of America,2023,12,HUMAN_OBSERVATION
+2782552451,"Pandion haliaetus (Linnaeus, 1758)",Pandion haliaetus,Pandionidae,United States of America,2023,12,HUMAN_OBSERVATION
+2783411559,"Buteo lineatus (Gmelin, 1788)",Buteo lineatus,Accipitridae,United States of America,2023,12,HUMAN_OBSERVATION
+2784250712,"Ardea herodias Linnaeus, 1758",Ardea herodias,Ardeidae,United States of America,2023,12,HUMAN_OBSERVATION
+4010986549,"Corvus cornix Linnaeus, 1758",Corvus cornix,Corvidae,Norway,2023,12,HUMAN_OBSERVATION
+4010992562,"Pyrrhula pyrrhula (Linnaeus, 1758)",Pyrrhula pyrrhula,Fringillidae,Norway,2023,12,HUMAN_OBSERVATION
+4011012396,"Cyanistes caeruleus (Linnaeus, 1758)",Cyanistes caeruleus,Paridae,Norway,2023,12,HUMAN_OBSERVATION
+4011050432,"Pica pica (Linnaeus, 1758)",Pica pica,Corvidae,Norway,2023,12,HUMAN_OBSERVATION
+4011058466,"Turdus merula Linnaeus, 1758",Turdus merula,Turdidae,Norway,2023,12,HUMAN_OBSERVATION
+4011080326,"Erithacus rubecula (Linnaeus, 1758)",Erithacus rubecula,Muscicapidae,Norway,2023,12,HUMAN_OBSERVATION
+4011089346,"Parus major Linnaeus, 1758",Parus major,Paridae,Norway,2023,12,HUMAN_OBSERVATION
+4011098541,"Chloris chloris (Linnaeus, 1758)",Chloris chloris,Fringillidae,Norway,2023,12,HUMAN_OBSERVATION
+1291443001,"Acanthiza chrysorrhoa (Quoy & Gaimard, 1830)",Acanthiza chrysorrhoa,Acanthizidae,Australia,2024,12,PRESERVED_SPECIMEN
+2650163143,"Chiroxiphia pareola (Linnaeus, 1766)",Chiroxiphia pareola,Pipridae,Brazil,2024,12,PRESERVED_SPECIMEN
+2650163155,"Turdus leucomelas Vieillot, 1818",Turdus leucomelas,Turdidae,Brazil,2024,12,PRESERVED_SPECIMEN
+4180433966,"Dryobates pubescens (Linnaeus, 1766)",Dryobates pubescens,Picidae,United States of America,2024,12,HUMAN_OBSERVATION
+4213751739,"Todirostrum cinereum (Linnaeus, 1766)",Todirostrum cinereum,Tyrannidae,Colombia,2024,12,HUMAN_OBSERVATION
+4217708021,"Tringa solitaria A.Wilson, 1813",Tringa solitaria,Scolopacidae,Colombia,2024,12,HUMAN_OBSERVATION
+4226539806,"Buteo jamaicensis (Gmelin, 1788)",Buteo jamaicensis,Accipitridae,United States of America,2024,12,HUMAN_OBSERVATION
+4228260155,"Ardea ibis Linnaeus, 1758",Bubulcus ibis,Ardeidae,Colombia,2024,12,HUMAN_OBSERVATION
+4232261610,"Pitangus sulphuratus (Linnaeus, 1766)",Pitangus sulphuratus,Tyrannidae,Colombia,2024,12,HUMAN_OBSERVATION
+4241183007,"Turdus migratorius Linnaeus, 1766",Turdus migratorius,Turdidae,United States of America,2024,12,HUMAN_OBSERVATION
+4241221608,"Zenaida macroura (Linnaeus, 1758)",Zenaida macroura,Columbidae,United States of America,2024,12,HUMAN_OBSERVATION
+4241293833,"Baeolophus bicolor (Linnaeus, 1766)",Baeolophus bicolor,Paridae,United States of America,2024,12,HUMAN_OBSERVATION
+4242430416,"Cyanocitta cristata (Linnaeus, 1758)",Cyanocitta cristata,Corvidae,United States of America,2024,12,HUMAN_OBSERVATION
+4245919156,"Catharus guttatus (Pallas, 1811)",Catharus guttatus,Turdidae,United States of America,2024,12,HUMAN_OBSERVATION
+4253252272,"Sitta carolinensis Latham, 1790",Sitta carolinensis,Sittidae,United States of America,2024,12,HUMAN_OBSERVATION
+4255554962,"Cardinalis cardinalis (Linnaeus, 1758)",Cardinalis cardinalis,Cardinalidae,United States of America,2024,12,HUMAN_OBSERVATION
+4263820911,"Ramphocelus carbo (Pallas, 1764)",Ramphocelus carbo,Thraupidae,Colombia,2024,12,HUMAN_OBSERVATION
+4265269569,"Melospiza melodia (A.Wilson, 1810)",Melospiza melodia,Passerellidae,United States of America,2024,12,HUMAN_OBSERVATION
+4270797138,"Pharomachrus auriceps (Gould, 1842)",Pharomachrus auriceps,Trogonidae,Colombia,2024,12,HUMAN_OBSERVATION
+4271298145,"Tyrannus melancholicus Vieillot, 1819",Tyrannus melancholicus,Tyrannidae,Colombia,2024,12,HUMAN_OBSERVATION
+4271625978,"Thraupis episcopus (Linnaeus, 1766)",Thraupis episcopus,Thraupidae,Colombia,2024,12,HUMAN_OBSERVATION
+4280018063,"Cranioleuca subcristata (P.L.Sclater, 1874)",Cranioleuca subcristata,Furnariidae,Colombia,2024,12,HUMAN_OBSERVATION
+4285444873,"Poecile atricapillus (Linnaeus, 1766)",Poecile atricapillus,Paridae,United States of America,2024,12,HUMAN_OBSERVATION
+4294538459,"Colaptes auratus (Linnaeus, 1758)",Colaptes auratus,Picidae,United States of America,2024,12,HUMAN_OBSERVATION
+4298008782,"Turdus leucomelas Vieillot, 1818",Turdus leucomelas,Turdidae,Colombia,2024,12,HUMAN_OBSERVATION
+4300172062,"Spinus tristis (Linnaeus, 1758)",Spinus tristis,Fringillidae,United States of America,2024,12,HUMAN_OBSERVATION
+4302293096,"Leptopogon superciliaris Tschudi, 1844",Leptopogon superciliaris,Tyrannidae,Colombia,2024,12,HUMAN_OBSERVATION
+4311348696,"Spinus psaltria (Say, 1822)",Spinus psaltria,Fringillidae,Colombia,2024,12,HUMAN_OBSERVATION
+4322333048,"Melanerpes cruentatus (Boddaert, 1783)",Melanerpes cruentatus,Picidae,Colombia,2024,12,HUMAN_OBSERVATION
+4332716808,"Coereba flaveola (Linnaeus, 1758)",Coereba flaveola,Thraupidae,Colombia,2024,12,HUMAN_OBSERVATION
+4367671499,"Stilpnia cyanicollis (d'Orbigny & Lafresnaye, 1837)",Stilpnia cyanicollis,Thraupidae,Colombia,2024,12,HUMAN_OBSERVATION
+4369409743,"Rupornis magnirostris (Gmelin, 1788)",Rupornis magnirostris,Accipitridae,Colombia,2024,12,HUMAN_OBSERVATION
+4370025729,"Myiozetetes cayanensis (Linnaeus, 1766)",Myiozetetes cayanensis,Tyrannidae,Colombia,2024,12,HUMAN_OBSERVATION
+4370419575,"Cissopis leverianus (J.F.Gmelin, 1788)",Cissopis leverianus,Thraupidae,Colombia,2024,12,HUMAN_OBSERVATION

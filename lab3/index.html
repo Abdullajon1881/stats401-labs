@@ -3,12 +3,47 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Lab 3</title>
+  <title>Lab 3: Web Data Acquisition</title>
   <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
-  <h1>Lab 3</h1>
-  <p>Lab 3 will be added here.</p>
+<body class="lab3-page">
+  <h1>Lab 3: Web Data Acquisition</h1>
+  <p>STATS 401: Data Acquisition and Visualization</p>
+  <p>Bird occurrence records collected from a public API with Python, shown in a sortable table.</p>
+
+  <nav class="lab-nav">
+    <a href="../lab1/">Lab 1</a>
+    <a href="../lab2/">Lab 2</a>
+    <a href="../lab3/">Lab 3</a>
+    <a href="../lab4/">Lab 4</a>
+    <a href="../lab5/">Lab 5</a>
+    <a href="../lab6/">Lab 6</a>
+    <a href="../lab7/">Lab 7</a>
+    <a href="../lab8/">Lab 8</a>
+    <a href="../lab9/">Lab 9</a>
+    <a href="../lab10/">Lab 10</a>
+  </nav>
+
+  <div class="lab3-summary">
+    <p><strong>Dataset:</strong> Bird (class Aves) occurrence records</p>
+    <p><strong>Source:</strong> <a href="https://techdocs.gbif.org/en/openapi/v1/occurrence">GBIF Occurrence Search API</a></p>
+    <p><strong>Method:</strong> REST API requests from Python using <code>requests</code>, looping over year and month slices with offset pagination</p>
+    <p><strong>Records collected:</strong> <span id="record-count">1224</span></p>
+    <p>The API needs no key or login, and GBIF's robots.txt allows this endpoint. Requests were sent one per second with a User-Agent identifying the class exercise. The acquisition script is <a href="acquire_data.py">acquire_data.py</a>.</p>
+  </div>
+
+  <p>Click a column heading to sort. Clicking the same heading again reverses the order.</p>
+
+  <div class="lab3-table-wrap">
+    <table id="data-table" class="lab3-table">
+      <thead></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
   <p><a href="../index.html">Back to main page</a></p>
+
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <script src="lab3.js"></script>
 </body>
 </html>

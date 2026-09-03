@@ -120,3 +120,53 @@ body.lab2-page {
 .design-justification {
   margin-top: 30px;
 }
+
+body.lab3-page {
+  max-width: 1000px;
+}
+
+.lab3-summary {
+  margin: 20px 0;
+  padding: 12px 16px;
+  background: #f7f7f7;
+  border-left: 3px solid #ccc;
+}
+
+.lab3-summary p {
+  margin: 6px 0;
+}
+
+.lab3-table-wrap {
+  max-height: 500px;
+  overflow: auto;
+  border: 1px solid #ddd;
+}
+
+.lab3-table {
+  border-collapse: collapse;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.lab3-table th,
+.lab3-table td {
+  padding: 6px 10px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+.lab3-table th {
+  position: sticky;
+  top: 0;
+  background: #f1f1f1;
+  cursor: pointer;
+  user-select: none;
+}
+
+.lab3-table th:hover {
+  background: #e2e2e2;
+}
+
+.lab3-table tbody tr:hover {
+  background: #fafafa;
+}

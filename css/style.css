@@ -170,3 +170,91 @@ body.lab3-page {
 .lab3-table tbody tr:hover {
   background: #fafafa;
 }
+
+body.lab4-page {
+  max-width: 900px;
+}
+
+.lab4-summary {
+  margin: 20px 0;
+  padding: 12px 16px;
+  background: #f7f7f7;
+  border-left: 3px solid #ccc;
+}
+
+.lab4-summary p {
+  margin: 6px 0;
+}
+
+.lab4-chart-wrap {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.lab4-segment {
+  stroke: #fff;
+  stroke-width: 1px;
+}
+
+.lab4-segment:hover {
+  opacity: 0.85;
+}
+
+.lab4-segment-label {
+  font-size: 11px;
+  fill: #fff;
+  text-anchor: middle;
+  pointer-events: none;
+}
+
+.lab4-chart-title {
+  font-size: 14px;
+  font-weight: bold;
+  fill: #222;
+}
+
+.lab4-axis-title {
+  font-size: 12px;
+  fill: #333;
+  text-anchor: middle;
+}
+
+.lab4-legend-title {
+  font-size: 12px;
+  font-weight: bold;
+  fill: #333;
+}
+
+.lab4-legend-text {
+  font-size: 12px;
+  fill: #333;
+}
+
+.lab4-totals {
+  font-size: 13px;
+  color: #555;
+}
+
+.lab4-caveat {
+  font-size: 13px;
+  padding: 10px 14px;
+  background: #fdf6e3;
+  border-left: 3px solid #d9b45b;
+}
+
+.lab4-tooltip {
+  position: absolute;
+  display: none;
+  pointer-events: none;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 6px 10px;
+  font-size: 12px;
+  line-height: 1.4;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.lab4-analysis {
+  margin-top: 24px;
+}

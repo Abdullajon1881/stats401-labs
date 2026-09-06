@@ -3,12 +3,52 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Lab 4</title>
+  <title>Lab 4: Cleaning Web Data for Visualization</title>
   <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
-  <h1>Lab 4</h1>
-  <p>Lab 4 will be added here.</p>
+<body class="lab4-page">
+  <h1>Lab 4: Cleaning Web Data for Visualization</h1>
+  <p>STATS 401: Data Acquisition and Visualization</p>
+  <p>Cleaning a public tweet dataset and comparing estimated sentiment between disaster and non-disaster tweets.</p>
+
+  <nav class="lab-nav">
+    <a href="../lab1/">Lab 1</a>
+    <a href="../lab2/">Lab 2</a>
+    <a href="../lab3/">Lab 3</a>
+    <a href="../lab4/">Lab 4</a>
+    <a href="../lab5/">Lab 5</a>
+    <a href="../lab6/">Lab 6</a>
+    <a href="../lab7/">Lab 7</a>
+    <a href="../lab8/">Lab 8</a>
+    <a href="../lab9/">Lab 9</a>
+    <a href="../lab10/">Lab 10</a>
+  </nav>
+
+  <div class="lab4-summary">
+    <p><strong>Dataset:</strong> Disaster Tweets, 11,370 tweets collected on 14 January 2020</p>
+    <p><strong>Source:</strong> <a href="https://www.kaggle.com/datasets/vstepanenko/disaster-tweets">Viktor Stepanenko, Kaggle</a> (CC0: Public Domain)</p>
+    <p><strong>Raw sample used:</strong> 1,500 tweets, deterministic random sample (<code>random_state=401</code>)</p>
+    <p><strong>Cleaned tweets analysed:</strong> 1,499</p>
+    <p><strong>Method:</strong> cleaning with pandas, then sentiment estimated with <code>cardiffnlp/twitter-roberta-base-sentiment-latest</code></p>
+    <p>The cleaning and analysis script is <a href="clean_tweets.py">clean_tweets.py</a>.</p>
+  </div>
+
+  <div class="lab4-chart-wrap">
+    <div id="chart"></div>
+  </div>
+  <p id="chart-totals" class="lab4-totals"></p>
+  <div id="tooltip" class="lab4-tooltip"></div>
+
+  <p class="lab4-caveat"><strong>Note:</strong> the sentiment values shown here are estimates produced by a machine learning model, not ground-truth labels. The tweets were never labelled for sentiment by a person, so the model can be wrong on individual tweets.</p>
+
+  <div class="lab4-analysis">
+    <h2>Analysis</h2>
+    <p>This page uses the CC0 &ldquo;Disaster Tweets&rdquo; dataset published by Viktor Stepanenko on Kaggle, which holds 11,370 tweets collected in January 2020. I took a deterministic random sample of 1,500 tweets and kept only the id, keyword, text and target columns; the location field was left out because this question does not need it. Cleaning was fairly light because the data was already tidy: I decoded percent-encoded keywords such as <code>airplane%20accident</code> into readable text (217 rows), dropped one tweet whose text exactly duplicated another, and checked for blank text, duplicate ids and invalid target values, of which there were none. That left 1,499 tweets. Sentiment was then estimated for every tweet with <code>cardiffnlp/twitter-roberta-base-sentiment-latest</code>. The chart puts tweet class on the x-axis, segment height as the share of tweets, and colour as the predicted sentiment. Disaster-related tweets came out more negative (51.5% against 42.2%) and much less positive (3.4% against 14.4%) than non-disaster tweets.</p>
+  </div>
+
   <p><a href="../index.html">Back to main page</a></p>
+
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <script src="lab4.js"></script>
 </body>
 </html>

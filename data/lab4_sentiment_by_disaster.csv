@@ -1,0 +1,7 @@
+disaster_class,sentiment,count,proportion
+Disaster-related,Negative,138,0.514925
+Disaster-related,Neutral,121,0.451493
+Disaster-related,Positive,9,0.033582
+Non-disaster,Negative,520,0.422421
+Non-disaster,Neutral,534,0.433794
+Non-disaster,Positive,177,0.143786

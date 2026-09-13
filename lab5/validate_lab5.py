@@ -104,7 +104,11 @@ def structural_summary(stations, routes):
     print("\nDistrict pair edge counts:")
     for (a, b), n in sorted(pair_counts.items(), key=lambda kv: -kv[1]):
         print(f"  {a:8} - {b:8} {n}")
-    print("Within-district edges:", sum(n for (a, b), n in pair_counts.items() if a == b))
+    within = sum(n for (a, b), n in pair_counts.items() if a == b)
+    print("Within-district edges:", within)
+    print("Within-district symmetric matrix cells:", 2 * within)
+    print("Undirected routes:", len(routes))
+    print("Filled off-diagonal symmetric matrix cells:", 2 * len(routes))
 
     print("\nLongest direct travel times:")
     for r in sorted(routes, key=lambda r: -int(r["travel_time_min"]))[:5]:

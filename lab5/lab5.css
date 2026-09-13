@@ -1,0 +1,399 @@
+/* Lab 5: Interactive Network Visualization (page-scoped styles) */
+
+body.lab5-page {
+  max-width: 1180px;
+}
+
+.lab5-summary {
+  margin: 20px 0;
+  padding: 12px 16px;
+  background: #f7f7f7;
+  border-left: 3px solid #ccc;
+}
+
+.lab5-summary p {
+  margin: 6px 0;
+}
+
+.lab5-section {
+  margin-top: 36px;
+}
+
+.lab5-section h2 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.lab5-text {
+  max-width: 860px;
+}
+
+.lab5-hint,
+.lab5-status {
+  font-size: 13px;
+  color: #555;
+}
+
+.lab5-hint {
+  margin: 4px 0 12px;
+}
+
+.lab5-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin: 8px 0;
+}
+
+.lab5-button {
+  font: inherit;
+  font-size: 13px;
+  padding: 5px 12px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  background: #f7f7f7;
+  color: #222;
+  cursor: pointer;
+}
+
+.lab5-button:hover {
+  background: #e6e6e6;
+}
+
+.lab5-button:focus-visible {
+  outline: 2px solid #1f6feb;
+  outline-offset: 2px;
+}
+
+.lab5-figure {
+  margin: 0;
+}
+
+/* --- node-link view --- */
+
+.lab5-network-wrap {
+  overflow-x: auto;
+  border: 1px solid #ddd;
+  background: #fff;
+}
+
+.lab5-network-wrap svg {
+  display: block;
+  width: 100%;
+  min-width: 720px;
+  height: auto;
+}
+
+.lab5-links line {
+  stroke-linecap: round;
+  transition: stroke-opacity 0.15s;
+}
+
+.lab5-links line.is-muted {
+  stroke-opacity: 0.07;
+}
+
+.lab5-links line.is-incident {
+  stroke-opacity: 1;
+}
+
+.lab5-link-hit {
+  stroke: transparent;
+  stroke-width: 10px;
+  pointer-events: stroke;
+}
+
+.lab5-node {
+  cursor: grab;
+  transition: opacity 0.15s;
+}
+
+.lab5-node:active {
+  cursor: grabbing;
+}
+
+.lab5-node:focus {
+  outline: none;
+}
+
+.lab5-node:focus-visible {
+  outline: 2px solid #1f6feb;
+  outline-offset: 3px;
+}
+
+.lab5-node.is-muted {
+  opacity: 0.15;
+}
+
+.lab5-node.is-neighbour {
+  stroke: #111;
+  stroke-width: 2px;
+}
+
+.lab5-node.is-focus {
+  stroke: #111;
+  stroke-width: 2.5px;
+}
+
+.lab5-node-label {
+  display: none;
+  font-size: 12px;
+  fill: #222;
+  text-anchor: middle;
+  pointer-events: none;
+  paint-order: stroke;
+  stroke: #fff;
+  stroke-width: 3px;
+  stroke-linejoin: round;
+}
+
+.lab5-node-label.is-isolated {
+  display: block;
+  font-size: 10px;
+  fill: #777;
+}
+
+.lab5-node-label.is-visible {
+  display: block;
+  font-size: 12px;
+  fill: #222;
+}
+
+.lab5-node-label.is-focus {
+  font-weight: bold;
+}
+
+/* legend under the network */
+
+.lab5-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 36px;
+  margin: 14px 0 4px;
+  font-size: 13px;
+}
+
+.lab5-legend-group h3 {
+  font-size: 13px;
+  font-weight: bold;
+  margin: 0 0 6px;
+}
+
+.lab5-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 3px 0;
+}
+
+.lab5-legend-item svg {
+  flex: none;
+}
+
+.lab5-legend-note {
+  font-size: 12px;
+  color: #555;
+  margin: 6px 0 0;
+  max-width: 220px;
+}
+
+/* --- tooltip (shared by both views) --- */
+
+.lab5-tooltip {
+  position: absolute;
+  display: none;
+  pointer-events: none;
+  max-width: 280px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 6px 10px;
+  font-size: 12px;
+  line-height: 1.4;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.lab5-tooltip-label {
+  color: #666;
+}
+
+/* --- adjacency matrix --- */
+
+.lab5-matrix-layout {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 20px 32px;
+}
+
+.lab5-matrix-wrap {
+  overflow-x: auto;
+  max-width: 100%;
+  border: 1px solid #ddd;
+  background: #fff;
+}
+
+.lab5-matrix-wrap svg {
+  display: block;
+}
+
+.lab5-matrix-cell {
+  shape-rendering: crispEdges;
+}
+
+.lab5-matrix-label {
+  font-size: 10px;
+  cursor: default;
+}
+
+.lab5-matrix-label.is-active {
+  font-weight: bold;
+}
+
+.lab5-matrix-district {
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.lab5-matrix-separator {
+  stroke: #999;
+  stroke-width: 1px;
+  shape-rendering: crispEdges;
+}
+
+.lab5-matrix-highlight {
+  fill: #000;
+  fill-opacity: 0.07;
+  pointer-events: none;
+}
+
+.lab5-matrix-legend {
+  flex: 1 1 220px;
+  min-width: 200px;
+  font-size: 13px;
+}
+
+.lab5-matrix-legend h3 {
+  font-size: 13px;
+  margin: 12px 0 6px;
+}
+
+.lab5-matrix-legend h3:first-child {
+  margin-top: 0;
+}
+
+.lab5-matrix-legend p {
+  font-size: 12px;
+  color: #555;
+  margin: 6px 0;
+  max-width: 260px;
+}
+
+/* --- findings table --- */
+
+.lab5-findings {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.lab5-findings th,
+.lab5-findings td {
+  padding: 8px 10px;
+  border-bottom: 1px solid #e3e3e3;
+  text-align: left;
+  vertical-align: top;
+}
+
+.lab5-findings th {
+  background: #f1f1f1;
+}
+
+.lab5-findings .lab5-q {
+  font-weight: bold;
+  width: 17%;
+}
+
+.lab5-findings .lab5-obs {
+  width: 38%;
+}
+
+.lab5-support {
+  display: inline-block;
+  padding: 1px 8px;
+  border-radius: 3px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.lab5-support-well {
+  background: #e3f1e3;
+  color: #245b24;
+}
+
+.lab5-support-partially {
+  background: #fdf3d9;
+  color: #6b4f00;
+}
+
+.lab5-support-not {
+  background: #f5e0e0;
+  color: #7a2323;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* stack the findings table on narrow screens */
+@media (max-width: 720px) {
+  .lab5-findings thead {
+    display: none;
+  }
+
+  .lab5-findings,
+  .lab5-findings tbody,
+  .lab5-findings tr,
+  .lab5-findings td,
+  .lab5-findings .lab5-q,
+  .lab5-findings .lab5-obs {
+    display: block;
+    width: auto;
+  }
+
+  .lab5-findings tr {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 12px;
+  }
+
+  .lab5-findings td {
+    border-bottom: 1px solid #eee;
+    padding: 6px 10px;
+  }
+
+  .lab5-findings td:last-child {
+    border-bottom: none;
+  }
+
+  .lab5-findings td::before {
+    content: attr(data-label);
+    display: block;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: #777;
+    margin-bottom: 2px;
+  }
+
+  .lab5-findings .lab5-q::before {
+    content: none;
+  }
+}

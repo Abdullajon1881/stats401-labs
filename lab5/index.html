@@ -3,12 +3,142 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Lab 5</title>
+  <title>Lab 5: Interactive Network Visualization</title>
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="lab5.css">
 </head>
-<body>
-  <h1>Lab 5</h1>
-  <p>Lab 5 will be added here.</p>
+<body class="lab5-page">
+  <h1>Lab 5: Interactive Network Visualization</h1>
+  <p>STATS 401: Data Acquisition and Visualization</p>
+  <p>Urban Transit Network: a force-directed node-link diagram and an adjacency matrix of the same 50-station network.</p>
+
+  <nav class="lab-nav">
+    <a href="../lab1/">Lab 1</a>
+    <a href="../lab2/">Lab 2</a>
+    <a href="../lab3/">Lab 3</a>
+    <a href="../lab4/">Lab 4</a>
+    <a href="../lab5/">Lab 5</a>
+    <a href="../lab6/">Lab 6</a>
+    <a href="../lab7/">Lab 7</a>
+    <a href="../lab8/">Lab 8</a>
+    <a href="../lab9/">Lab 9</a>
+    <a href="../lab10/">Lab 10</a>
+  </nav>
+
+  <div class="lab5-summary">
+    <p><strong>Dataset:</strong> synthetic urban transit network supplied for STATS 401 Lab 5 (made for visualization practice, not a real city)</p>
+    <p><strong>Stations (nodes):</strong> 50 stations in 5 districts (Central, North, South, East, West) and 3 station types (Local, Transfer, Terminal), each with an average daily passenger count</p>
+    <p><strong>Connections (links):</strong> 50 direct station-to-station routes, treated as undirected, each with a travel time in minutes and a route type (Metro, Express, Shuttle)</p>
+    <p><strong>Files:</strong> <a href="../data/lab5_assignment_stations.csv">lab5_assignment_stations.csv</a> and <a href="../data/lab5_assignment_routes.csv">lab5_assignment_routes.csv</a>, loaded in the browser with <code>d3.csv()</code></p>
+    <p id="lab5-load-status">Loading data&hellip;</p>
+  </div>
+
+  <section class="lab5-section" aria-labelledby="node-link-heading">
+    <h2 id="node-link-heading">1. Node-Link Visualization</h2>
+    <p class="lab5-hint">Hover over or tab to a station to see its name, details and direct connections; the rest of the network is dimmed. Click a station to keep it highlighted. Drag stations to untangle the layout; hover a line for its route type and travel time.</p>
+    <div class="lab5-controls">
+      <button id="reset-layout" class="lab5-button" type="button">Reset layout</button>
+      <span id="network-status" class="lab5-status"></span>
+    </div>
+    <figure class="lab5-figure">
+      <div class="lab5-network-wrap">
+        <div id="network"></div>
+      </div>
+      <figcaption class="visually-hidden">Force-directed node-link diagram of the transit network. The legend below explains the encodings.</figcaption>
+      <div id="network-legend" class="lab5-legend"></div>
+    </figure>
+  </section>
+
+  <section class="lab5-section" aria-labelledby="node-link-design-heading">
+    <h2 id="node-link-design-heading">2. Node-Link Design</h2>
+    <div class="lab5-text" id="node-link-design">
+      <p>Each station is one symbol. District is the fill colour because it is the main grouping to compare, and five hues stay easy to tell apart. Station type is shape (circle local, square transfer, diamond terminal) so it does not compete with the district colour. Daily passengers set symbol area on a square-root scale, so twice the passengers looks about twice as big, not four times. Travel time controls line width and route type controls line colour, using three colours kept apart from the district palette; width means time only, not service frequency. Hovering or focusing a station dims everything except its direct neighbours and lists its connections in a tooltip; clicking pins that view, and dragging untangles crowded parts of the chain. The five unconnected stations are kept and labelled.</p>
+    </div>
+  </section>
+
+  <section class="lab5-section" aria-labelledby="matrix-heading">
+    <h2 id="matrix-heading">3. Adjacency Matrix</h2>
+    <p class="lab5-hint">Hover over a cell to see the station pair, its route type and travel time; the row and column light up. Hover a station label to highlight its whole row or column. On small screens the matrix scrolls sideways.</p>
+    <div class="lab5-matrix-layout">
+      <div class="lab5-matrix-wrap">
+        <div id="matrix"></div>
+      </div>
+      <div id="matrix-legend" class="lab5-matrix-legend"></div>
+    </div>
+  </section>
+
+  <section class="lab5-section" aria-labelledby="matrix-design-heading">
+    <h2 id="matrix-design-heading">4. Matrix Design</h2>
+    <div class="lab5-text" id="matrix-design">
+      <p>The same 50 stations sit on both axes, so every connection appears twice, mirrored across the diagonal. Rows and columns are ordered by district (Central, North, South, East, West) and then by station number. District order turns district-to-district connections into 10&times;10 blocks separated by thin lines; a dense block means two well-connected districts. Numbering inside each block lines up the sequential chain links as short diagonals, so the few shortcut links stand out. Cell colour repeats the route-type colours from the node-link view, and opacity grows with travel time: darker means longer, not stronger. Labels are coloured by district and carry the station-type shape and a short passenger bar, so all five attributes survive. Hovering a cell highlights its row and column and names the pair.</p>
+    </div>
+  </section>
+
+  <section class="lab5-section" aria-labelledby="findings-heading">
+    <h2 id="findings-heading">5. Network Questions and Findings</h2>
+    <p class="lab5-hint">Each answer states how well the design supports the question, which view was most useful, which encoding or interaction gave the answer, and what was actually observed in the visualization.</p>
+    <table class="lab5-findings">
+      <thead>
+        <tr>
+          <th scope="col">Question</th>
+          <th scope="col">How well?</th>
+          <th scope="col">Best view</th>
+          <th scope="col">What supports the answer</th>
+          <th scope="col">Observation</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="lab5-q" data-label="Question">1. Which stations appear central in the network?</td>
+          <td data-label="How well?"><span class="lab5-support lab5-support-partially">Partially</span></td>
+          <td data-label="Best view">Both</td>
+          <td data-label="What supports the answer">Hover highlighting and the connection count in the tooltip; counting filled cells across a row of the matrix.</td>
+          <td class="lab5-obs" data-label="Observation">No station stands out as a hub: hovering any station lights up at most three lines, and the tooltip never reports more than three connections, so many stations tie. The three-connection stations are where the ten shortcut links join the long chain (Stations 7, 31, 18, 34 and others); most of them sit in the interior of the drawing, while the single-link stations (44, 45, 47, 50) hang at the edge. The matrix confirms this as rows with three filled cells, one of them far from the block diagonal. Because degree is so flat, the design shows local connectivity well but does not settle which station is most central overall.</td>
+        </tr>
+        <tr>
+          <td class="lab5-q" data-label="Question">2. Which districts are strongly connected to one another?</td>
+          <td data-label="How well?"><span class="lab5-support lab5-support-well">Well</span></td>
+          <td data-label="Best view">Adjacency matrix</td>
+          <td data-label="What supports the answer">District-ordered rows and columns with block separators and district-coloured labels.</td>
+          <td class="lab5-obs" data-label="Observation">The East&ndash;South block has the most distinct routes (11), followed by Central&ndash;North (9), East&ndash;West (9), North&ndash;South (8) and Central&ndash;West (8); in each of these the cells fall on a short diagonal, the signature of the chain stepping between the two districts. The Central&ndash;South, Central&ndash;East and North&ndash;East blocks are completely empty, and the blocks on the diagonal are almost empty too: the only within-district routes are two Central&ndash;Central Shuttle connections, which appear as four filled cells because the matrix is symmetric. Nearly every direct connection therefore crosses a district boundary. In the node-link view the colours are thoroughly mixed, which gives the same impression but is much harder to count.</td>
+        </tr>
+        <tr>
+          <td class="lab5-q" data-label="Question">3. Where are transfer or terminal stations located in the topology?</td>
+          <td data-label="How well?"><span class="lab5-support lab5-support-partially">Partially</span></td>
+          <td data-label="Best view">Node-link</td>
+          <td data-label="What supports the answer">Symbol shape, read together with hover highlighting; the small shapes beside the matrix labels as a check.</td>
+          <td class="lab5-obs" data-label="Observation">Diamonds (terminals) are not at the ends of the network as the name suggests: most of the three-link junction stations are diamonds, so terminals sit where the shortcut links meet the chain, and three of the five unconnected stations are also terminals. Squares (transfers) mostly sit inside the chain with two links, and three of the four single-link stations hanging off the main component (44, 47, 50) are transfer stations. The shapes make this visible station by station, but because type and position are only loosely related the overall pattern is weak.</td>
+        </tr>
+        <tr>
+          <td class="lab5-q" data-label="Question">4. Which stations have high passenger volume?</td>
+          <td data-label="How well?"><span class="lab5-support lab5-support-well">Well</span></td>
+          <td data-label="Best view">Node-link</td>
+          <td data-label="What supports the answer">Symbol area on the square-root scale; the passenger bars beside the matrix labels as a secondary cue.</td>
+          <td class="lab5-obs" data-label="Observation">The largest symbols are Stations 42 to 50, and every one of them is either unconnected (42, 43, 46, 48, 49) or attached to the main component by a single link (44, 45, 47, 50). Passenger volume rises steadily with station number, so the smallest symbols cluster around Stations 1 to 10 in the chain and the busiest stations sit at the topological edge, while the three-link junction stations are only mid-sized. The matrix bars agree: the longest bars belong to the last rows of each district block, which are also the rows with the fewest filled cells.</td>
+        </tr>
+        <tr>
+          <td class="lab5-q" data-label="Question">5. Where are the longest direct travel-time connections?</td>
+          <td data-label="How well?"><span class="lab5-support lab5-support-well">Well</span></td>
+          <td data-label="Best view">Both</td>
+          <td data-label="What supports the answer">Line width in the node-link view; cell opacity in the matrix; the link tooltip for the exact minutes.</td>
+          <td class="lab5-obs" data-label="Observation">The three thickest lines are all shortcut links rather than chain links: Station 7&ndash;31 (16 min), Station 18&ndash;34 (15 min) and Station 29&ndash;50 (14 min). All three are Express routes (teal) and all three cross districts. In the matrix they form the three darkest symmetric cell pairs (six cells for three routes), and they lie well away from the block diagonals where the chain links sit. No chain link is wider than the 12-minute lines, so the long trips are the ones that jump across the network.</td>
+        </tr>
+        <tr>
+          <td class="lab5-q" data-label="Question">6. Are particular route types concentrated in particular parts of the network?</td>
+          <td data-label="How well?"><span class="lab5-support lab5-support-not">Not easily</span></td>
+          <td data-label="Best view">Both</td>
+          <td data-label="What supports the answer">Line colour along the chain; cell colour within each district block of the matrix.</td>
+          <td class="lab5-obs" data-label="Observation">Following the chain in the node-link view, the charcoal, teal and brown lines alternate in a repeating order, so no region is dominated by one route type. In the matrix, the five large cross-district groups (East&ndash;South, Central&ndash;North, East&ndash;West, North&ndash;South and Central&ndash;West) each contain all three route types. The remaining non-empty groups are sparse: North&ndash;West has one Metro route, South&ndash;West has one Metro and one Shuttle, and the two Central&ndash;Central routes are both Shuttles. The only other pattern is also small: the three longest links are all Express. The encodings show route type clearly; the data simply has no regional concentration to find.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <div id="tooltip" class="lab5-tooltip" aria-hidden="true"></div>
+
   <p><a href="../index.html">Back to main page</a></p>
+
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <script src="lab5.js"></script>
 </body>
 </html>

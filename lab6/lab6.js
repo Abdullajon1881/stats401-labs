@@ -54,6 +54,10 @@
     return `${label.slice(0, Math.max(1, maxCharacters - 1))}…`;
   }
 
+  function usesVerticalContinentLabel(node) {
+    return node.depth === 1 && node.x1 - node.x0 < 75 && node.y1 - node.y0 > 80;
+  }
+
   function tooltipContent(leaf) {
     const { area, continent } = ancestorsFor(leaf);
     const title = document.createElement("strong");
@@ -109,12 +113,12 @@
     const layout = d3.treemap()
       .tile(tile)
       .size([width, height])
-      .round(true)
-      .paddingOuter(5)
-      .paddingInner(2)
+      .round(false)
+      .paddingOuter((node) => node.depth === 0 ? 4 : node.depth === 1 ? 2 : 0)
+      .paddingInner(1)
       .paddingTop((node) => {
-        if (node.depth === 1) return 27;
-        if (node.depth === 2) return 19;
+        if (node.depth === 1) return 24;
+        if (node.depth === 2) return node.value >= 700 ? 16 : 2;
         return 0;
       });
 
@@ -214,12 +218,22 @@
       .attr("height", (node) => Math.max(0, node.y1 - node.y0));
 
     parents.append("text")
-      .attr("class", (node) => `lab6-parent-label ${node.depth === 1 ? "lab6-continent-label" : "lab6-area-label"}`)
-      .attr("x", (node) => node.x0 + 6)
-      .attr("y", (node) => node.y0 + (node.depth === 1 ? 18 : 13))
-      .attr("clip-path", (node) => `url(#${node.clipId})`)
+      .attr("class", (node) => [
+        "lab6-parent-label",
+        node.depth === 1 ? "lab6-continent-label" : "lab6-area-label",
+        usesVerticalContinentLabel(node) ? "lab6-vertical-label" : ""
+      ].join(" ").trim())
+      .attr("x", (node) => node.x0 + (usesVerticalContinentLabel(node) ? 13 : 6))
+      .attr("y", (node) => node.y0 + (usesVerticalContinentLabel(node) ? 7 : node.depth === 1 ? 18 : 13))
+      .attr("transform", (node) => usesVerticalContinentLabel(node)
+        ? `rotate(90,${node.x0 + 13},${node.y0 + 7})`
+        : null)
+      .attr("clip-path", (node) => usesVerticalContinentLabel(node) ? null : `url(#${node.clipId})`)
       .text((node) => {
-        const nodeWidth = node.x1 - node.x0 - 12;
+        if (node.depth === 2 && node.value < 700) return "";
+        const nodeWidth = usesVerticalContinentLabel(node)
+          ? node.y1 - node.y0 - 12
+          : node.x1 - node.x0 - 12;
         const fontSize = node.depth === 1 ? 14 : 10.5;
         return truncateLabel(node.data.name, nodeWidth, fontSize);
       });

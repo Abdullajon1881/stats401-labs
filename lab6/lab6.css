@@ -236,6 +236,14 @@ body.lab6-page {
   font-weight: 600;
 }
 
+.lab6-vertical-label {
+  font-size: 11px;
+  paint-order: stroke;
+  stroke: rgba(238, 241, 243, 0.92);
+  stroke-width: 3px;
+  stroke-linejoin: round;
+}
+
 .lab6-legend {
   display: flex;
   flex-wrap: wrap;

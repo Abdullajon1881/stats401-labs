@@ -3,12 +3,112 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Lab 6</title>
+  <title>Lab 6: Hierarchical Data Visualization</title>
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="lab6.css">
 </head>
-<body>
-  <h1>Lab 6</h1>
-  <p>Lab 6 will be added here.</p>
-  <p><a href="../index.html">Back to main page</a></p>
+<body class="lab6-page">
+  <header class="lab6-header">
+    <p class="lab6-course">STATS 401: Data Acquisition and Visualization</p>
+    <h1>Lab 6: Hierarchical Data Visualization</h1>
+    <p class="lab6-subtitle">GDP Hierarchy with Two Treemaps</p>
+  </header>
+
+  <nav class="lab-nav" aria-label="Lab navigation">
+    <a href="../lab1/">Lab 1</a>
+    <a href="../lab2/">Lab 2</a>
+    <a href="../lab3/">Lab 3</a>
+    <a href="../lab4/">Lab 4</a>
+    <a href="../lab5/">Lab 5</a>
+    <a href="../lab6/" aria-current="page">Lab 6</a>
+    <a href="../lab7/">Lab 7</a>
+    <a href="../lab8/">Lab 8</a>
+    <a href="../lab9/">Lab 9</a>
+    <a href="../lab10/">Lab 10</a>
+  </nav>
+
+  <main>
+    <section class="lab6-intro" aria-labelledby="dataset-heading">
+      <h2 id="dataset-heading">GDP hierarchy</h2>
+      <p>This synthetic GDP dataset was supplied for STATS 401. It organizes countries as <strong>World → Continent → Area → Country</strong>.</p>
+      <p id="data-summary" class="lab6-summary" aria-live="polite">Loading GDP hierarchy&hellip;</p>
+      <dl class="lab6-encodings" aria-label="Visual encodings">
+        <div>
+          <dt>Rectangle area</dt>
+          <dd>GDP in billion USD</dd>
+        </div>
+        <div>
+          <dt>Rectangle color</dt>
+          <dd>GDP status</dd>
+        </div>
+        <div>
+          <dt>Containment and borders</dt>
+          <dd>Continent → area → country</dd>
+        </div>
+      </dl>
+    </section>
+
+    <div id="load-error" class="lab6-error" role="alert" hidden></div>
+
+    <section class="lab6-section" aria-labelledby="squarify-heading">
+      <div class="lab6-section-heading">
+        <p class="lab6-number" aria-hidden="true">1</p>
+        <div>
+          <h2 id="squarify-heading">Squarify Treemap</h2>
+          <p>Squarify favors more square-like rectangles.</p>
+        </div>
+      </div>
+      <figure class="lab6-figure">
+        <div class="lab6-chart-wrap" tabindex="0" aria-label="Scrollable Squarify treemap">
+          <div id="squarify-chart" class="lab6-chart"></div>
+        </div>
+        <figcaption>Country area represents GDP; country color represents GDP status.</figcaption>
+      </figure>
+    </section>
+
+    <section class="lab6-section" aria-labelledby="slicedice-heading">
+      <div class="lab6-section-heading">
+        <p class="lab6-number" aria-hidden="true">2</p>
+        <div>
+          <h2 id="slicedice-heading">Slice-Dice Treemap</h2>
+          <p>Slice-Dice alternates horizontal and vertical subdivision by depth.</p>
+        </div>
+      </div>
+      <figure class="lab6-figure">
+        <div class="lab6-chart-wrap" tabindex="0" aria-label="Scrollable Slice-Dice treemap">
+          <div id="slicedice-chart" class="lab6-chart"></div>
+        </div>
+        <figcaption>The data and encodings are unchanged; only the layout algorithm differs.</figcaption>
+      </figure>
+    </section>
+
+    <section class="lab6-section lab6-legend-section" aria-labelledby="legend-heading">
+      <div class="lab6-section-heading">
+        <p class="lab6-number" aria-hidden="true">3</p>
+        <div>
+          <h2 id="legend-heading">GDP Status Legend</h2>
+          <p>Rectangle area = GDP in billion USD</p>
+        </div>
+      </div>
+      <div id="status-legend" class="lab6-legend" aria-label="GDP status colors"></div>
+    </section>
+
+    <section class="lab6-section lab6-design" aria-labelledby="design-heading">
+      <div class="lab6-section-heading">
+        <p class="lab6-number" aria-hidden="true">4</p>
+        <div>
+          <h2 id="design-heading">Design Description</h2>
+        </div>
+      </div>
+      <p id="design-description">Rectangle area encodes GDP because a treemap preserves the part-to-whole relationship: each country contributes to its area, continent, and the world total. Color is reserved for GDP status, using green for Increase, gray for Unchanged, and red for Decrease so the same categories can be scanned in either layout. Nested placement communicates the World-to-continent-to-area-to-country structure. Strong continent outlines and headers establish the largest groups, while lighter area outlines and smaller labels show the next level. Country names appear only when their rectangles have enough room, with the tooltip providing every exact value and ancestor. The Squarify layout produces more compact, square-like country shapes, which usually makes labels and area comparisons easier. Slice-Dice alternates its partition direction at each depth, so the recursive grouping is more visible as bands, but some countries become long, narrow rectangles. Neither method is always better: together they show how changing only the segmentation algorithm affects readability while every value, color, order, and tooltip stays fixed.</p>
+    </section>
+  </main>
+
+  <div id="tooltip" class="lab6-tooltip" role="tooltip" aria-hidden="true"></div>
+
+  <p class="lab6-back"><a href="../index.html">Back to main page</a></p>
+
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <script src="lab6.js"></script>
 </body>
 </html>

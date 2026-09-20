@@ -3,12 +3,269 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Lab 7</title>
+  <title>Lab 7: Temporal Data Visualization</title>
+  <link rel="icon" href="data:,">
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="lab7.css">
 </head>
-<body>
-  <h1>Lab 7</h1>
-  <p>Lab 7 will be added here.</p>
-  <p><a href="../index.html">Back to main page</a></p>
+<body class="lab7-page">
+  <header class="lab7-header">
+    <p class="lab7-course">STATS 401: Data Acquisition and Visualization</p>
+    <h1>Lab 7: Temporal Data Visualization</h1>
+    <p class="lab7-subtitle">60-Day Commercial Network</p>
+  </header>
+
+  <nav class="lab-nav" aria-label="Lab navigation">
+    <a href="../lab1/">Lab 1</a>
+    <a href="../lab2/">Lab 2</a>
+    <a href="../lab3/">Lab 3</a>
+    <a href="../lab4/">Lab 4</a>
+    <a href="../lab5/">Lab 5</a>
+    <a href="../lab6/">Lab 6</a>
+    <a href="../lab7/" aria-current="page">Lab 7</a>
+    <a href="../lab8/">Lab 8</a>
+    <a href="../lab9/">Lab 9</a>
+    <a href="../lab10/">Lab 10</a>
+  </nav>
+
+  <main>
+    <section class="lab7-intro" aria-labelledby="dataset-heading">
+      <h2 id="dataset-heading">The dataset and how to read the network</h2>
+      <p>
+        Twelve fabricated companies trade with each other over 60 days, from 1 January to 1 March 2026.
+        Every company is a node and stays in the same place for the whole animation. A line is drawn
+        only for the commercial relationships recorded on the day being shown, so lines appear and
+        disappear as time advances while the twelve companies never move. Relationships are treated
+        as undirected. Data:
+        <a href="../data/lab7_assignment_companies.csv">lab7_assignment_companies.csv</a> and
+        <a href="../data/lab7_assignment_transactions_60days.csv">lab7_assignment_transactions_60days.csv</a>,
+        loaded in the browser with <code>d3.csv()</code>.
+      </p>
+      <p id="data-summary" class="lab7-datanote" aria-live="polite">Loading the commercial network&hellip;</p>
+      <p class="lab7-mentalmap">
+        <strong>Mental map.</strong> A single <code>d3.forceSimulation()</code> is run once over the
+        twelve companies and the 27 relationships that occur at any point in the 60 days. The layout
+        is ticked to a stable state before the first frame and the resulting coordinates are then
+        held fixed, with a regional pull that keeps each company inside its labelled band, so any
+        line crossing a band boundary is a cross-region relationship. The relationship and repulsion
+        forces set the order within a band. The simulation is never restarted for a new day, so
+        nothing on screen changes except
+        the things that genuinely change in the data: which lines exist, how thick they are, how
+        large each company is, and the summary values.
+      </p>
+    </section>
+
+    <div id="load-error" class="lab7-error" role="alert" hidden></div>
+
+    <section class="lab7-section" aria-labelledby="controls-heading">
+      <div class="lab7-section-heading">
+        <p class="lab7-number" aria-hidden="true">1</p>
+        <div>
+          <h2 id="controls-heading">Time Controls</h2>
+          <p>Play the 60 days, pause at any point, reset to day 1, or drag the slider to inspect one day.</p>
+        </div>
+      </div>
+
+      <div class="lab7-controls">
+        <div class="lab7-buttons" role="group" aria-label="Animation controls">
+          <button id="play" class="lab7-button lab7-button-primary" type="button">Play</button>
+          <button id="pause" class="lab7-button" type="button">Pause</button>
+          <button id="reset" class="lab7-button" type="button">Reset</button>
+        </div>
+        <div class="lab7-slider-block">
+          <label class="lab7-slider-label" for="time-slider">Day</label>
+          <input id="time-slider" class="lab7-slider" type="range" min="1" max="60" step="1" value="1"
+                 aria-describedby="day-readout">
+        </div>
+        <p id="day-readout" class="lab7-readout" aria-live="polite">Day 1 &middot; January 1, 2026</p>
+      </div>
+
+      <dl id="day-summary" class="lab7-summary" aria-label="Summary for the current day">
+        <div>
+          <dt>Active companies</dt>
+          <dd id="stat-companies">&ndash;</dd>
+        </div>
+        <div>
+          <dt>Active relationships</dt>
+          <dd id="stat-links">&ndash;</dd>
+        </div>
+        <div>
+          <dt>Total transaction value</dt>
+          <dd id="stat-value">&ndash;</dd>
+        </div>
+        <div>
+          <dt>Cross-region relationships</dt>
+          <dd id="stat-cross">&ndash;</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="lab7-section" aria-labelledby="network-heading">
+      <div class="lab7-section-heading">
+        <p class="lab7-number" aria-hidden="true">2</p>
+        <div>
+          <h2 id="network-heading">Temporal Commercial Network</h2>
+          <p>Hover or tab to a company for its current-day activity; hover a line for that day's transaction record.</p>
+        </div>
+      </div>
+      <figure class="lab7-figure">
+        <div class="lab7-network-wrap" tabindex="0" aria-label="Scrollable temporal commercial network">
+          <div id="network" class="lab7-network"></div>
+        </div>
+        <figcaption>
+          Company positions are identical on every day. Only the lines, the circle sizes and the
+          dimming of inactive companies respond to the selected day.
+        </figcaption>
+      </figure>
+    </section>
+
+    <section class="lab7-section" aria-labelledby="legend-heading">
+      <div class="lab7-section-heading">
+        <p class="lab7-number" aria-hidden="true">3</p>
+        <div>
+          <h2 id="legend-heading">Legend and Encodings</h2>
+          <p>Two company encodings and three relationship encodings.</p>
+        </div>
+      </div>
+      <div class="lab7-legend-grid">
+        <div class="lab7-legend-card">
+          <h3>Node fill &mdash; business sector</h3>
+          <div id="sector-legend" class="lab7-swatches"></div>
+        </div>
+        <div class="lab7-legend-card">
+          <h3>Node size &mdash; current-day transaction volume</h3>
+          <div id="size-legend" class="lab7-size-legend"></div>
+          <p class="lab7-legend-note">
+            Radius uses a square-root scale of the total <code>amount_usd</code> on the lines touching
+            that company on the selected day, so equal area differences mean equal value differences.
+          </p>
+        </div>
+        <div class="lab7-legend-card">
+          <h3>Inactive companies</h3>
+          <div id="inactive-legend" class="lab7-inactive-legend"></div>
+          <p class="lab7-legend-note">
+            A company with no relationship on the selected day keeps its position but is drawn at a
+            small fixed radius, faded and hollow. It is never removed, so the twelve positions stay
+            learnable across all 60 days.
+          </p>
+        </div>
+        <div class="lab7-legend-card">
+          <h3>Line colour &mdash; transaction type</h3>
+          <div id="type-legend" class="lab7-swatches"></div>
+        </div>
+        <div class="lab7-legend-card">
+          <h3>Line width &mdash; amount in USD</h3>
+          <div id="width-legend" class="lab7-width-legend"></div>
+        </div>
+        <div class="lab7-legend-card">
+          <h3>Line style &mdash; region</h3>
+          <div id="style-legend" class="lab7-style-legend"></div>
+          <p class="lab7-legend-note">
+            Dashes, not colour, carry the cross-region distinction, so it survives alongside the five
+            transaction-type hues. The three regional bands are labelled above the network.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="lab7-section lab7-findings" aria-labelledby="findings-heading">
+      <div class="lab7-section-heading">
+        <p class="lab7-number" aria-hidden="true">4</p>
+        <div>
+          <h2 id="findings-heading">Temporal Network Questions</h2>
+          <p>
+            All figures below were computed from the two supplied CSV files with
+            <code>lab7/analyze_lab7.py</code> and re-checked by <code>lab7/validate_lab7.py</code>.
+            The 60 days are split into three 20-day windows. These are descriptive counts of
+            commercial activity, not causal claims.
+          </p>
+        </div>
+      </div>
+
+      <article class="lab7-answer">
+        <h3>1. How does overall network connectivity change across the 60 days?</h3>
+        <p>
+          Connectivity is almost flat for the first 40 days and then rises. Days 1&ndash;20 average
+          5.50 active relationships per day and days 21&ndash;40 average 5.60, but days 41&ndash;60
+          average 7.25. Participation moves the same way: 8.55, then 8.05, then 9.65 of the twelve
+          companies are active on an average day. Daily transaction value grows faster than the link
+          count, from about $77,196 per day in the first window to $96,770 and then $144,326, because
+          the average relationship also gets larger ($14,036, $17,280, $19,907). The sparsest frames
+          are all early &mdash; days 1, 7, 11, 13, 17 and 19 each carry only 3 relationships &mdash;
+          while days 45, 51 and 57 are the densest, with 10 relationships and all twelve companies
+          active.
+        </p>
+      </article>
+
+      <article class="lab7-answer">
+        <h3>2. Which companies become more central or commercially active over time?</h3>
+        <p>
+          The lead changes twice. In days 1&ndash;20 activity is spread fairly evenly and Fusion
+          Electronics (c06) is only a modest leader, with $372,117 of incident volume over 27
+          incident daily-link records. In days 21&ndash;40 Fusion Electronics becomes the clear hub:
+          $1,053,610 and 53 incident records, more than twice the next company, Granite Wholesale
+          (c07) at $484,156. In days 41&ndash;60 it hands over to Ion Systems (c09) at $1,096,550
+          across 46 records and Cedar Retail (c03) at $901,810 across 43 records, while Fusion
+          Electronics falls back to $559,804 and keeps only three trading partners. Ion Systems grows
+          from two partners in each of the first two windows to five in the last, and Cedar Retail
+          from three and two to five.
+        </p>
+      </article>
+
+      <article class="lab7-answer">
+        <h3>3. Are there periods when the network consists of relatively separate clusters?</h3>
+        <p>
+          The daily network is fragmented throughout &mdash; counting connected components among the
+          active companies only, no single day of the 60 forms one connected component. Three
+          components is the usual state (34 days), two components happens on 20 days and four on days
+          3, 4, 9, 16, 28 and 40. Day 1 is the clearest example: 3 relationships, 6 active companies
+          and 3 separate pairs. Fragmentation is not simply an early-period problem either. The three
+          peak days, 45, 51 and 57, have all twelve companies active and 10 relationships, yet they
+          still split into 3 components. The late period adds more relationships around the same
+          active companies rather than stitching the separate groups together.
+        </p>
+      </article>
+
+      <article class="lab7-answer">
+        <h3>4. Which commercial relationships appear, disappear, or become stronger over time?</h3>
+        <p>
+          Twenty-seven distinct relationships occur across the 60 days, and only 9 of them appear in
+          all three windows. The most persistent strong one is Delta Components (c04) &ndash; Fusion
+          Electronics (c06): active on 20 separate days spread across the whole period, worth
+          $440,146 in total. Three relationships stop after day 20, including Cedar Retail (c03)
+          &ndash; Fusion Electronics (c06), which was active on 10 days in the first window and never
+          returns; Fusion Electronics (c06) &ndash; Granite Wholesale (c07) and Granite Wholesale
+          (c07) &ndash; Harbor Shipping (c08) run through day 40 and then stop. Eight relationships
+          are new in days 41&ndash;60, and the largest of them arrive with real weight straight away:
+          Fusion Electronics (c06) &ndash; Ion Systems (c09), first seen on day 42, is active on 10
+          days for $300,580; Cedar Retail (c03) &ndash; Keystone Materials (c11), first seen on day
+          41, reaches $282,296 over 10 days; Cedar Retail (c03) &ndash; Granite Wholesale (c07),
+          also from day 41, reaches $254,352.
+        </p>
+      </article>
+
+      <article class="lab7-answer">
+        <h3>5. Does the network become more or less cross-regional over time?</h3>
+        <p>
+          More cross-regional, and the change is concentrated in the final window. Cross-region pairs
+          are 63.64% of the daily relationship records in days 1&ndash;20 and 63.39% in days
+          21&ndash;40 &mdash; essentially unchanged &mdash; then 72.41% in days 41&ndash;60. The
+          mechanism is visible in the new relationships: 7 of the 8 relationships that first appear
+          in the last window link companies in different regions, including Cedar Retail (North
+          America) with Keystone Materials (Asia), Granite Wholesale (Europe) and Harbor Shipping
+          (Europe), and Ion Systems (North America) with Fusion Electronics (Asia), Apex Textiles
+          (Asia) and Delta Components (Europe). On the network these read as dashed lines crossing
+          between the regional bands, and they are the lines that arrive late and stay.
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <div id="tooltip" class="lab7-tooltip" role="tooltip" aria-hidden="true"></div>
+
+  <p class="lab7-back"><a href="../index.html">Back to main page</a></p>
+
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <script src="lab7.js"></script>
 </body>
 </html>

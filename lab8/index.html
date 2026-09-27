@@ -3,12 +3,360 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Lab 8</title>
+  <title>Lab 8: Web Text Data and Visualization</title>
+  <link rel="icon" href="data:,">
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="lab8.css">
 </head>
-<body>
-  <h1>Lab 8</h1>
-  <p>Lab 8 will be added here.</p>
-  <p><a href="../index.html">Back to main page</a></p>
+<body class="lab8-page">
+  <header class="lab8-header">
+    <p class="lab8-course">STATS 401: Data Acquisition and Visualization</p>
+    <h1>Lab 8: Web Text Data and Visualization</h1>
+    <p class="lab8-subtitle">
+      A coordinated semantic exploration of the ~400-page Duke Kunshan University
+      Undergraduate Bulletin, connecting its formal document structure to its
+      semantic structure.
+    </p>
+  </header>
+
+  <nav class="lab-nav" aria-label="Lab navigation">
+    <a href="../lab1/">Lab 1</a>
+    <a href="../lab2/">Lab 2</a>
+    <a href="../lab3/">Lab 3</a>
+    <a href="../lab4/">Lab 4</a>
+    <a href="../lab5/">Lab 5</a>
+    <a href="../lab6/">Lab 6</a>
+    <a href="../lab7/">Lab 7</a>
+    <a href="../lab8/" aria-current="page">Lab 8</a>
+    <a href="../lab9/">Lab 9</a>
+    <a href="../lab10/">Lab 10</a>
+  </nav>
+
+  <main>
+    <div id="load-error" class="lab8-error" role="alert" hidden></div>
+
+    <!-- 1. corpus description --------------------------------------------- -->
+    <section class="lab8-section" aria-labelledby="corpus-heading">
+      <div class="lab8-section-heading">
+        <p class="lab8-number" aria-hidden="true">1</p>
+        <div>
+          <h2 id="corpus-heading">Bulletin &amp; Corpus Description</h2>
+          <p>
+            The corpus was extracted from the official bulletin PDF with a text-layer
+            parser (PyMuPDF), structured with the document's embedded outline, cleaned,
+            and split into paragraph / policy / course passages. All counters below are
+            read from <code>data/lab8_corpus_summary.json</code>.
+          </p>
+        </div>
+      </div>
+
+      <dl class="lab8-meta" aria-label="Corpus statistics">
+        <div><dt>PDF pages</dt><dd id="stat-pages">&ndash;</dd></div>
+        <div><dt>Raw passages</dt><dd id="stat-raw">&ndash;</dd></div>
+        <div><dt>Clean passages</dt><dd id="stat-clean">&ndash;</dd></div>
+        <div><dt>Avg words / passage</dt><dd id="stat-avg">&ndash;</dd></div>
+        <div><dt>Formal sections</dt><dd id="stat-sections">&ndash;</dd></div>
+        <div><dt>Semantic topics</dt><dd id="stat-topics">&ndash;</dd></div>
+      </dl>
+
+      <div class="lab8-source">
+        <p><strong>Title:</strong> <span id="meta-title"></span></p>
+        <p><strong>Version / academic year:</strong> <span id="meta-version"></span></p>
+        <p><strong>Official source:</strong> <a id="meta-source" href="#" rel="noopener noreferrer"></a></p>
+        <p><strong>Date accessed:</strong> <span id="meta-accessed"></span></p>
+      </div>
+      <p class="lab8-note">
+        Passage unit = one paragraph or short policy/course block. To avoid
+        duplicated front-matter, extraction begins at the first real
+        <em>Part 1: General Information</em> heading and ignores the table-of-contents
+        dotted-line pages. <code>page</code> is the 1-based PDF page on which a passage
+        begins, for deterministic traceability; a paragraph reconstructed across a page
+        break also records <code>page_end</code> and is shown as a page range. The two
+        &gt;100-page Part 10 containers ("Majors&hellip;",
+        "Course Descriptions") are represented by their per-major / per-subject
+        level-3 sections so every formal section stays a meaningful, citable unit.
+      </p>
+    </section>
+
+    <!-- 2. corpus overview ------------------------------------------------ -->
+    <section class="lab8-section" aria-labelledby="overview-heading">
+      <div class="lab8-section-heading">
+        <p class="lab8-number" aria-hidden="true">2</p>
+        <div>
+          <h2 id="overview-heading">Corpus Overview</h2>
+          <p>
+            Two corpus-level summaries: passages per formal section (complete, scrollable)
+            and the most characteristic corpus terms by mean TF-IDF (English + generic
+            academic stop words removed; unigrams + bigrams; min_df 5, max_df 0.4).
+          </p>
+        </div>
+      </div>
+      <div class="lab8-overview-grid">
+        <div class="lab8-card">
+          <h3>Passages by formal section</h3>
+          <p class="lab8-note">All <span id="section-count-inline">&ndash;</span> sections; scroll for the full list.</p>
+          <div id="section-chart" class="lab8-scroll-chart"></div>
+        </div>
+        <div class="lab8-card">
+          <h3>Top corpus terms (TF-IDF)</h3>
+          <p class="lab8-note">Characteristic content terms, not raw frequency.</p>
+          <div id="terms-chart"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. semantic embedding map ---------------------------------------- -->
+    <section class="lab8-section" aria-labelledby="map-heading">
+      <div class="lab8-section-heading">
+        <p class="lab8-number" aria-hidden="true">3</p>
+        <div>
+          <h2 id="map-heading">Semantic Embedding Map</h2>
+          <p>
+            One point = one passage. Position encodes the UMAP projection of the
+            sentence embedding, colour encodes the semantic topic, and point size
+            encodes passage word count. Search, topic and section filters combine with
+            logical AND. Click a point for details and its five nearest semantic
+            neighbours.
+          </p>
+        </div>
+      </div>
+
+      <div class="lab8-controls">
+        <div class="lab8-control">
+          <label for="search">Search bulletin</label>
+          <input type="text" id="search" placeholder="Search text, section, subsection&hellip;" autocomplete="off">
+        </div>
+        <div class="lab8-control">
+          <label for="topic-filter">Semantic topic</label>
+          <select id="topic-filter"><option value="all">All topics</option></select>
+        </div>
+        <div class="lab8-control">
+          <label for="section-filter">Formal section</label>
+          <select id="section-filter"><option value="all">All sections</option></select>
+        </div>
+        <button id="reset-map" class="lab8-button" type="button">Reset view</button>
+      </div>
+      <p id="map-status" class="lab8-status" aria-live="polite">Loading semantic map&hellip;</p>
+
+      <div class="lab8-map-layout">
+        <div>
+          <figure class="lab8-map-figure">
+            <svg id="semantic-map" role="img" aria-label="Semantic embedding map of bulletin passages"></svg>
+            <figcaption class="lab8-map-caption">
+              Scroll to zoom, drag to pan, "Reset view" to restore. Nearby points tend
+              to be semantically similar; the two axes have no standalone meaning.
+            </figcaption>
+          </figure>
+
+          <div class="lab8-legend">
+            <h3>Semantic topics</h3>
+            <div id="topic-legend" class="lab8-swatches"></div>
+            <div class="lab8-legend-aux">
+              <span class="lab8-legend-key">
+                <span class="lab8-size-demo">
+                  <svg width="46" height="20"><circle cx="8" cy="10" r="3" fill="#8a95a1"></circle><circle cx="30" cy="10" r="8" fill="#8a95a1"></circle></svg>
+                </span>
+                size = passage word count (&radic; scale)
+              </span>
+              <span class="lab8-legend-key"><span class="lab8-ring-demo"></span> nearest neighbour (ring)</span>
+              <span class="lab8-legend-key"><span class="lab8-sel-demo"></span> selected passage</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="lab8-detail" aria-labelledby="detail-heading">
+          <h3 id="detail-heading">Passage details</h3>
+          <div id="detail-body">
+            <p class="lab8-detail-empty">Click a point on the map (or a neighbour below) to inspect a passage.</p>
+          </div>
+          <div class="lab8-neighbors" id="neighbors-block" hidden>
+            <h4>Nearest semantic neighbours</h4>
+            <ul id="neighbor-list" class="lab8-neighbor-list"></ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- 4. topic x section matrix ---------------------------------------- -->
+    <section class="lab8-section" aria-labelledby="matrix-heading">
+      <div class="lab8-section-heading">
+        <p class="lab8-number" aria-hidden="true">4</p>
+        <div>
+          <h2 id="matrix-heading">Topic &times; Bulletin Section Matrix</h2>
+          <p>
+            Rows are formal bulletin sections, columns are semantic topics, and cell
+            darkness encodes the passage count. Click a cell to highlight the matching
+            passages on the map above; selecting a map point outlines its section&times;topic
+            cell here.
+          </p>
+        </div>
+      </div>
+
+      <div class="lab8-matrix-toolbar">
+        <span id="matrix-status" class="lab8-status">No matrix cell selected.</span>
+        <button id="clear-matrix" class="lab8-button" type="button">Clear matrix selection</button>
+      </div>
+
+      <div class="lab8-matrix-head"><svg id="matrix-header" role="presentation"></svg></div>
+      <div class="lab8-matrix-scroll">
+        <svg id="matrix-body" role="img" aria-label="Topic by section matrix of passage counts"></svg>
+      </div>
+      <div class="lab8-matrix-legend">
+        <span>0</span>
+        <span id="matrix-gradient" class="lab8-gradient"></span>
+        <span id="matrix-max">max</span>
+        <span>passages per section &times; topic cell</span>
+      </div>
+    </section>
+
+    <!-- 5. findings ------------------------------------------------------- -->
+    <section class="lab8-section lab8-findings" aria-labelledby="findings-heading">
+      <div class="lab8-section-heading">
+        <p class="lab8-number" aria-hidden="true">5</p>
+        <div>
+          <h2 id="findings-heading">Semantic Findings</h2>
+          <p>
+            Every figure below was computed from the committed Lab 8 data with
+            <code>lab8/analyze_lab8.py</code> and re-checked by
+            <code>lab8/validate_lab8.py</code>. These are descriptive results, not causal claims.
+          </p>
+        </div>
+      </div>
+
+      <article class="lab8-answer">
+        <h3>1. What are the major semantic topics?</h3>
+        <p>
+          KMeans on the 384-dimensional embeddings yields 10 interpretable topics across
+          the 1,448 passages. The largest are Culture, Literature &amp; the Arts (205
+          passages, 14.2%), Politics, Policy &amp; Economics (201, 13.9%), Mathematics,
+          Physical Science &amp; Computing (187, 12.9%) and Grading, Registration &amp;
+          Academic Standing (149, 10.3%); the smallest is Biology, Environment &amp; Global
+          Health (88, 6.1%). The topics split cleanly into administrative themes
+          (grading/registration, transfer and placement credit, advising) and disciplinary
+          themes that mirror the course catalogue, which is expected because Part 10 supplies
+          most of the corpus.
+        </p>
+      </article>
+
+      <article class="lab8-answer">
+        <h3>2. Which topics appear across multiple formal sections?</h3>
+        <p>
+          Administrative topics are the most spread out. Student Development, Advising &amp;
+          Skills appears in 58 of the 151 formal sections, and Transfer Credit &amp; Global
+          Education and Placement Credit &amp; Degree Requirements each appear in 54 &mdash;
+          these concepts recur throughout the bulletin rather than living in one chapter.
+          Disciplinary topics are far more concentrated: Biology, Environment &amp; Global
+          Health touches only 18 sections and Language &amp; Writing Courses only 24. This is
+          the core contrast between formal and semantic structure: some meanings are localized
+          to their section, others are woven across the whole document.
+        </p>
+      </article>
+
+      <article class="lab8-answer">
+        <h3>3. Which formal sections contain the most semantically diverse content?</h3>
+        <p>
+          Diversity is measured as the Shannon entropy of a section's topic distribution
+          (sections with at least 15 passages). The most diverse are the interdisciplinary
+          majors: Computation and Design (27 passages spanning 7 topics, entropy 2.610) and
+          Degree Requirements (40 passages, 5 topics, entropy 2.058). Size alone does not
+          create diversity: Mathematics (MATH) has 28 passages &mdash; about the same as
+          Computation and Design &mdash; yet sits in just 2 topics (entropy 0.222), and Chinese
+          (CHINESE), despite 36 passages, sits entirely in one topic (entropy 0.000) &mdash; the
+          least diverse section by this measure. Broad, cross-cutting majors mix many meanings;
+          single-discipline course lists do not.
+        </p>
+      </article>
+
+      <article class="lab8-answer">
+        <h3>4. Which passages from different sections are semantically similar?</h3>
+        <p>
+          Computed in the original embedding space, the highest cross-section similarities are
+          near-identical cross-listed course descriptions that appear under two formal sections.
+          Passage p0744 in Biology (BIOL) and p0928 in Environment (ENVIR) are the same
+          "Ecosystem services&hellip;" description (cosine 1.000), and p0552 in Global China Studies
+          matches p0677 in Political Economy on "POLECON 401 / GCHINA 401 Political Economy of the
+          Chinese Reform" (cosine 1.000). The two rows in each pair differ only in trivial spacing
+          or capitalization, so they survive exact-duplicate removal yet remain semantically
+          equivalent &mdash; cross-listed courses act as semantic bridges linking otherwise separate
+          majors, exactly the kind of connection the nearest-neighbour interaction surfaces.
+        </p>
+      </article>
+
+      <article class="lab8-answer">
+        <h3>5. Search concept: does "credit" occupy one topic or several?</h3>
+        <p>
+          The word "credit" appears in 181 passages spread across 9 of the 10 topics, so it is a
+          genuinely cross-cutting concept rather than a single semantic region. It concentrates in
+          Placement Credit &amp; Degree Requirements (81 passages) and Transfer Credit &amp; Global
+          Education (46) &mdash; together 70% &mdash; but still surfaces in Grading, Registration &amp;
+          Academic Standing (27) and Language &amp; Writing Courses (10). By contrast "graduation" (33
+          passages) is confined to just 4 topics, mostly Transfer Credit (12) and Grading/Registration
+          (11). Lexical search and semantic neighbourhood therefore answer different questions.
+        </p>
+      </article>
+    </section>
+
+    <!-- 6. design description -------------------------------------------- -->
+    <section class="lab8-section" aria-labelledby="design-heading">
+      <div class="lab8-section-heading">
+        <p class="lab8-number" aria-hidden="true">6</p>
+        <div>
+          <h2 id="design-heading">Design Description</h2>
+          <p>Method, encodings, and rationale (approximately 250 words).</p>
+        </div>
+      </div>
+
+      <dl class="lab8-method" aria-label="Method summary">
+        <div><dt>Embedding model</dt><dd>sentence-transformers/all-MiniLM-L6-v2</dd></div>
+        <div><dt>Embedding dimension</dt><dd>384 (L2-normalized)</dd></div>
+        <div><dt>Projection</dt><dd>UMAP &middot; n_neighbors 15 &middot; min_dist 0.15 &middot; metric cosine &middot; seed 401</dd></div>
+        <div><dt>Clustering</dt><dd>KMeans on original embeddings &middot; k = 10 &middot; n_init 20 &middot; seed 401</dd></div>
+      </dl>
+
+      <div class="lab8-design">
+        <p>
+          Each passage is embedded with the all-MiniLM-L6-v2 sentence-transformer, producing
+          L2-normalized 384-dimensional vectors so that cosine similarity measures meaning. Two
+          reductions run on these vectors. UMAP (n_neighbors 15, min_dist 0.15, cosine metric,
+          seed 401) projects them to two dimensions purely for layout, while KMeans (k = 10,
+          n_init 20, seed 401) clusters the full-dimensional vectors &mdash; never the UMAP
+          coordinates &mdash; so topics reflect true semantic structure. The number of clusters was
+          chosen from a k = 8&ndash;12 silhouette and interpretability scan; k = 10 gave balanced,
+          coherent groups. Each cluster was labelled by hand after reading its top TF-IDF terms and
+          representative passages, and those labels are frozen in source for reproducibility.
+        </p>
+        <p>
+          The semantic map encodes UMAP position, topic colour (a ten-hue categorical palette), and
+          word count as a square-root-scaled radius, so area, not radius, tracks length. Nearest
+          neighbours are computed in the original embedding space and marked with a warm ring, and
+          the selected passage with a dark ring, so highlighting never relies on colour alone. The
+          Topic&times;Section matrix summarizes what the map cannot: how each topic distributes across
+          151 formal sections. A single central state function drives search, topic and section
+          filters (combined with AND), the matrix selection, the selected point and its neighbours,
+          keeping the two views coordinated and their emphasis deterministic rather than accumulated
+          across handlers.
+        </p>
+      </div>
+    </section>
+
+    <!-- limitations ------------------------------------------------------- -->
+    <section class="lab8-section lab8-limitations" aria-labelledby="limits-heading">
+      <h2 id="limits-heading">Important limitations</h2>
+      <ul>
+        <li>The map is a 2D UMAP approximation; distance on the map is less faithful than similarity in the original embedding space.</li>
+        <li>Topic labels are interpretive human summaries of statistical clusters, not official bulletin categories.</li>
+        <li>PDF extraction and TOC-based hierarchy parsing may contain imperfections (for example cross-listed courses appearing under multiple sections).</li>
+        <li>Free-text search is lexical (substring match), whereas the neighbour highlighting is embedding-based; they can disagree.</li>
+        <li>Part 10 (Majors and Courses) supplies most passages, so disciplinary topics dominate the corpus by construction.</li>
+      </ul>
+    </section>
+
+    <p class="lab8-back"><a href="../index.html">Back to main page</a></p>
+  </main>
+
+  <div id="tooltip" class="lab8-tooltip" role="tooltip" aria-hidden="true"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <script src="lab8.js"></script>
 </body>
 </html>

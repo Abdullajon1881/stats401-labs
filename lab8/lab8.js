@@ -47,6 +47,7 @@ Promise.all([
     section: d.section,
     subsection: d.subsection || "",
     page: +d.page,
+    page_end: +(d.page_end || d.page),
     text: d.text,
     word_count: +d.word_count,
     cluster: +d.cluster,
@@ -266,7 +267,7 @@ function buildMap() {
     .on("click", (event, d) => { event.stopPropagation(); selectPassage(d.passage_id); })
     .on("mousemove", (event, d) => showTooltip(event, [
       { strong: true, text: d.section },
-      { text: `${d.cluster_name} · p${d.page} · ${d.word_count} words` },
+      { text: `${d.cluster_name} · ${pageShort(d)} · ${d.word_count} words` },
     ]))
     .on("mouseleave", hideTooltip);
 
@@ -397,7 +398,9 @@ function renderDetail(d) {
   metaRow(dl, "Chapter", d.chapter);
   metaRow(dl, "Section", d.section);
   metaRow(dl, "Subsection", d.subsection || "—");
-  metaRow(dl, "PDF page", String(d.page));
+  const spansPages = d.page_end && d.page_end > d.page;
+  metaRow(dl, spansPages ? "PDF pages" : "PDF page",
+    spansPages ? `${d.page}–${d.page_end}` : String(d.page));
   metaRow(dl, "Word count", String(d.word_count));
   body.appendChild(dl);
 
@@ -428,7 +431,7 @@ function renderNeighbors(d) {
     const head = document.createElement("div");
     head.className = "lab8-neighbor-head";
     const where = document.createElement("span");
-    where.textContent = `${nd.section} · p${nd.page}`;
+    where.textContent = `${nd.section} · ${pageShort(nd)}`;
     const sim = document.createElement("span");
     sim.className = "lab8-neighbor-sim";
     sim.textContent = "cos " + n.similarity.toFixed(3);
@@ -607,6 +610,10 @@ function resetAll() {
 
 function shorten(s, n) {
   return s.length > n ? s.slice(0, n - 1) + "…" : s;
+}
+
+function pageShort(d) {
+  return d.page_end && d.page_end > d.page ? `p${d.page}–${d.page_end}` : `p${d.page}`;
 }
 
 // tooltip content is built from DOM nodes with textContent only - no innerHTML

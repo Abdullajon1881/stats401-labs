@@ -19,8 +19,8 @@
     "n_init": 20
   },
   "pdf_pages": 400,
-  "raw_passages": 3329,
-  "clean_passages": 1507,
-  "average_word_count": 68.41,
+  "raw_passages": 3251,
+  "clean_passages": 1448,
+  "average_word_count": 70.54,
   "formal_section_count": 151
 }

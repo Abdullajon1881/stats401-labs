@@ -69,8 +69,10 @@
         Passage unit = one paragraph or short policy/course block. To avoid
         duplicated front-matter, extraction begins at the first real
         <em>Part 1: General Information</em> heading and ignores the table-of-contents
-        dotted-line pages. <code>page</code> is the 1-based PDF page for deterministic
-        traceability. The two &gt;100-page Part 10 containers ("Majors&hellip;",
+        dotted-line pages. <code>page</code> is the 1-based PDF page on which a passage
+        begins, for deterministic traceability; a paragraph reconstructed across a page
+        break also records <code>page_end</code> and is shown as a page range. The two
+        &gt;100-page Part 10 containers ("Majors&hellip;",
         "Course Descriptions") are represented by their per-major / per-subject
         level-3 sections so every formal section stays a meaningful, citable unit.
       </p>
@@ -225,13 +227,14 @@
         <h3>1. What are the major semantic topics?</h3>
         <p>
           KMeans on the 384-dimensional embeddings yields 10 interpretable topics across
-          the 1,507 passages. The largest are Sciences, Mathematics &amp; Computing (215
-          passages, 14.3%), Grading, Registration &amp; Academic Standing (210, 13.9%),
-          Culture, Literature &amp; Society (202, 13.4%) and Politics, Policy &amp; Economics
-          (181, 12.0%); the smallest is Language &amp; Writing Courses (95, 6.3%). The
-          topics split cleanly into administrative themes (grading/registration, credit and
-          transfer, advising) and disciplinary themes that mirror the course catalogue, which
-          is expected because Part 10 supplies most of the corpus.
+          the 1,448 passages. The largest are Culture, Literature &amp; the Arts (205
+          passages, 14.2%), Politics, Policy &amp; Economics (201, 13.9%), Mathematics,
+          Physical Science &amp; Computing (187, 12.9%) and Grading, Registration &amp;
+          Academic Standing (149, 10.3%); the smallest is Biology, Environment &amp; Global
+          Health (88, 6.1%). The topics split cleanly into administrative themes
+          (grading/registration, transfer and placement credit, advising) and disciplinary
+          themes that mirror the course catalogue, which is expected because Part 10 supplies
+          most of the corpus.
         </p>
       </article>
 
@@ -239,13 +242,13 @@
         <h3>2. Which topics appear across multiple formal sections?</h3>
         <p>
           Administrative topics are the most spread out. Student Development, Advising &amp;
-          Signature Work appears in 61 of the 151 formal sections, Grading, Registration &amp;
-          Academic Standing in 57, and Credit, Transfer &amp; Degree Policy in 52 &mdash; these
-          concepts recur throughout the bulletin rather than living in one chapter. Disciplinary
-          topics are far more concentrated: Media, Arts &amp; Communication touches only 22
-          sections and Language &amp; Writing Courses only 24. This is the core contrast between
-          formal and semantic structure: some meanings are localized to their section, others
-          are woven across the whole document.
+          Skills appears in 58 of the 151 formal sections, and Transfer Credit &amp; Global
+          Education and Placement Credit &amp; Degree Requirements each appear in 54 &mdash;
+          these concepts recur throughout the bulletin rather than living in one chapter.
+          Disciplinary topics are far more concentrated: Biology, Environment &amp; Global
+          Health touches only 18 sections and Language &amp; Writing Courses only 24. This is
+          the core contrast between formal and semantic structure: some meanings are localized
+          to their section, others are woven across the whole document.
         </p>
       </article>
 
@@ -254,10 +257,11 @@
         <p>
           Diversity is measured as the Shannon entropy of a section's topic distribution
           (sections with at least 15 passages). The most diverse are the interdisciplinary
-          majors: Computation and Design (27 passages spanning 7 topics, entropy 2.550) and
-          Degree Requirements (40 passages, 7 topics, entropy 2.440). Size alone does not
-          create diversity: History has 60 passages but a lower entropy of 1.878, and Chinese
-          (CHINESE), despite 37 passages, sits entirely in one topic (entropy 0.000) &mdash; the
+          majors: Computation and Design (27 passages spanning 7 topics, entropy 2.610) and
+          Degree Requirements (40 passages, 5 topics, entropy 2.058). Size alone does not
+          create diversity: Mathematics (MATH) has 28 passages &mdash; about the same as
+          Computation and Design &mdash; yet sits in just 2 topics (entropy 0.222), and Chinese
+          (CHINESE), despite 36 passages, sits entirely in one topic (entropy 0.000) &mdash; the
           least diverse section by this measure. Broad, cross-cutting majors mix many meanings;
           single-discipline course lists do not.
         </p>
@@ -267,11 +271,13 @@
         <h3>4. Which passages from different sections are semantically similar?</h3>
         <p>
           Computed in the original embedding space, the highest cross-section similarities are
-          cross-listed courses that appear verbatim under two formal sections. Passage p0769 in
-          Biology (BIOL) and p0962 in Environment (ENVIR) are an identical "Ecosystem services&hellip;"
-          course description (cosine 1.000), and p0572 in Global China Studies matches p0700 in
-          Political Economy on "POLECON 401 / GCHINA 401 Political Economy of the Chinese Reform"
-          (cosine 1.000). These shared courses act as semantic bridges linking otherwise separate
+          near-identical cross-listed course descriptions that appear under two formal sections.
+          Passage p0744 in Biology (BIOL) and p0928 in Environment (ENVIR) are the same
+          "Ecosystem services&hellip;" description (cosine 1.000), and p0552 in Global China Studies
+          matches p0677 in Political Economy on "POLECON 401 / GCHINA 401 Political Economy of the
+          Chinese Reform" (cosine 1.000). The two rows in each pair differ only in trivial spacing
+          or capitalization, so they survive exact-duplicate removal yet remain semantically
+          equivalent &mdash; cross-listed courses act as semantic bridges linking otherwise separate
           majors, exactly the kind of connection the nearest-neighbour interaction surfaces.
         </p>
       </article>
@@ -279,13 +285,13 @@
       <article class="lab8-answer">
         <h3>5. Search concept: does "credit" occupy one topic or several?</h3>
         <p>
-          The word "credit" appears in 184 passages spread across 9 of the 10 topics, so it is a
+          The word "credit" appears in 181 passages spread across 9 of the 10 topics, so it is a
           genuinely cross-cutting concept rather than a single semantic region. It concentrates in
-          Grading, Registration &amp; Academic Standing (77 passages) and Credit, Transfer &amp;
-          Degree Policy (54) &mdash; together 71% &mdash; but still surfaces in Major Requirements &amp;
-          Elective Lists (23) and Language &amp; Writing Courses (16). By contrast "graduation" (34
-          passages) is confined to just 3 topics, mostly Grading/Registration (21) and Credit/Transfer
-          (12). Lexical search and semantic neighbourhood therefore answer different questions.
+          Placement Credit &amp; Degree Requirements (81 passages) and Transfer Credit &amp; Global
+          Education (46) &mdash; together 70% &mdash; but still surfaces in Grading, Registration &amp;
+          Academic Standing (27) and Language &amp; Writing Courses (10). By contrast "graduation" (33
+          passages) is confined to just 4 topics, mostly Transfer Credit (12) and Grading/Registration
+          (11). Lexical search and semantic neighbourhood therefore answer different questions.
         </p>
       </article>
     </section>

@@ -115,16 +115,16 @@ TFIDF_DOMAIN_STOPWORDS = [
 # Filled after inspecting representative passages and TF-IDF terms with
 # lab8/analyze_lab8.py. Every cluster id 0..FINAL_K-1 must have exactly one label.
 CLUSTER_LABELS: dict[int, str] = {
-    0: "Media, Arts & Communication",
-    1: "Grading, Registration & Academic Standing",
-    2: "Major Requirements & Elective Lists",
-    3: "China & Global History",
-    4: "Politics, Policy & Economics",
-    5: "Sciences, Mathematics & Computing",
-    6: "Student Development, Advising & Signature Work",
-    7: "Culture, Literature & Society",
-    8: "Credit, Transfer & Degree Policy",
-    9: "Language & Writing Courses",
+    0: "Student Development, Advising & Skills",
+    1: "China & Global History",
+    2: "Language & Writing Courses",
+    3: "Transfer Credit & Global Education",
+    4: "Grading, Registration & Academic Standing",
+    5: "Culture, Literature & the Arts",
+    6: "Mathematics, Physical Science & Computing",
+    7: "Placement Credit & Degree Requirements",
+    8: "Biology, Environment & Global Health",
+    9: "Politics, Policy & Economics",
 }
 
 
@@ -161,8 +161,92 @@ def clean_text(text: str) -> str:
     return text.strip()
 
 
+def join_spans(spans) -> str:
+    """Join a text line's spans, inserting a space only where the glyph geometry
+    shows a real horizontal gap. PyMuPDF emits word-level spans, but a superscript
+    footnote marker or a font change can split a single word into adjacent spans
+    (e.g. "s" + "tudents"); a blind space join turns that into "s tudents". Using
+    the span bounding boxes repairs those intra-word splits deterministically while
+    preserving ordinary inter-word spacing."""
+    parts = []
+    prev_x1 = None
+    prev_size = 11.0
+    for span in spans:
+        text = span["text"]
+        if not text:
+            continue
+        x0, x1 = span["bbox"][0], span["bbox"][2]
+        if parts and prev_x1 is not None:
+            gap = x0 - prev_x1
+            ends_space = parts[-1].endswith(" ") or parts[-1].endswith("\t")
+            starts_space = text[:1].isspace()
+            if gap > 0.25 * prev_size and not ends_space and not starts_space:
+                parts.append(" ")
+        parts.append(text)
+        prev_x1 = x1
+        prev_size = span["size"] or prev_size
+    return "".join(parts)
+
+
 def part_short(chapter: str) -> str:
     return re.sub(r"^Part\s+\d+:\s*", "", chapter).strip()
+
+
+# structural course-group headings inside Part 10 (e.g. "Disciplinary Courses",
+# "Chinese as Second Language Courses") are layout labels, not document units.
+_GROUP_WORDS = {
+    "courses", "course", "electives", "elective", "requirements", "requirement",
+    "sequence", "track", "tracks", "concentration", "concentrations",
+}
+
+
+def is_structure_heading(text: str, chapter: str) -> bool:
+    """A short Part-10 course-group heading with no sentence content: title-like,
+    no course code, no digits, no sentence punctuation, ends on a group word."""
+    if not chapter.startswith("Part 10"):
+        return False
+    words = text.split()
+    if not (1 <= len(words) <= 8):
+        return False
+    if re.search(r"[.!?:;,()]", text):
+        return False
+    if any(ch.isdigit() for ch in text):
+        return False
+    if re.search(r"\b[A-Z]{2,}\s*\d", text):  # course code such as MATH 405
+        return False
+    if words[-1].lower() not in _GROUP_WORDS:
+        return False
+    return text[:1].isupper()
+
+
+def ends_open(text: str) -> bool:
+    """True when a passage does not end on a sentence-terminal boundary."""
+    return re.search(r"[.!?]['\")\]]?\s*$", text) is None
+
+
+def begins_lowercase(text: str) -> bool:
+    match = re.search(r"[A-Za-z]", text)
+    return bool(match) and match.group().islower()
+
+
+def looks_like_page_continuation(prev, cur) -> bool:
+    """Strong, geometry-backed evidence that `cur` continues `prev`'s paragraph
+    across a page break: same hierarchy, consecutive PDF pages, the previous block
+    sits low on its page, the current block starts high on the next page, the
+    previous text is syntactically unfinished, and the current text starts lower
+    case. Two independent paragraphs that merely straddle a page break do not meet
+    all of these conditions."""
+    if not (prev["chapter"] == cur["chapter"]
+            and prev["section"] == cur["section"]
+            and prev["subsection"] == cur["subsection"]):
+        return False
+    if cur["page"] != prev["end_page"] + 1:
+        return False
+    if prev["end_y_bottom"] < 0.72 * prev["end_page_height"]:
+        return False
+    if cur["y_top"] > 0.32 * cur["page_height"]:
+        return False
+    return ends_open(prev["text"]) and begins_lowercase(cur["text"])
 
 
 def short_section(section: str) -> str:
@@ -239,15 +323,17 @@ def extract_fragments(pdf_path: Path):
 
     for pno in range(CONTENT_START_PAGE - 1, page_count):
         page1 = pno + 1
+        page_height = doc[pno].rect.height
         blocks = [b for b in doc[pno].get_text("dict")["blocks"] if b.get("type") == 0]
         blocks.sort(key=lambda b: (round(b["bbox"][1]), round(b["bbox"][0])))
         for block in blocks:
-            spans = [s for line in block["lines"] for s in line["spans"]]
-            text = clean_text(" ".join(s["text"] for s in spans))
+            line_texts = [join_spans(line["spans"]) for line in block["lines"]]
+            text = clean_text(" ".join(line_texts))
             if not text:
                 continue
             ntext = norm_title(text)
             y_top = block["bbox"][1]
+            y_bottom = block["bbox"][3]
 
             # footer page number -> record printed page, drop from corpus
             if y_top > 720 and page_num_re.match(text):
@@ -286,6 +372,10 @@ def extract_fragments(pdf_path: Path):
             if not section:
                 section = part_short(chapter)
 
+            # structure-only course-group heading -> not a semantic passage
+            if is_structure_heading(text, chapter):
+                continue
+
             fragments.append({
                 "page": page1,
                 "chapter": chapter,
@@ -293,26 +383,46 @@ def extract_fragments(pdf_path: Path):
                 "subsection": subsection,
                 "text": text,
                 "words": len(text.split()),
+                "y_top": y_top,
+                "y_bottom": y_bottom,
+                "page_height": page_height,
             })
 
     consumed = ptr
     return fragments, printed_page, page_count, len(headings), consumed
 
 
+def _absorb(prev, frag):
+    """Fold `frag` into `prev`, extending the page span and end geometry."""
+    prev["text"] = f'{prev["text"]} {frag["text"]}'.strip()
+    prev["words"] = len(prev["text"].split())
+    prev["end_page"] = frag["page"]
+    prev["end_y_bottom"] = frag["y_bottom"]
+    prev["end_page_height"] = frag["page_height"]
+
+
 def merge_fragments(fragments):
-    """Merge tiny adjacent fragments that share a section and subsection."""
+    """Merge fragments into passages. Two fragments join when either (a) the block
+    geometry shows a clear cross-page paragraph continuation, or (b) one side is a
+    tiny fragment (a stub or a prerequisite line) sharing the same hierarchy."""
     merged = []
     for frag in fragments:
+        work = dict(frag)
+        work["end_page"] = frag["page"]
+        work["end_y_bottom"] = frag["y_bottom"]
+        work["end_page_height"] = frag["page_height"]
         if merged:
             prev = merged[-1]
+            if looks_like_page_continuation(prev, frag):
+                _absorb(prev, frag)
+                continue
             same = (prev["section"] == frag["section"]
                     and prev["subsection"] == frag["subsection"]
-                    and abs(prev["page"] - frag["page"]) <= 1)
+                    and abs(prev["end_page"] - frag["page"]) <= 1)
             if same and (prev["words"] < MIN_WORDS or frag["words"] < ABSORB_WORDS):
-                prev["text"] = f'{prev["text"]} {frag["text"]}'.strip()
-                prev["words"] = len(prev["text"].split())
+                _absorb(prev, frag)
                 continue
-        merged.append(dict(frag))
+        merged.append(work)
     return merged
 
 
@@ -367,6 +477,7 @@ def build_passages(fragments, printed_page):
             "section": frag["section"],
             "subsection": frag["subsection"],
             "page": frag["page"],
+            "page_end": frag.get("end_page", frag["page"]),
             "printed_page": printed_page.get(frag["page"], ""),
             "text": text,
             "text_clean": text_clean,
@@ -383,7 +494,7 @@ def build_passages(fragments, printed_page):
 def write_passages_csv(rows):
     import pandas as pd
 
-    columns = ["passage_id", "chapter", "section", "subsection", "page",
+    columns = ["passage_id", "chapter", "section", "subsection", "page", "page_end",
                "printed_page", "text", "text_clean", "word_count"]
     df = pd.DataFrame(rows, columns=columns)
     out = DATA_DIR / "lab8_bulletin_passages.csv"
@@ -546,7 +657,7 @@ def write_embedding_map(df, labels, coords):
     out_df["cluster_name"] = out_df["cluster"].map(CLUSTER_LABELS)
     out_df["x"] = np.round(coords[:, 0], 4)
     out_df["y"] = np.round(coords[:, 1], 4)
-    columns = ["passage_id", "chapter", "section", "subsection", "page",
+    columns = ["passage_id", "chapter", "section", "subsection", "page", "page_end",
                "text", "word_count", "cluster", "cluster_name", "x", "y"]
     out = DATA_DIR / "lab8_embedding_map.csv"
     out_df.to_csv(out, index=False, lineterminator="\n", columns=columns)

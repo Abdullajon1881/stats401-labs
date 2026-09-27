@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A critique and coordinated D3 redesign of Our World in Data's global electricity generation by source chart.">
+  <title>Visualization Critique and Redesign | STATS 401</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Newsreader:opsz,wght@6..72,600;6..72,700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="critique.css">
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <script src="critique.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <a class="course-link" href="../">STATS 401</a>
+    <nav aria-label="Project sections">
+      <a href="#visualization">Visualization</a>
+      <a href="#report">Report</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" aria-labelledby="page-title">
+      <p class="eyebrow">Visualization Critique and Redesign</p>
+      <h1 id="page-title">Reading the changing<br><span>electricity mix</span></h1>
+      <p class="hero-copy">A fair critique of a strong overview chart, followed by a coordinated redesign for comparing sources, shares, and selected-year generation.</p>
+      <dl class="hero-meta">
+        <div><dt>Place</dt><dd>World</dd></div>
+        <div><dt>Period</dt><dd>2010–2025</dd></div>
+        <div><dt>Measure</dt><dd>Annual TWh</dd></div>
+        <div><dt>Sources</dt><dd>9</dd></div>
+      </dl>
+    </section>
+
+    <section id="visualization" class="section-block" aria-labelledby="visualization-title">
+      <div class="section-heading">
+        <p class="section-number">Part 1</p>
+        <div>
+          <h2 id="visualization-title">GitHub Pages Visualization</h2>
+          <p>Two readings of the same electricity-generation data: historical share and selected-year scale.</p>
+        </div>
+      </div>
+
+      <article class="context-card">
+        <div>
+          <p class="card-kicker">Original visualization</p>
+          <h3>Electricity generation by source</h3>
+          <p>Our World in Data’s stacked-area chart shows annual global generation from nine sources in terawatt-hours from 2010 through 2025. The layers make total generation and each source’s contribution to that total visible in one compact form.</p>
+          <p class="important-note"><strong>Scope note:</strong> electricity generation is not the same as total energy consumption. Electricity is one part of the wider energy system.</p>
+        </div>
+        <figure class="original-figure">
+          <img src="original-visualization.png" width="850" height="600" alt="Our World in Data stacked-area chart of world electricity generation by nine sources from 2010 to 2025.">
+          <figcaption>
+            <strong>Original:</strong> “Electricity generation by source,” World, 2010–2025, annual generation in TWh. Source: Our World in Data; data from Ember (2026) and other sources. Accessed 2026-09-27. <a href="https://ourworldindata.org/grapher/electricity-mix?frequency=annual&amp;metric=by_source&amp;source=total&amp;time=2010..latest" target="_blank" rel="noopener">View the original visualization</a>.
+          </figcaption>
+        </figure>
+      </article>
+
+      <article id="redesign" class="redesign-card" aria-labelledby="redesign-title">
+        <header class="redesign-header">
+          <div>
+            <p class="card-kicker">Coordinated redesign</p>
+            <h3 id="redesign-title">Share over time. Scale in a year.</h3>
+            <p id="summary-text" class="summary-text" aria-live="polite">Loading the frozen dataset…</p>
+          </div>
+          <div class="control-panel">
+            <div class="year-readout"><span>Selected year</span><strong id="year-display">2025</strong></div>
+            <label for="year-slider">Choose year</label>
+            <input id="year-slider" type="range" min="2010" max="2025" value="2025" step="1">
+            <div class="range-labels" aria-hidden="true"><span id="range-start">2010</span><span id="range-end">2025</span></div>
+            <button id="clear-highlight" type="button" disabled>Clear highlight</button>
+          </div>
+        </header>
+
+        <div id="chart-error" class="chart-error" role="alert" hidden></div>
+
+        <div class="dashboard">
+          <section class="chart-section" aria-labelledby="shares-title">
+            <div class="chart-heading">
+              <div>
+                <p class="view-label">View A</p>
+                <h4 id="shares-title">Source share over time</h4>
+              </div>
+              <p id="scale-note" class="scale-note">All panels use the same 0–40% scale.</p>
+            </div>
+            <div id="small-multiples" class="small-multiples"></div>
+          </section>
+
+          <section class="chart-section bars-section" aria-labelledby="bars-title">
+            <div class="chart-heading">
+              <div>
+                <p class="view-label">View B</p>
+                <h4 id="bars-title">Generation in <span id="bar-year">2025</span></h4>
+              </div>
+              <p class="scale-note">Ranked by TWh</p>
+            </div>
+            <div id="bar-chart" class="bar-chart"></div>
+          </section>
+        </div>
+
+        <p class="interaction-note"><span aria-hidden="true">↗</span> Hover or focus a source to trace it across both views. Click to lock the highlight.</p>
+      </article>
+
+      <aside class="source-note" aria-labelledby="source-note-title">
+        <h3 id="source-note-title">Source, data, and method</h3>
+        <div class="source-grid">
+          <p><strong>Frozen submission data.</strong> The page loads a committed local CSV rather than a live feed. The preparation script downloads the official OWID annual, total-source, generation-by-source CSV, selects World for 2010–2025, and reshapes it to 144 year-source rows.</p>
+          <p><strong>Share denominator.</strong> Each share is the source’s generation divided by the sum of the nine included sources for that year. That sum was audited against OWID’s explicit total-generation metric and reconciles exactly at the supplied precision.</p>
+          <p><strong>Attribution.</strong> Ember (2026); Pinto et al. (2023); Energy Institute – Statistical Review of World Energy (2026) – with major processing by Our World in Data. The broader source series covers 1900–2025; this project intentionally uses 2010–2025.</p>
+          <p><strong>Links.</strong> <a href="https://ourworldindata.org/grapher/electricity-mix?frequency=annual&amp;metric=by_source&amp;source=total&amp;time=2010..latest" target="_blank" rel="noopener">Original chart and data page</a> · <a href="https://ourworldindata.org/grapher/electricity-mix.csv?v=1&amp;csvType=full&amp;useColumnShortNames=false&amp;source=total&amp;metric=by_source&amp;frequency=annual">Official downloadable CSV</a> · Accessed 2026-09-27.</p>
+        </div>
+      </aside>
+    </section>
+
+    <section id="report" class="section-block report-block" aria-labelledby="report-title">
+      <div class="section-heading">
+        <p class="section-number">Part 2</p>
+        <div>
+          <h2 id="report-title">Visualization Critique and Redesign Report</h2>
+          <p>A comparison centered on viewer tasks and perceptual accuracy.</p>
+        </div>
+      </div>
+
+      <article id="report-prose" class="report-prose">
+        <section aria-labelledby="report-context">
+          <h3 id="report-context">Original visualization and context</h3>
+          <p>Our World in Data’s “Electricity generation by source” chart presents annual global electricity generation from 2010 to 2025 in terawatt-hours. Its nine stacked layers represent coal, oil, gas, nuclear, hydropower, wind, solar, bioenergy, and other renewables. The intended message is twofold: total electricity generation has grown, and the contribution of individual sources has changed within that total. The likely audience includes the general public, journalists, students, and energy or policy readers. Their main tasks are to understand total growth, identify the largest contributors, observe mix changes, compare established and emerging sources, and notice recent wind and solar growth. The measure is electricity generation, not total energy consumption, and the display does not by itself establish why any source rises or falls.</p>
+        </section>
+
+        <figure class="report-figure">
+          <img src="original-visualization.png" width="850" height="600" alt="Original OWID stacked-area visualization of annual world electricity generation by source, 2010 to 2025.">
+          <figcaption><strong>Figure 1.</strong> Original OWID stacked-area visualization: World electricity generation by source, 2010–2025. Source: Our World in Data; Ember (2026) and other sources.</figcaption>
+        </figure>
+
+        <section aria-labelledby="report-critique">
+          <h3 id="report-critique">Critique</h3>
+          <p>The original has real strengths. First, stacking makes the additive structure explicit: the layers form total electricity generation, so the top boundary efficiently communicates cumulative growth. Second, time uses a familiar horizontal axis, while direct labels at the right edge reduce trips to a separate legend. Restrained annotation and recognizable source colors also establish a clear visual hierarchy.</p>
+          <p>Its main weakness follows from the same stacking. Only coal, the bottom layer, has a fixed zero baseline. Gas, hydropower, nuclear, wind, and solar sit above changing layers, so comparisons such as gas versus hydropower or wind versus solar depend on judging band thickness and area. Position on a common scale is perceived more accurately than thickness without a shared baseline; direct labels identify the bands but do not repair that comparison problem.</p>
+          <p>Second, the physically thin bands for solar, wind, bioenergy, and other renewables compress rapid relative growth, crossovers, and year-to-year trajectories. Their values remain visible, but are harder to compare precisely than the large fossil-fuel layers. This matters because recent mix change is a central viewer task. Third, absolute TWh and mix change are conflated. A source can gain TWh while its percentage share stays flat or falls as total generation grows. The chart is effective for the additive-total question, but weaker for asking how each source’s share is changing.</p>
+        </section>
+
+        <section aria-labelledby="report-rationale">
+          <h3 id="report-rationale">Redesign rationale</h3>
+          <p>The first redesign decision replaces stacked areas with nine small-multiple share lines. Every panel uses the same zero baseline and shared percentage maximum, changing the key encoding from moving-band thickness to position on a common scale. Separate panels also keep smaller sources from being squeezed between larger ones. The panels are ordered by the latest share, making present-day comparison easier without hard-coding a ranking.</p>
+          <p>The second decision separates a relative trend view from an absolute view. Share lines isolate the transition in the electricity mix, while the selected-year bars preserve the original’s TWh question. This distinction prevents growth in total output from being mistaken for growth in share. The third decision replaces within-year layer-thickness comparison with ranked horizontal bars. Bar length begins at zero, source names have room to remain legible, and direct TWh and percentage labels support exact reading. A coordinated slider moves all selected-year dots, reranks the bars, and updates the summary; linked hover, focus, and click highlighting lets viewers follow one source across both views.</p>
+        </section>
+
+        <figure class="report-figure">
+          <img src="redesign-visualization.png" width="1440" height="900" alt="Redesigned coordinated visualization with nine source-share line charts and a ranked horizontal bar chart for 2025.">
+          <figcaption><strong>Figure 2.</strong> Coordinated redesign showing source shares over time and ranked generation for the selected year. Source data: Our World in Data, adapted from Ember, Pinto et al., and Energy Institute.</figcaption>
+        </figure>
+
+        <section aria-labelledby="report-comparison">
+          <h3 id="report-comparison">Original vs. redesign</h3>
+          <p>After the redesign, a viewer can compare any two sources against the same scale, see whether each share is rising or falling, notice the acceleration of smaller sources, rank sources in a chosen year, and read exact TWh and share values. The original still wins at one task: its single cumulative silhouette communicates historical total generation immediately. The redesign instead makes the two analytical questions explicit and coordinated.</p>
+        </section>
+
+        <section aria-labelledby="report-tradeoffs">
+          <h3 id="report-tradeoffs">Trade-offs and limitations</h3>
+          <p>That gain costs screen space and compactness. Nine panels require scanning, and the redesign loses the stacked area’s immediate single-shape impression of the entire cumulative historical total. The ranked bars restore absolute magnitude only for the active year, not for every year simultaneously. The common share scale also leaves empty space in panels for small sources, but that emptiness is meaningful: it preserves honest cross-source comparison. Overall, the redesign intentionally prioritizes source-to-source comparison, mix change, and precise reading over a compact overview.</p>
+        </section>
+      </article>
+
+      <section class="references" aria-labelledby="references-title">
+        <h3 id="references-title">References</h3>
+        <ol>
+          <li>Our World in Data. <a href="https://ourworldindata.org/grapher/electricity-mix?frequency=annual&amp;metric=by_source&amp;source=total&amp;time=2010..latest">“Electricity generation by source.”</a> World, 2010–2025. Accessed 2026-09-27.</li>
+          <li>Ember (2026); Pinto et al. (2023); Energy Institute – Statistical Review of World Energy (2026) – with major processing by Our World in Data. “Electricity generation by source” [dataset]. Ember, “Yearly Electricity Data Europe”; Ember, “Yearly Electricity Data”; Pinto et al., “Global historical electricity”; Energy Institute, “Statistical Review of World Energy” [original data]. Accessed 2026-09-27.</li>
+          <li>Our World in Data. <a href="https://ourworldindata.org/electricity-mix">“Electricity Mix.”</a> Data and research page. Accessed 2026-09-27.</li>
+          <li>D3.js. <a href="https://d3js.org/">Data-Driven Documents, version 7.</a> Accessed 2026-09-27.</li>
+        </ol>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <p>STATS 401 · Individual Project · Visualization Critique and Redesign</p>
+    <a href="#main-content">Back to top ↑</a>
+  </footer>
+
+  <div id="tooltip" class="tooltip" role="status" aria-live="polite" hidden>
+    <strong id="tooltip-source"></strong>
+    <span id="tooltip-year"></span>
+    <span id="tooltip-generation"></span>
+    <span id="tooltip-share"></span>
+  </div>
+</body>
+</html>

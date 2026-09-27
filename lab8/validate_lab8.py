@@ -95,6 +95,12 @@ def check_corpus():
     pages = df["page"]
     check(pages.between(CONTENT_START_PAGE, PDF_PAGES).all(),
           f"page numbers in [{CONTENT_START_PAGE}, {PDF_PAGES}]")
+    if check("page_end" in df.columns, "page_end column present"):
+        pe = df["page_end"]
+        check(pe.between(CONTENT_START_PAGE, PDF_PAGES).all(),
+              f"page_end in [{CONTENT_START_PAGE}, {PDF_PAGES}]")
+        check((pe >= df["page"]).all(), "page_end >= page")
+        check((pe - df["page"] <= 3).all(), "no passage spans more than a few pages")
 
     check(df["chapter"].fillna("").str.strip().astype(bool).all(), "chapter is never empty")
     check(df["section"].fillna("").str.strip().astype(bool).all(), "section is never empty")
@@ -141,6 +147,74 @@ def check_summary(df):
         check(abs(s["average_word_count"] - round(df["word_count"].mean(), 2)) < 0.01,
               "summary average_word_count matches corpus")
         check(s["pdf_pages"] == PDF_PAGES, f"summary pdf_pages is {PDF_PAGES}")
+
+
+_GROUP_WORDS = {
+    "courses", "course", "electives", "elective", "requirements", "requirement",
+    "sequence", "track", "tracks", "concentration", "concentrations",
+}
+
+
+def _looks_structural(text):
+    words = str(text).split()
+    if not (1 <= len(words) <= 8):
+        return False
+    if re.search(r"[.!?:;,()]", text) or any(c.isdigit() for c in text):
+        return False
+    if re.search(r"\b[A-Z]{2,}\s*\d", text):
+        return False
+    return words[-1].lower() in _GROUP_WORDS and text[:1].isupper()
+
+
+def check_boundary(df):
+    """Guard the extraction-quality failure class the audit surfaced: paragraphs
+    split across a page break, and structure-only course-group headings emitted as
+    semantic passages."""
+    section("PASSAGE BOUNDARY INTEGRITY")
+    if df is None:
+        check(False, "corpus available for boundary checks")
+        return
+
+    d = df.sort_values("passage_id").reset_index(drop=True)
+
+    # regression: historical cross-page splits must be reconstructed as one passage
+    for phrase in [
+        "Duke Kunshan has a need-aware admissions process",
+        "A student registered for a course with a prerequisite in which they have an I grade",
+    ]:
+        check(d["text"].str.contains(re.escape(phrase)).any(),
+              f"reconstructed cross-page paragraph present: '{phrase[:38]}...'")
+
+    # conservative page-boundary continuation heuristic (validator has no geometry):
+    # adjacent passages, same hierarchy, consecutive pages, previous unfinished,
+    # next starts lowercase -> a likely un-merged continuation to review.
+    def ends_open(t):
+        return re.search(r"[.!?]['\")\]]?\s*$", str(t)) is None
+
+    def begins_lower(t):
+        m = re.search(r"[A-Za-z]", str(t))
+        return bool(m) and m.group().islower()
+
+    flags = []
+    for i in range(len(d) - 1):
+        a, b = d.iloc[i], d.iloc[i + 1]
+        if (a["chapter"] == b["chapter"] and a["section"] == b["section"]
+                and str(a["subsection"]) == str(b["subsection"])
+                and int(a["page_end"]) + 1 == int(b["page"])
+                and ends_open(a["text"]) and begins_lower(b["text"])):
+            flags.append((a["passage_id"], b["passage_id"], str(a["text"])[-40:], str(b["text"])[:40]))
+    if not check(len(flags) == 0,
+                 f"no strong page-boundary continuation signatures remain ({len(flags)})"):
+        for aid, bid, atail, bhead in flags[:10]:
+            print(f"       review {aid} -> {bid}: ...{atail!r} => {bhead!r}...")
+
+    # structure-only headings must not be semantic passages
+    check(not (df["text_clean"] == "Chinese as Second Language Courses").any(),
+          "no structure-only heading 'Chinese as Second Language Courses' as a passage")
+    heads = df[df["text_clean"].apply(_looks_structural)]
+    if not check(len(heads) == 0, f"no structure-only course-group heading passages ({len(heads)})"):
+        for text in heads["text_clean"].head(10):
+            print(f"       heading passage: {text!r}")
 
 
 # --------------------------------------------------------------------------- #
@@ -369,7 +443,7 @@ def check_js_safe_dom():
         check(re.search(rf"\b{field}\b", js) is not None, f"central state tracks '{field}'")
 
     # no fabricated analytical constants: findings numbers must not be hard-coded in JS
-    check(not re.search(r"\b215\b|\b184\b|\b2\.550\b", js),
+    check(not re.search(r"\b205\b|\b181\b|\b2\.610\b", js),
           "finding figures are not hard-coded in the visualization JS")
 
 
@@ -410,11 +484,11 @@ def check_findings(map_df, matrix_df_none, neighbors, html):
     # ---- finding 1: topic sizes
     sizes = map_df["cluster_name"].value_counts()
     expected_sizes = {
-        "Sciences, Mathematics & Computing": 215,
-        "Grading, Registration & Academic Standing": 210,
-        "Culture, Literature & Society": 202,
-        "Politics, Policy & Economics": 181,
-        "Language & Writing Courses": 95,
+        "Culture, Literature & the Arts": 205,
+        "Politics, Policy & Economics": 201,
+        "Mathematics, Physical Science & Computing": 187,
+        "Grading, Registration & Academic Standing": 149,
+        "Biology, Environment & Global Health": 88,
     }
     for name, n in expected_sizes.items():
         check(int(sizes.get(name, -1)) == n, f"topic '{name[:34]}' has {n} passages")
@@ -424,10 +498,10 @@ def check_findings(map_df, matrix_df_none, neighbors, html):
     # ---- finding 2: topic spread across sections
     spread = map_df.groupby("cluster_name")["section"].nunique()
     expected_spread = {
-        "Student Development, Advising & Signature Work": 61,
-        "Grading, Registration & Academic Standing": 57,
-        "Credit, Transfer & Degree Policy": 52,
-        "Media, Arts & Communication": 22,
+        "Student Development, Advising & Skills": 58,
+        "Transfer Credit & Global Education": 54,
+        "Placement Credit & Degree Requirements": 54,
+        "Biology, Environment & Global Health": 18,
         "Language & Writing Courses": 24,
     }
     for name, n in expected_spread.items():
@@ -441,23 +515,26 @@ def check_findings(map_df, matrix_df_none, neighbors, html):
                           int((grp["count"] > 0).sum()),
                           round(entropy_of(grp["count"].values), 3))
     for sec, passages, ntopics, ent in [
-        ("Computation and Design", 27, 7, 2.550),
-        ("Degree Requirements", 40, 7, 2.440),
-        ("History (HIST)", 60, 6, 1.878),
-        ("Chinese (CHINESE)", 37, 1, 0.000),
+        ("Computation and Design", 27, 7, 2.610),
+        ("Degree Requirements", 40, 5, 2.058),
+        ("Mathematics (MATH)", 28, 2, 0.222),
+        ("Chinese (CHINESE)", 36, 1, 0.000),
     ]:
         got = diversity.get(sec)
         check(got == (passages, ntopics, ent),
               f"section '{sec}' diversity = {passages} passages / {ntopics} topics / entropy {ent:.3f} (got {got})")
         check(f"{ent:.3f}" in html, f"HTML quotes entropy {ent:.3f}")
 
-    # ---- finding 4: cross-section similar passages (cross-listed courses)
+    # ---- finding 4: cross-section similar passages (near-identical cross-listed courses)
     meta = map_df.set_index("passage_id")["section"].to_dict()
-    for a, b in [("p0769", "p0962"), ("p0572", "p0700")]:
+    for a, b in [("p0744", "p0928"), ("p0552", "p0677")]:
         hit = [e for e in neighbors.get(a, []) if e["passage_id"] == b]
         ok = bool(hit) and hit[0]["similarity"] >= 0.999 and meta.get(a) != meta.get(b)
         check(ok, f"{a} and {b} are near-identical neighbours from different sections")
         check(a in html and b in html, f"HTML cites {a} and {b}")
+    # the page must not overclaim these are byte-for-byte identical
+    check("verbatim" not in html.lower() and "are an identical" not in html.lower(),
+          "finding 4 uses accurate non-verbatim wording")
 
     # ---- finding 5: search concept distribution
     def term_dist(term):
@@ -465,23 +542,24 @@ def check_findings(map_df, matrix_df_none, neighbors, html):
         return len(hits), Counter(hits["cluster_name"])
 
     credit_n, credit_dist = term_dist("credit")
-    check(credit_n == 184, f"'credit' appears in 184 passages (got {credit_n})")
+    check(credit_n == 181, f"'credit' appears in 181 passages (got {credit_n})")
     check(len(credit_dist) == 9, f"'credit' spans 9 topics (got {len(credit_dist)})")
-    check(credit_dist["Grading, Registration & Academic Standing"] == 77,
-          "'credit' concentrates 77 in Grading/Registration")
-    check(credit_dist["Credit, Transfer & Degree Policy"] == 54,
-          "'credit' has 54 in Credit/Transfer")
+    check(credit_dist["Placement Credit & Degree Requirements"] == 81,
+          "'credit' concentrates 81 in Placement Credit & Degree Requirements")
+    check(credit_dist["Transfer Credit & Global Education"] == 46,
+          "'credit' has 46 in Transfer Credit & Global Education")
     grad_n, grad_dist = term_dist("graduation")
-    check(grad_n == 34, f"'graduation' appears in 34 passages (got {grad_n})")
-    check(len(grad_dist) == 3, f"'graduation' spans 3 topics (got {len(grad_dist)})")
+    check(grad_n == 33, f"'graduation' appears in 33 passages (got {grad_n})")
+    check(len(grad_dist) == 4, f"'graduation' spans 4 topics (got {len(grad_dist)})")
 
-    for value in ["184", "77", "54", "34", "71%", "9 of the 10"]:
+    for value in ["181", "81", "46", "33", "70%", "9 of the 10"]:
         check(value in html, f"HTML quotes '{value}'")
 
 
 def main():
     corpus = check_corpus()
     check_summary(corpus)
+    check_boundary(corpus)
     map_df = check_map(corpus)
     check_matrix(map_df)
     neighbors = check_neighbors(map_df)

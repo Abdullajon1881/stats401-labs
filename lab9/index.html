@@ -3,12 +3,46 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Lab 9</title>
+  <title>Lab 9: Geospatial Visualization</title>
+  <link rel="icon" href="data:,">
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="lab9.css">
 </head>
-<body>
-  <h1>Lab 9</h1>
-  <p>Lab 9 will be added here.</p>
-  <p><a href="../index.html">Back to main page</a></p>
+<body class="lab9-page">
+  <header class="lab9-header">
+    <p class="lab9-course">STATS 401: Data Acquisition and Visualization</p>
+    <h1>Lab 9: Geospatial Visualization</h1>
+    <p class="lab9-subtitle">A linked comparison of 2025 nominal GDP encoded with colour on a geographic map and area in a non-contiguous cartogram.</p>
+  </header>
+  <nav class="lab-nav" aria-label="Lab navigation">
+    <a href="../lab1/">Lab 1</a><a href="../lab2/">Lab 2</a><a href="../lab3/">Lab 3</a><a href="../lab4/">Lab 4</a><a href="../lab5/">Lab 5</a><a href="../lab6/">Lab 6</a><a href="../lab7/">Lab 7</a><a href="../lab8/">Lab 8</a><a href="../lab9/" aria-current="page">Lab 9</a><a href="../lab10/">Lab 10</a>
+  </nav>
+  <main>
+    <div id="load-error" class="lab9-error" role="alert" hidden></div>
+    <section class="lab9-section" aria-labelledby="dataset-heading">
+      <div class="lab9-heading"><p aria-hidden="true">1</p><div><h2 id="dataset-heading">Dataset Description</h2><p>The supplied dataset contains the 50 largest economies by 2025 nominal GDP, measured in billions of current U.S. dollars. It is based on the IMF World Economic Outlook, October 2025 series; observations may include IMF staff estimates and can later be revised. Frozen Natural Earth boundaries provide country shapes and geographic identifiers. GDP and geometry are joined only by ISO-3. Countries outside the supplied 50 are labelled <em>No data</em>, never treated as zero GDP.</p></div></div>
+      <dl class="lab9-stats" aria-label="GDP dataset summary"><div><dt>Economies with GDP data</dt><dd id="stat-count">&ndash;</dd></div><div><dt>Highest GDP</dt><dd id="stat-high">&ndash;</dd></div><div><dt>Lowest included GDP</dt><dd id="stat-low">&ndash;</dd></div></dl>
+      <div class="lab9-source"><p><strong>GDP data:</strong> Instructor dataset, <code>hiilab/stats-401/data/lab9_gdp_2025_top50.csv</code>.</p><p><strong>Boundaries:</strong> Natural Earth Vector, pinned commit <code>ca96624a56bd078437bca8184e78163e5039ad19</code>, <code>geojson/ne_10m_admin_0_countries_iso.geojson</code>. The 10m ISO file is used because the preferred 110m file does not represent HKG and SGP. Boundaries supply shapes and ISO identifiers only.</p><p><strong>Library:</strong> D3.js v7. The page loads only the committed local GDP and geometry files.</p></div>
+    </section>
+    <section class="lab9-section" aria-labelledby="choropleth-heading">
+      <div class="lab9-heading"><p aria-hidden="true">2</p><div><h2 id="choropleth-heading">2025 GDP Choropleth</h2><p>Position represents geography, shape represents an actual geographic boundary, and colour represents 2025 GDP.</p></div></div>
+      <div class="lab9-controls" aria-label="Map controls"><div class="lab9-control"><label for="country-select">Find an economy</label><select id="country-select"><option value="">No selected economy</option></select></div><button id="clear-selection" type="button">Clear selection</button><button id="reset-map" type="button">Reset map</button></div>
+      <p id="selection-status" class="lab9-status" aria-live="polite">Loading GDP data and geographic boundaries&hellip;</p>
+      <div class="lab9-map-card"><figure><svg id="choropleth-map" role="img" aria-labelledby="choropleth-title choropleth-desc"></svg><figcaption>Scroll or pinch to zoom and drag to pan. Reset map returns to the full-world view.</figcaption></figure><aside class="lab9-legend" aria-label="Choropleth legend"><h3>2025 nominal GDP</h3><div id="choropleth-legend"></div></aside></div>
+      <p class="lab9-note">A logarithmic colour scale is used because the provided GDP values span roughly two orders of magnitude. A linear scale would compress most of the top-50 economies into a narrow light-colour range; the transformation changes only the colour mapping, not GDP.</p>
+    </section>
+    <section class="lab9-section" aria-labelledby="cartogram-heading">
+      <div class="lab9-heading"><p aria-hidden="true">3</p><div><h2 id="cartogram-heading">2025 GDP Cartogram</h2><p>Position is approximate geography, shape is a uniformly scaled geographic silhouette, and displayed area represents 2025 GDP.</p></div></div>
+      <div class="lab9-map-card lab9-cart-card"><figure><svg id="cartogram-map" role="img" aria-labelledby="cartogram-title cartogram-desc"></svg><figcaption>Faint unscaled outlines are reference geography, not quantitative marks. The foreground country silhouettes are the GDP-scaled cartogram.</figcaption></figure></div>
+      <p class="lab9-cart-note">This is a non-contiguous cartogram. Each top-50 country&rsquo;s projected silhouette is uniformly scaled around its projected centroid so displayed area is proportional to nominal GDP. Approximate location and shape are retained, but adjacency, geographic area, spacing and overlap can be distorted. Only relative areas are meaningful; the total cartogram area is normalized for layout.</p>
+    </section>
+    <section class="lab9-section" aria-labelledby="comparison-heading">
+      <div class="lab9-heading"><p aria-hidden="true">4</p><div><h2 id="comparison-heading">Design and Comparison</h2></div></div>
+      <div id="comparison-text" class="lab9-comparison"><p>In the choropleth, the United States and China are most prominent because their dark colours signal the largest GDP values; Germany, Japan, and India also stand out while remaining in their familiar locations. The cartogram makes those same economic leaders visually dominant through broad silhouettes, but it also makes Singapore, Hong Kong SAR, Switzerland, the Netherlands, and Ireland appear far larger than their geographic footprints. Conversely, Russia, Canada, Australia, and Kazakhstan contract because large land area is no longer the visual quantity.</p><p>The choropleth best supports locating economies, comparing neighbours, and relating economic magnitude to actual coastlines, regions, and geographic area. Its boundaries, positions, adjacency, and relative land size remain intact, although colour comparisons across a log scale require reading the legend. The cartogram is better for an immediate comparison of aggregate economic size because area produces a stronger sense of dominance than colour alone. That gain comes with trade-offs: scaling around centroids separates or overlaps countries, distorts geographic area, and weakens adjacency cues. Moving from colour to area changes the question viewers notice first: the choropleth asks where high-GDP economies are, while the cartogram asks how much visual global economic space each economy commands.</p></div>
+    </section>
+  </main>
+  <div id="tooltip" class="lab9-tooltip" role="status" aria-hidden="true"></div>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="lab9.js"></script>
 </body>
 </html>

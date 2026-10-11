@@ -9,14 +9,13 @@ import html.parser
 import json
 import math
 import re
-import shutil
 import subprocess
 import sys
 import tempfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-EXPECTED_HASH = "c50617431a3d4bb4e0a1943fa714e43c922019ad07f4cc5d639470d5e3009f92"
+EXPECTED_NORMALIZED_GDP_SHA256 = "606fae0731ce99defcdac987579569c31076687a9ac423da252d1c0f70039450"
 REQUIRED_COLUMNS = ["iso3", "country", "gdp_2025_billion_usd", "rank"]
 ISO_RE = re.compile(r"^[A-Z]{3}$")
 
@@ -26,11 +25,20 @@ def require(condition: bool, message: str) -> None:
         raise ValueError(message)
 
 
+def normalize_newlines(raw: bytes) -> bytes:
+    """Normalize line endings without changing any CSV record content."""
+    return raw.replace(b"\r\n", b"\n").replace(b"\r", b"\n")
+
+
 def validate_gdp(path: Path, check_hash: bool = True) -> list[dict[str, str]]:
     raw = path.read_bytes()
+    normalized = normalize_newlines(raw)
     if check_hash:
-        require(hashlib.sha256(raw).hexdigest() == EXPECTED_HASH, "GDP file SHA256 differs from instructor source")
-    rows = list(csv.DictReader(raw.decode("utf-8").splitlines()))
+        require(
+            hashlib.sha256(normalized).hexdigest() == EXPECTED_NORMALIZED_GDP_SHA256,
+            "GDP file normalized SHA256 differs from instructor source",
+        )
+    rows = list(csv.DictReader(normalized.decode("utf-8").splitlines()))
     require(rows and list(rows[0]) == REQUIRED_COLUMNS, "GDP columns are not exact")
     require(len(rows) == 50, "GDP row count must be 50")
     isos = [row["iso3"] for row in rows]
@@ -162,14 +170,21 @@ def run_failure_checks(gdp_path: Path, world_path: Path, html_path: Path, js_pat
             write_csv(bad_gdp, rows)
             expect_rejection(label, lambda: validate_gdp(bad_gdp, check_hash=False))
         test_gdp("duplicate GDP ISO", lambda rows: rows.__setitem__(1, {**rows[1], "iso3": "USA"}))
-        test_gdp("missing rank", lambda rows: rows.pop())
+        test_gdp("missing rank", lambda rows: rows.__setitem__(0, {**rows[0], "rank": ""}))
         test_gdp("non-positive GDP", lambda rows: rows.__setitem__(0, {**rows[0], "gdp_2025_billion_usd": "0"}))
         test_gdp("rank/GDP order", lambda rows: rows.__setitem__(1, {**rows[1], "gdp_2025_billion_usd": "40000"}))
         test_gdp("malformed ISO", lambda rows: rows.__setitem__(0, {**rows[0], "iso3": "US"}))
-        shutil.copy2(gdp_path, bad_gdp)
-        with bad_gdp.open("ab") as handle:
-            handle.write(b"\n")
-        expect_rejection("GDP source mutation", lambda: validate_gdp(bad_gdp))
+        normalized_good = normalize_newlines(gdp_path.read_bytes())
+        lf_gdp = temp / "correct-lf.csv"
+        crlf_gdp = temp / "correct-crlf.csv"
+        lf_gdp.write_bytes(normalized_good)
+        crlf_gdp.write_bytes(normalized_good.replace(b"\n", b"\r\n"))
+        validate_gdp(lf_gdp)
+        print("Portability check: LF checkout validation: passed")
+        validate_gdp(crlf_gdp)
+        print("Portability check: CRLF checkout validation: passed")
+        bad_gdp.write_bytes(normalized_good.replace(b"30615.743", b"30615.744", 1))
+        expect_rejection("GDP source content mutation", lambda: validate_gdp(bad_gdp))
         def test_world(label: str, mutate) -> None:
             world = json.loads(json.dumps(good_world))
             mutate(world["features"])
@@ -208,7 +223,7 @@ def main() -> None:
     validate_node_helper(args.js)
     if args.failure_checks:
         run_failure_checks(args.gdp, args.world, args.html, args.js)
-    print("GDP validation: 50 rows, ranks 1..50, exact instructor SHA256")
+    print("GDP validation: 50 rows, ranks 1..50, normalized instructor SHA256")
     print("Join validation: 50 matched; HKG, TWN, SGP matched; name fallback unused")
     print(f"World GeoJSON validation: {len(json.loads(args.world.read_text(encoding='utf-8'))['features'])} features")
     print("Cartogram Node unit test: proportional area passed")

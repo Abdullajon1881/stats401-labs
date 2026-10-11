@@ -9,6 +9,7 @@ compact relative to its source and has a stable byte representation.
 from __future__ import annotations
 
 import csv
+import hashlib
 import io
 import json
 import math
@@ -22,6 +23,7 @@ GDP_PATH = DATA / "lab9_gdp_2025_top50.csv"
 WORLD_PATH = DATA / "lab9_world.geojson"
 
 GDP_URL = "https://raw.githubusercontent.com/hiilab/stats-401/main/data/lab9_gdp_2025_top50.csv"
+UPSTREAM_GDP_RAW_SHA256 = "c50617431a3d4bb4e0a1943fa714e43c922019ad07f4cc5d639470d5e3009f92"
 NATURAL_EARTH_COMMIT = "ca96624a56bd078437bca8184e78163e5039ad19"
 NATURAL_EARTH_FILE = "geojson/ne_10m_admin_0_countries_iso.geojson"
 WORLD_URL = (
@@ -39,6 +41,11 @@ def fetch(url: str) -> bytes:
         if response.status != 200:
             raise RuntimeError(f"Could not fetch {url}: HTTP {response.status}")
         return response.read()
+
+
+def normalize_newlines(raw: bytes) -> bytes:
+    """Normalize only record separators for a deterministic committed CSV."""
+    return raw.replace(b"\r\n", b"\n").replace(b"\r", b"\n")
 
 
 def validate_gdp(raw: bytes) -> set[str]:
@@ -101,10 +108,13 @@ def compact_world(raw: bytes, gdp_isos: set[str]) -> dict:
 def main() -> None:
     DATA.mkdir(parents=True, exist_ok=True)
     gdp_raw = fetch(GDP_URL)
+    if hashlib.sha256(gdp_raw).hexdigest() != UPSTREAM_GDP_RAW_SHA256:
+        raise ValueError("Downloaded instructor GDP CSV does not match the pinned raw SHA256")
     gdp_isos = validate_gdp(gdp_raw)
     world = compact_world(fetch(WORLD_URL), gdp_isos)
-    # Exact downloaded CSV bytes are preserved.  Compact JSON is deterministic.
-    GDP_PATH.write_bytes(gdp_raw)
+    # The instructor CSV content is preserved at record level; only line endings
+    # are normalized to LF for a deterministic committed artifact.
+    GDP_PATH.write_bytes(normalize_newlines(gdp_raw))
     WORLD_PATH.write_text(
         json.dumps(world, ensure_ascii=False, separators=(",", ":")) + "\n",
         encoding="utf-8",

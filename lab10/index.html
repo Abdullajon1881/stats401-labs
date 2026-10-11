@@ -3,12 +3,74 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Lab 10</title>
+  <title>Lab 10: Novel Interaction with Visualizations</title>
+  <link rel="icon" href="data:,">
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../lab9/lab9.css">
+  <link rel="stylesheet" href="lab10.css">
 </head>
-<body>
-  <h1>Lab 10</h1>
-  <p>Lab 10 will be added here.</p>
-  <p><a href="../index.html">Back to main page</a></p>
+<body class="lab9-page lab10-page">
+  <header class="lab9-header">
+    <p class="lab9-course">STATS 401: Data Acquisition and Visualization</p>
+    <h1>Lab 10: Novel Interaction with Visualizations</h1>
+    <p class="lab9-subtitle">Lab 9&rsquo;s coordinated GDP maps, extended with voice-based country selection as an additional input method.</p>
+  </header>
+  <nav class="lab-nav" aria-label="Lab navigation">
+    <a href="../lab1/">Lab 1</a><a href="../lab2/">Lab 2</a><a href="../lab3/">Lab 3</a><a href="../lab4/">Lab 4</a><a href="../lab5/">Lab 5</a><a href="../lab6/">Lab 6</a><a href="../lab7/">Lab 7</a><a href="../lab8/">Lab 8</a><a href="../lab9/">Lab 9</a><a href="../lab10/" aria-current="page">Lab 10</a>
+  </nav>
+  <main>
+    <div id="load-error" class="lab9-error" role="alert" hidden></div>
+    <section class="lab9-section" aria-labelledby="reuse-heading">
+      <div class="lab9-heading"><p aria-hidden="true">1</p><div><h2 id="reuse-heading">Reused Visualization</h2><p>This page runs the complete Lab 9 2025 nominal-GDP choropleth and non-contiguous cartogram unchanged. GDP is joined to frozen Natural Earth boundaries through ISO-3; country selection coordinates both views.</p></div></div>
+      <dl class="lab9-stats" aria-label="GDP dataset summary"><div><dt>Economies with GDP data</dt><dd id="stat-count">&ndash;</dd></div><div><dt>Highest GDP</dt><dd id="stat-high">&ndash;</dd></div><div><dt>Lowest included GDP</dt><dd id="stat-low">&ndash;</dd></div></dl>
+      <div class="lab9-source"><p><strong>GDP data:</strong> Instructor dataset, <code>hiilab/stats-401/data/lab9_gdp_2025_top50.csv</code>, based on IMF World Economic Outlook, October 2025 nominal GDP. Countries outside the supplied 50 are <em>No data</em>, not zero.</p><p><strong>Maps:</strong> Lab 9 uses D3 v7, a frozen Natural Earth boundary source, ISO-3 joins, and an Equal Earth projection.</p></div>
+    </section>
+
+    <section class="lab9-section" aria-labelledby="voice-heading">
+      <div class="lab9-heading"><p aria-hidden="true">2</p><div><h2 id="voice-heading">Voice Interaction</h2><p>Say a small set of commands to activate the existing country selector, Clear selection button, or Reset map button. This is useful when a small economy is hard to target precisely on a world map.</p></div></div>
+      <div class="voice-panel">
+        <div class="voice-start"><button id="voice-button" type="button">Start Voice Control</button><p id="voice-status" aria-live="polite">Checking browser support for voice control&hellip;</p></div>
+        <dl class="voice-feedback"><div><dt>Heard</dt><dd id="voice-heard" aria-live="polite">&ndash;</dd></div><div><dt>Action</dt><dd id="voice-action" aria-live="polite">&ndash;</dd></div></dl>
+        <div class="voice-examples"><h3>Try a command</h3><ul><li>&ldquo;Highlight Japan&rdquo;</li><li>&ldquo;Highlight Singapore&rdquo;</li><li>&ldquo;Highlight Hong Kong&rdquo;</li><li>&ldquo;Clear selection&rdquo;</li><li>&ldquo;Reset map&rdquo;</li></ul></div>
+        <p class="voice-privacy"><strong>Privacy:</strong> Recognition begins only after you press Start Voice Control, and this page does not store audio recordings. Speech recognition may be processed by your browser or its provider according to that implementation. The selector, mouse, keyboard, Clear selection, and Reset map remain available without microphone access.</p>
+      </div>
+    </section>
+
+    <section class="lab9-section" aria-labelledby="maps-heading">
+      <div class="lab9-heading"><p aria-hidden="true">3</p><div><h2 id="maps-heading">Coordinated GDP Maps</h2><p>Use the conventional controls or voice input. The choropleth encodes GDP by logarithmic colour; the cartogram encodes GDP by displayed area.</p></div></div>
+      <div class="lab9-controls" aria-label="Map controls"><div class="lab9-control"><label for="country-select">Find an economy</label><select id="country-select"><option value="">No selected economy</option></select></div><button id="clear-selection" type="button">Clear selection</button><button id="reset-map" type="button">Reset map</button></div>
+      <p id="selection-status" class="lab9-status" aria-live="polite">Loading GDP data and geographic boundaries&hellip;</p>
+      <div class="lab9-map-card"><figure><svg id="choropleth-map" role="img" aria-labelledby="choropleth-title choropleth-desc"></svg><figcaption>Scroll or pinch to zoom and drag to pan. Reset map returns to the full-world view.</figcaption></figure><aside class="lab9-legend" aria-label="Choropleth legend"><h3>2025 nominal GDP</h3><div id="choropleth-legend"></div></aside></div>
+      <p class="lab9-note">A logarithmic colour scale keeps the wide spread of supplied GDP values interpretable; it changes colour mapping only, not the GDP data.</p>
+      <div class="lab9-map-card lab9-cart-card"><figure><svg id="cartogram-map" role="img" aria-labelledby="cartogram-title cartogram-desc"></svg><figcaption>Faint unscaled outlines are reference geography. Foreground silhouettes are uniformly scaled so relative displayed area is proportional to GDP.</figcaption></figure></div>
+      <p class="lab9-cart-note">This non-contiguous cartogram retains approximate location and shape, while adjacency, spacing, and geographic area can be distorted. Only relative cartogram areas are meaningful.</p>
+    </section>
+
+    <section class="lab9-section" aria-labelledby="reflection-heading">
+      <div class="lab9-heading"><p aria-hidden="true">4</p><div><h2 id="reflection-heading">Design Reflection</h2></div></div>
+      <div id="reflection-text" class="lab10-reflection"><p>This extension reuses Lab 9&rsquo;s coordinated GDP choropleth and non-contiguous cartogram. The novel input is one-shot voice recognition for selecting an economy, which then uses the existing selector to highlight that economy in both views. The supported task is finding a named economy and comparing its colour and GDP-scaled silhouette. Voice is particularly useful for geographically small targets such as Singapore or Hong Kong SAR, where precise pointing on a world map can be awkward even though saying the name is straightforward. It is not a replacement for conventional interaction: the selector, mouse, keyboard, Clear selection, and Reset map remain essential fallbacks. Browser support differs, permission can be denied, and background noise, accents, pronunciation, ambiguous names, or a browser&rsquo;s network-backed recognition service can cause errors. Visible Heard and Action feedback makes those limits inspectable rather than silent.</p></div>
+    </section>
+  </main>
+  <div id="tooltip" class="lab9-tooltip" role="status" aria-hidden="true"></div>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="../lab9/lab9.js"></script>
+  <script>
+    // Local deterministic browser-QA seam; inert unless a mockSpeech/mockError
+    // query parameter is explicitly supplied. It never accesses a microphone.
+    if (new URLSearchParams(window.location.search).has("forceUnsupported")) window.__lab10ForceUnsupported = true;
+    if (new URLSearchParams(window.location.search).has("mockSpeech") || new URLSearchParams(window.location.search).has("mockError")) {
+      window.__lab10MockSpeechRecognition = class {
+        constructor() { window.__lab10MockInstance = this; }
+        start() {
+          window.__lab10MockStartCount = (window.__lab10MockStartCount || 0) + 1;
+          const query = new URLSearchParams(window.location.search);
+          if (query.has("mockError")) this.onerror({ error: query.get("mockError") });
+          else this.onresult({ results: [[{ transcript: query.get("mockSpeech") || "" }]] });
+          this.onend();
+        }
+      };
+    }
+  </script>
+  <script src="lab10.js"></script>
 </body>
 </html>
